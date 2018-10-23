@@ -1,0 +1,24 @@
+@import "mixins/well";
+.ve-well {
+    @include make-well($body-bg);
+    &--primary {
+        @include make-well(lighten($color-primary, 25%));
+    }
+    &--danger {
+        @include make-well(lighten($color-danger, 25%));
+    }
+    &--warning {
+        @include make-well(lighten($color-warning, 30%));
+    }
+    &--success {
+        @include make-well(lighten($color-success, 35%));
+    }
+    &--info {
+        @include make-well(lighten($color-info, 30%));
+    }
+    &--default {
+        background: #fff;
+        color: findColorInvert(#fff);
+    }
+    &--outline {}
+}

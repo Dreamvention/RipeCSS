@@ -1,0 +1,73 @@
+@import "mixins/alert";
+.ve-alert {
+    $ve: &;
+    padding: 15px;
+    border-radius: 3px;
+    color: $text-color;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(50, 50, 93, .1);
+    position: relative;
+    &__media {
+        padding: 0px 15px 15px 0px;
+        float: left;
+        height: 100%;
+    }
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 15px;
+        cursor: pointer;
+    }
+    &--dismissible {
+        padding-right: 30px;
+    }
+    &--primary {
+        background: lighten($color-primary, 25%);
+        @include make-alert-shadow($color-primary);
+        #{$ve}__heading,
+        #{$ve}__close {
+            color: $color-primary;
+        }
+    }
+    &--danger {
+        background: lighten($color-danger, 25%);
+        @include make-alert-shadow($color-danger);
+        #{$ve}__heading,
+        #{$ve}__close {
+            color: $color-danger;
+        }
+    }
+    &--warning {
+        background: lighten($color-warning, 30%);
+        @include make-alert-shadow($color-warning);
+        #{$ve}__heading,
+        #{$ve}__close {
+            color: $color-warning;
+        }
+    }
+    &--success {
+        background: lighten($color-success, 35%);
+        @include make-alert-shadow($color-success);
+        #{$ve}__heading,
+        #{$ve}__close {
+            color: $color-success;
+        }
+    }
+    &--info {
+        background: lighten($color-info, 30%);
+        @include make-alert-shadow($color-info);
+        #{$ve}t__heading,
+        #{$ve}__close {
+            color: $color-info;
+        }
+    }
+    &--default {
+        background: #fff;
+        @include make-alert-shadow(#333);
+        #{$ve}__heading,
+        #{$ve}__close {
+            color: findColorInvert(#fff);
+        }
+    }
+}

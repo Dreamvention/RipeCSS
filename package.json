@@ -1,0 +1,25 @@
+{
+    "name": "shopunitycss",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@csstools/postcss-sass": "^3.0.0",
+        "autoprefixer": "^9.2.1",
+        "browser-sync": "^2.26.3",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-sourcemaps": "^2.6.4",
+        "normalize.css": "github:necolas/normalize.css",
+        "postcss": "^7.0.5",
+        "postcss-scss": "^2.0.0"
+    },
+    "dependencies": {
+        "gulp-postcss": "^8.0.0"
+    }
+}

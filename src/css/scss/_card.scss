@@ -1,0 +1,24 @@
+.ve-card {
+    box-shadow: $box-shadow;
+    border-radius: .3rem;
+    padding: 0px;
+    margin-bottom: 15px;
+    background: #fff;
+    min-height: 3rem;
+    &.col {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    &__header {
+        border-bottom: $border;
+        padding: 2.0rem;
+    }
+    &__body {
+        padding: 2.0rem;
+    }
+    &__footer {
+        border-top: $border;
+        background: $gray-lighter;
+        padding: 2.0rem;
+    }
+}

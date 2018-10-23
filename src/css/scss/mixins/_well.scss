@@ -1,0 +1,6 @@
+@mixin make-well($color) {
+    border-radius: 5px;
+    background: $color;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
