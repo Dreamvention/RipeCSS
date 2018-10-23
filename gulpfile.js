@@ -10,7 +10,7 @@ var browserSync = require('browser-sync');
 var baseDir = path.join(__dirname, '/');
 
 if (typeof process.env.HOST === "undefined") {
-    process.env.HOST = 'localhost/ripecss';
+    process.env.HOST = 'localhost/ripecss/docs';
 }
 
 gulp.task('css', function() {
