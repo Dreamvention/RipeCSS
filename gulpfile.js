@@ -25,6 +25,7 @@ gulp.task('css', function() {
         .pipe(postcss(processors)).on('error', (e) => console.log(e.message))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.join(baseDir, 'dist/css/')))
+        .pipe(gulp.dest(path.join(baseDir, 'docs/css/')))
         .pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
