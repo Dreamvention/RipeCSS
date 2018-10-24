@@ -535,24 +535,55 @@
   margin: 0;
   max-width: 100%;
   font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
-  box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, 0.05);
-  box-sizing: border-box;
-  transition: box-shadow 0.2s cubic-bezier(0.64, 0, 0.35, 1);
-  margin-bottom: 1rem; }
-  .ve-input:focus {
-    border-color: #5c6ac4;
-    box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem #5c6ac4;
-    outline: none; }
+  transition: box-shadow 0.2s cubic-bezier(0.64, 0, 0.35, 1); }
+  .ve-input[type=text] {
+    width: 100%; }
+    .ve-input[type=text]:focus {
+      border-color: #5c6ac4;
+      box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem #5c6ac4;
+      outline: none;
+      box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, 0.05);
+      box-sizing: border-box; }
   .ve-input:disabled {
     cursor: not-allowed;
     background-color: #F4F6F8;
     border: .1rem solid #DFE4E8;
     color: #C4CDD5; }
+  .ve-input[type=radio], .ve-input[type=checkbox] {
+    display: inline-block;
+    margin-right: 4px; }
+
+textarea.ve-input {
+  width: 100%; }
+  textarea.ve-input:focus {
+    border-color: #5c6ac4;
+    box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem #5c6ac4;
+    outline: none;
+    box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, 0.05);
+    box-sizing: border-box; }
+
+select.ve-input {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  min-width: 7.5rem;
+  box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, 0.05);
+  box-sizing: border-box;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='rgb(99,115,129)' d='M13 8l-3-3-3 3h6zm-.1 4L10 14.9 7.1 12h5.8z' fill-rule='evenodd'></path></svg>");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 0.7rem; }
 
 .ve-field {
   margin-bottom: 1rem; }
+  .ve-field .ve-input,
+  .ve-field .ve-label {
+    margin-bottom: 1rem; }
   .ve-field--inline > * {
     display: inline-block; }
+    .ve-field--inline > *.ve-input {
+      width: inherit; }
   .ve-field--error .ve-field {
     border-color: #ed6347;
     background-color: #fbeae5; }
@@ -560,7 +591,51 @@
       border-color: #5c6ac4; }
 
 .ve-label {
-  font-weight: 500; }
+  font-weight: 500;
+  margin-bottom: 0; }
+
+.ve-input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .ve-input-group__addon,
+  .ve-input-group .ve-label {
+    border-radius: .3rem;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 14px;
+    border: .1rem solid #c4cdd5; }
+  .ve-input-group__addon,
+  .ve-input-group .ve-label,
+  .ve-input-group .ve-input,
+  .ve-input-group .ve-btn,
+  .ve-input-group a.ve-btn,
+  .ve-input-group a:not([href]):not([tabindex]).ve-btn {
+    margin-left: -1px; }
+    .ve-input-group__addon:first-child,
+    .ve-input-group .ve-label:first-child,
+    .ve-input-group .ve-input:first-child,
+    .ve-input-group .ve-btn:first-child,
+    .ve-input-group a.ve-btn:first-child,
+    .ve-input-group a:not([href]):not([tabindex]).ve-btn:first-child {
+      border-left-width: .1rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .ve-input-group__addon:last-child,
+    .ve-input-group .ve-label:last-child,
+    .ve-input-group .ve-input:last-child,
+    .ve-input-group .ve-btn:last-child,
+    .ve-input-group a.ve-btn:last-child,
+    .ve-input-group a:not([href]):not([tabindex]).ve-btn:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+    .ve-input-group__addon:not(:first-child):not(:last-child),
+    .ve-input-group .ve-label:not(:first-child):not(:last-child),
+    .ve-input-group .ve-input:not(:first-child):not(:last-child),
+    .ve-input-group .ve-btn:not(:first-child):not(:last-child),
+    .ve-input-group a.ve-btn:not(:first-child):not(:last-child),
+    .ve-input-group a:not([href]):not([tabindex]).ve-btn:not(:first-child):not(:last-child) {
+      border-radius: 0; }
 
 .ve-card {
   box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
@@ -594,7 +669,10 @@
 html {
   height: 100%;
   font-size: 62.5%;
-  text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
 
 body {
   font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
@@ -610,7 +688,9 @@ body {
 .ve-btn,
 a.ve-btn,
 a:not([href]):not([tabindex]).ve-btn {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
   border-style: none;
   color: #000;
@@ -635,13 +715,15 @@ a:not([href]):not([tabindex]).ve-btn {
   a.ve-btn:focus,
   a:not([href]):not([tabindex]).ve-btn:hover,
   a:not([href]):not([tabindex]).ve-btn:focus {
-    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
     box-shadow: 0 6px 10px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
     text-decoration: none; }
   .ve-btn:active,
   a.ve-btn:active,
   a:not([href]):not([tabindex]).ve-btn:active {
-    transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
     box-shadow: inset 0 2px 3px rgba(50, 50, 93, 0.11), 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
     text-decoration: none; }
   .ve-btn--sm,
@@ -772,12 +854,14 @@ a:not([href]):not([tabindex]).ve-btn {
     .ve-btn-group a.ve-btnfocus,
     .ve-btn-group a:not([href]):not([tabindex]).ve-btn:hover,
     .ve-btn-group a:not([href]):not([tabindex]).ve-btnfocus {
-      transform: none; }
+      -webkit-transform: none;
+              transform: none; }
     .ve-btn-group .ve-btn:active,
     .ve-btn-group a.ve-btn:active,
     .ve-btn-group a:not([href]):not([tabindex]).ve-btn:active {
       box-shadow: inset 0 2px 3px rgba(50, 50, 93, 0.11);
-      transform: none;
+      -webkit-transform: none;
+              transform: none;
       padding-bottom: 0px;
       padding-top: 1px; }
     .ve-btn-group .ve-btn:last-child,

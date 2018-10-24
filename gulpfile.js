@@ -15,8 +15,7 @@ if (typeof process.env.HOST === "undefined") {
 
 gulp.task('css', function() {
     var processors = [
-        autoprefixer(),
-        postcssSass()
+        postcssSass(), autoprefixer()
     ];
 
     return gulp.src(path.join(baseDir, 'src/css/ripe.scss'))

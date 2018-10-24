@@ -1,0 +1,33 @@
+.ve-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    &__addon,
+    .ve-label {
+        border-radius: .3rem;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 14px;
+        border: .1rem solid #c4cdd5;
+    }
+    &__addon,
+    .ve-label,
+    .ve-input,
+    .ve-btn,
+    a.ve-btn,
+    a:not([href]):not([tabindex]).ve-btn {
+        margin-left: -1px;
+        &:first-child {
+            border-left-width: .1rem;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &:last-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+    }
+}
