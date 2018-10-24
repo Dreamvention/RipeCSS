@@ -13,8 +13,19 @@
         border-bottom: $border;
         padding: 2.0rem;
     }
-    &__body {
+    &__image {
+        >img {
+            width: 100%;
+        }
+    }
+    &__section {
         padding: 2.0rem;
+        >hr {
+            margin: 1em 0;
+        }
+    }
+    >hr {
+        margin: 0px;
     }
     &__footer {
         border-top: $border;

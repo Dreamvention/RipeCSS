@@ -1,6 +1,7 @@
 .ve-btn,
 a.ve-btn,
 a:not([href]):not([tabindex]).ve-btn {
+    $ve: &;
     appearance: none;
     outline: none;
     border-style: none;
@@ -8,8 +9,6 @@ a:not([href]):not([tabindex]).ve-btn {
     display: inline-block;
     padding: 0 14px;
     letter-spacing: .025em;
-    padding: 0 14px;
-    text-transform: uppercase;
     font-size: 15px;
     height: 32px;
     line-height: 32px;
@@ -18,6 +17,8 @@ a:not([href]):not([tabindex]).ve-btn {
     transition: all .15s ease;
     background: #fff;
     color: findColorInvert(#fff);
+    flex: auto;
+    text-align: center;
     cursor: pointer;
     &:hover,
     &:focus {
@@ -27,38 +28,93 @@ a:not([href]):not([tabindex]).ve-btn {
     }
     &:active {
         transform: translateY(1px);
-        box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+        box-shadow: inset 0 2px 3px rgba(50, 50, 93, .11), 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
         text-decoration: none;
     }
     /*size*/
-    &--sm {}
-    &--md {}
-    &--lg {}
-    &--hg {}
+    &--sm {
+        line-height: 24px;
+        height: 24px;
+        font-size: 13px;
+        padding: 0 8px;
+    }
+    &--md {
+        line-height: 32px;
+        height: 32px;
+        font-size: 15px;
+    }
+    &--lg {
+        line-height: 40px;
+        height: 40px;
+        font-size: 17px;
+        padding: 0 18px;
+    }
+    &--hg {
+        line-height: 48px;
+        height: 48px;
+        font-size: 19px;
+        padding: 0 20px;
+    }
     /*state*/
     &--primary {
         background: $color-primary;
         color: findColorInvert($color-primary);
+        &:hover {
+            background: lighten($color-primary, 2%);
+        }
+        &:active {
+            background: darken($color-primary, 2%);
+        }
     }
     &--danger {
         background: $color-danger;
         color: findColorInvert($color-danger);
+        &:hover {
+            background: lighten($color-danger, 2%);
+        }
+        &:active {
+            background: darken($color-danger, 2%);
+        }
     }
     &--warning {
         background: $color-warning;
         color: findColorInvert($color-warning);
+        &:hover {
+            background: lighten($color-warning, 2%);
+        }
+        &:active {
+            background: darken($color-warning, 2%);
+        }
     }
     &--success {
         background: $color-success;
         color: findColorInvert($color-success);
+        &:hover {
+            background: lighten($color-success, 2%);
+        }
+        &:active {
+            background: darken($color-success, 2%);
+        }
     }
     &--info {
         background: $color-info;
         color: findColorInvert($color-info);
+        &:hover {
+            background: lighten($color-info, 2%);
+        }
+        &:active {
+            background: darken($color-info, 2%);
+        }
     }
     &--default {
         background: #fff;
         color: findColorInvert(#fff);
+        &:active {
+            background: darken(#efefef, 15%);
+        }
     }
     &--outline {}
+    &--block {
+        width: 100%;
+    }
 }

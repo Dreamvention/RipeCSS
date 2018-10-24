@@ -51,7 +51,7 @@
                             <div class="ve-card__header">
                                 <h3>Bootstrap drop-in</h3>
                             </div>
-                            <div class="ve-card__body">
+                            <div class="ve-card__section">
                                 <p>Ripe is conflict free with Bootstrap or any other CSS framework. Simply add it after bootstrap in your html head.</p>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                             <div class="ve-card__header">
                                 <h3>SCSS coded</h3>
                             </div>
-                            <div class="ve-card__body">
+                            <div class="ve-card__section">
                                 <p>Built with SCSS mixins and functions. Easy to customize.</p>
                             </div>
 
@@ -68,7 +68,7 @@
                             <div class="ve-card__header">
                                 <h3>Open source</h3>
                             </div>
-                            <div class="ve-card__body">
+                            <div class="ve-card__section">
                                 <p>Download the latest version from github</p>
                                 <a href="https://github.com/Dreamvention/RipeCSS" class="ve-btn ve-btn--primary"><i class="fab fa-github"></i> Download</a>
                             </div>
@@ -154,27 +154,47 @@
             </div>
             <div class="toc-block" id="cards">
                 <section>
-                    <h2>Cards</h2>
+                    <h1 class="toc-block__title">Cards</h1>
                     <p>Starting with shopunity css framework is easy</p>
-                    <div class="ve-card">
-                        <div class="ve-card__header">ve-card-header</div>
-                        <div class="ve-card__body">ve-card-body</div>
-                        <div class="ve-card__footer">ve-card-footer</div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="ve-card">
+                                <div class="ve-card__header">ve-card__header</div>
+                                <div class="ve-card__image">
+                                    <img src="https://shopunity.net/image/cache/extension/136/preview.ajax-quick-checkout400-400x250.png" />
+                                </div>
+                                <div class="ve-card__section">
+                                    <h2>Ajax Quick Checkout</h2>
+                                    <p>The worlds best onepage checkout for Opencart</p>
+                                </div>
+                                <hr/>
+                                <div class="ve-card__section">
+                                    <a class="ve-btn ve-btn--primary">Get it</a> from Shopunity.net
+                                </div>
+                                <div class="ve-card__footer">ve-card__footer</div>
+                            </div>
+                        </div>
+                        <div class="col ve-card"></div>
                     </div>
+
+                    <h2>Cards</h2>
+                    <p>Cards with grid will stretch to stay one hieght. </p>
                     <div class="row">
                         <div class="ve-card col">
-                            <div class="ve-card__body">
-                                <p>ve-card col <br/> hello</p>
+                            <div class="ve-card__section">
+                                <p>Short text</p>
                             </div>
                         </div>
                         <div class="ve-card col">
-                            <div class="ve-card__body">
-                                <p>ve-card col</p>
+                            <div class="ve-card__section">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
                         </div>
                         <div class="ve-card col">
-                            <div class="ve-card__body">
-                                <p>ve-card col</p>
+                            <div class="ve-card__section">
+                                <p>Short text</p>
                             </div>
                         </div>
                     </div>
@@ -186,7 +206,7 @@
                     <p>Starting with shopunity css framework is easy</p>
                     <div class="row">
                         <div class="ve-card col">
-                            <div class="ve-card__body">
+                            <div class="ve-card__section">
                                 <h1>h1 Heading</h1>
                                 <h2>h2 Heading</h2>
                                 <h3>h3 Heading</h3>
@@ -224,7 +244,7 @@
                             </div>
                         </div>
                         <div class="ve-card col">
-                            <xmp class="ve-card__body prettyprint">
+                            <xmp class="ve-card__section prettyprint">
 
                             </xmp>
                         </div>
@@ -245,34 +265,166 @@
                     <h2>Fields & Inputs</h2>
                     <p>Starting with shopunity css framework is easy</p>
                     <div class="ve-field">
-                        <label class="ve-field__label">Name</label>
-                        <input class="ve-field__input" type="text" />
+                        <label class="ve-label">Name</label>
+                        <input class="ve-input" type="text" />
                         <a class="ve-btn ve-btn--primary">Edit</a>
                     </div>
                     <div class="ve-field ve-field--inline">
-                        <label class="ve-field__label">Name</label>
-                        <input class="ve-field__input" type="text" />
+                        <label class="ve-label">Name</label>
+                        <input class="ve-input" type="text" />
                         <a class="ve-btn ve-btn--primary">Edit</a>
                     </div>
                 </section>
             </div>
             <div class="toc-block" id="forms">
                 <section>
-                    <h2>Forms</h2>
-                    <p>Starting with shopunity css framework is easy</p>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Forms</h2>
+                            <p>Starting with shopunity css framework is easy</p>
+                            <div class="ve-field">
+                                <label>Label</label>
+                                <input class="ve-input" type="text" />
+                            </div>
+                            <div class="ve-field">
+                                <label><input class="ve-input" type="radio" name="option1a" checked="checked">Option</label>
+                                <label><input class="ve-input" type="radio" name="option1a">Option</label>
+                            </div>
+                            <div class="ve-field">
+                                <select class="ve-input"><option>Select</option></select>
+                            </div>
+                            <div class="ve-field">
+                                <label><input class="ve-input" type="checkbox" name="option2a" checked="checked">Option</label>
+                                <label><input class="ve-input" type="checkbox" name="option2a">Option</label>
+                            </div>
+                            <div class="ve-field">
+                                <textarea class="ve-input"></textarea>
+                            </div>
+                        </div>
+                        <div class="col ve-card"></div>
+                    </div>
                 </section>
             </div>
             <div class="toc-block" id="buttons">
                 <section>
-                    <h2>Buttons</h2>
-                    <p>Starting with shopunity css framework is easy</p>
-                    <a class="ve-btn ve-btn--primary">Edit</a>
-                    <a class="ve-btn ve-btn--danger">Delete</a>
-                    <a class="ve-btn ve-btn--warning">Remove</a>
-                    <a class="ve-btn ve-btn--success">Save</a>
-                    <a class="ve-btn ve-btn--info">Details</a>
-                    <a class="ve-btn ve-btn--default">Show</a>
+                    <div class="row">
+                        <div class="col">
+                            <h1>Buttons</h1>
+                            <p>Starting with shopunity css framework is easy</p>
+                            <a class="ve-btn ve-btn--primary">Edit</a>
+                            <a class="ve-btn ve-btn--danger">Delete</a>
+                            <a class="ve-btn ve-btn--warning">Remove</a>
+                            <a class="ve-btn ve-btn--success">Save</a>
+                            <a class="ve-btn ve-btn--info">Details</a>
+                            <a class="ve-btn">Show</a>
+                        </div>
+                        <div class="col ve-card"></div>
+                    </div>
                 </section>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Button size</h2>
+                            <p>Starting with shopunity css framework is easy</p>
+                            <a class="ve-btn ve-btn--primary ve-btn--sm">Edit</a>
+                            <a class="ve-btn ve-btn--primary ve-btn--md">Edit</a>
+                            <a class="ve-btn ve-btn--primary ve-btn--lg">Edit</a>
+                            <a class="ve-btn ve-btn--primary ve-btn--hg">Edit</a>
+                        </div>
+                        <div class="col ve-card"></div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Button group</h2>
+                            <p><span>See how button groups work</span>
+                                <div class="ve-btn-group">
+                                    <a class="ve-btn">Show</a>
+                                    <a class="ve-btn">Show</a>
+                                    <a class="ve-btn">Show</a>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col ve-card"></div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Button group Size</h2>
+                            <p><span>See how button groups work</span>
+                                <div class="ve-btn-group ve-btn-group--sm">
+                                    <a class="ve-btn ve-btn--primary">Show</a>
+                                    <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                                </div><br/>
+                                <div class="ve-btn-group ve-btn-group--md">
+                                    <a class="ve-btn ve-btn--primary">Show</a>
+                                    <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                                </div><br/>
+                                <div class="ve-btn-group ve-btn-group--lg">
+                                    <a class="ve-btn ve-btn--primary">Show</a>
+                                    <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                                </div><br/>
+                                <div class="ve-btn-group ve-btn-group--hg">
+                                    <a class="ve-btn ve-btn--primary">Show</a>
+                                    <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col ve-card"></div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Button block</h2>
+                            <p><span>See how button groups work</span></p>
+                            <a class="ve-btn ve-btn--block">Show</a>
+
+
+                        </div>
+                        <div class="col ve-card"></div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Button group block</h2>
+                            <p><span>See how button groups work</span>
+                                <div class="ve-btn-group ve-btn-group--hg ve-btn-group--block">
+                                    <a class="ve-btn">Show</a>
+                                    <a class="ve-btn">Show</a>
+                                    <a class="ve-btn">Show</a>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col ve-card"></div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Button group Vertical</h2>
+                            <p><span>See how button groups work</span>
+                                <div class="ve-btn-group ve-btn-group--hg  ve-btn-group--vertical">
+                                    <a class="ve-btn"><i class="fas fa-compass"></i> Show</a>
+                                    <a class="ve-btn"><i class="fas fa-comment"></i> Show</a>
+                                    <a class="ve-btn"><i class="fas fa-times"></i> Show</a>
+                                </div>
+                            </p>
+                            <p><span>See how button groups work</span>
+                                <div class="ve-btn-group ve-btn-group--hg ve-btn-group--block ve-btn-group--vertical">
+                                    <a class="ve-btn">Show</a>
+                                    <a class="ve-btn">Show</a>
+                                    <a class="ve-btn">Show</a>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col ve-card"></div>
+                    </div>
+                </section>
+
             </div>
             <div class="toc-block" id="alerts">
                 <section>
@@ -280,7 +432,7 @@
                     <p>Starting with shopunity css framework is easy</p>
                     <div class="row">
                         <div class="col ve-card">
-                            <div class="ve-card__body">
+                            <div class="ve-card__section">
                                 <div class="ve-alert ve-alert--primary ve-alert--dismissible">
                                     <h4 class="ve-alert__heading">Alert Primary</h4>
                                     <p>Statement descriptors are limited to between 5 and 22 characters. They must contain at least 5 letters and cannot use the special characters</p>
@@ -288,19 +440,20 @@
                                     <span class="ve-alert__close"><i class="fas fa-times"></i></span>
                                 </div>
                                 <div class="ve-alert ve-alert--danger">
-                                    <h4 class="ve-alert__heading">Alert Primary</h4>
+                                    <h4 class="ve-alert__heading">Alert Danger</h4>
                                     <p>Statement descriptors are limited to between 5 and 22 characters. They must contain at least 5 letters and cannot use the special characters</p>
+                                    <span class="ve-alert__close"><i class="fas fa-times"></i></span>
                                 </div>
                                 <div class="ve-alert ve-alert--warning">
-                                    <h4 class="ve-alert__heading">Alert Primary</h4>
+                                    <h4 class="ve-alert__heading">Alert Warning</h4>
                                     <p>Statement descriptors are limited to between 5 and 22 characters. They must contain at least 5 letters and cannot use the special characters</p>
                                 </div>
                                 <div class="ve-alert ve-alert--success">
-                                    <h4 class="ve-alert__heading">Alert Primary</h4>
+                                    <h4 class="ve-alert__heading">Alert Success</h4>
                                     <p>Statement descriptors are limited to between 5 and 22 characters. They must contain at least 5 letters and cannot use the special characters</p>
                                 </div>
                                 <div class="ve-alert ve-alert--info">
-                                    <h4 class="ve-alert__heading">Alert Primary</h4>
+                                    <h4 class="ve-alert__heading">Alert Info</h4>
                                     <p>Statement descriptors are limited to between 5 and 22 characters. They must contain at least 5 letters and cannot use the special characters</p>
                                 </div>
                             </div>
@@ -318,7 +471,7 @@
 
                     <div class="row">
                         <div class="col ve-card">
-                            <div class="ve-card__body">
+                            <div class="ve-card__section">
                                 <div class="ve-well ve-well">
                                     <span>Select the two options</span>
                                     <a class="ve-btn ve-btn--primary">Yes</a>
