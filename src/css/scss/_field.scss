@@ -11,6 +11,7 @@
     font-size: 1.6rem;
     line-height: 2rem;
     min-width: 7.5rem;
+    font-weight: 300;
     vertical-align: baseline;
     height: auto;
     margin: 0;
@@ -19,11 +20,11 @@
     transition: box-shadow .2s cubic-bezier(.64, 0, .35, 1);
     &[type=text] {
         width: 100%;
+        box-shadow: 0 1px 3px 0 #e6ebf1;
         &:focus {
             border-color: #5c6ac4;
-            box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem #5c6ac4;
             outline: none;
-            box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, .05);
+            box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem #5c6ac4, 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, .05);
             box-sizing: border-box;
         }
     }
@@ -38,15 +39,31 @@
         display: inline-block;
         margin-right: 4px;
     }
+    &--sm {
+        padding: .1rem .6rem;
+        font-size: 1.3rem;
+    }
+    &--md {
+        padding: .4rem .8rem;
+        font-size: 1.6rem;
+    }
+    &--lg {
+        padding: .9rem 1rem;
+        font-size: 1.8rem;
+    }
+    &--hg {
+        padding: 1.3rem 1.3rem;
+        font-size: 2rem;
+    }
 }
 
 textarea.ve-input {
     width: 100%;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
     &:focus {
         border-color: #5c6ac4;
-        box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem #5c6ac4;
         outline: none;
-        box-shadow: 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, .05);
+        box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem #5c6ac4, 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, .05);
         box-sizing: border-box;
     }
 }
@@ -61,6 +78,11 @@ select.ve-input {
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: right 0.7rem top 0.7rem;
+    &:focus {
+        outline: none;
+        border-color: #5c6ac4;
+        box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem #5c6ac4, 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, .05);
+    }
 }
 
 .ve-field {
@@ -77,13 +99,23 @@ select.ve-input {
             }
         }
     }
-    &--error & {
-        border-color: #ed6347;
-        background-color: #fbeae5;
-        .ve-input:focus {
-            border-color: #5c6ac4;
+    &--error {
+        .ve-label {
+            color: $color-danger;
+        }
+        [type=text].ve-input,
+        select.ve-input,
+        textarea.ve-input {
+            border-color: $color-danger;
+            background-color: lighten($color-danger, 25%);
+            &:focus {
+                outline: none;
+                border-color: $color-danger;
+                box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem $color-danger, 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, .05);
+            }
         }
     }
+    &--error {}
 }
 
 .ve-label {

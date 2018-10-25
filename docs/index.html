@@ -78,13 +78,13 @@
             </div>
             <div class="toc-block" id="getstarted">
                 <section>
-                    <h2>Get Started</h2>
+                    <h1>Get Started</h1>
                     <p>Starting with shopunity css framework is easy</p>
                 </section>
             </div>
             <div class="toc-block" id="grid">
                 <section>
-                    <h2>Grid system</h2>
+                    <h1>Grid system</h1>
                     <p>The grid system is taken from bootstrap v4. If you are using the grid system from Bootstrap already, you can use Ripe without the grid.</p>
                     <section>
                         <div class="row">
@@ -159,7 +159,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="ve-card">
-                                <div class="ve-card__header">ve-card__header</div>
+                                <div class="ve-card__header">Module</div>
                                 <div class="ve-card__image">
                                     <img src="https://shopunity.net/image/cache/extension/136/preview.ajax-quick-checkout400-400x250.png" />
                                 </div>
@@ -169,15 +169,39 @@
                                 </div>
                                 <hr/>
                                 <div class="ve-card__section">
-                                    <a class="ve-btn ve-btn--primary">Get it</a> from Shopunity.net
+                                    <a class="ve-btn ve-btn--primary">Get it</a>
                                 </div>
-                                <div class="ve-card__footer">ve-card__footer</div>
+                                <div class="ve-card__footer">from Shopunity.net</div>
                             </div>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-card">
+    <div class="ve-card__header">
+        Module
+    </div>
+    <div class="ve-card__image">
+        <img src="..." />
+    </div>
+    <div class="ve-card__section">
+        <h2>Ajax Quick Checkout</h2>
+        <p>The worlds best onepage checkout 
+            for Opencart</p>
+    </div>
+    <hr/>
+    <div class="ve-card__section">
+        <a class="ve-btn ve-btn--primary">
+            Get it
+        </a> 
+    </div>
+    <div class="ve-card__footer">
+        from Shopunity.net
+    </div>
+</div></xmp></pre>
+                        </div>
                     </div>
-
-                    <h2>Cards</h2>
+                </section>
+                <section>
+                    <h2>Cards with columns</h2>
                     <p>Cards with grid will stretch to stay one hieght. </p>
                     <div class="row">
                         <div class="ve-card col">
@@ -202,7 +226,7 @@
             </div>
             <div class="toc-block" id="typography">
                 <section>
-                    <h2>Typography</h2>
+                    <h1 class="toc-block__title">Typography</h1>
                     <p>Starting with shopunity css framework is easy</p>
                     <div class="row">
                         <div class="ve-card col">
@@ -217,8 +241,6 @@
                                 <a>Anchor</a>
                                 <strong>Bold</strong>
                                 <u>Underline</u>
-                                <pre>Preformatted text</pre>
-                                <code>Code</code>
                                 <ul>
                                     <li>Unordered list item</li>
                                     <li>Unordered list item
@@ -244,16 +266,45 @@
                             </div>
                         </div>
                         <div class="ve-card col">
-                            <xmp class="ve-card__section prettyprint">
-
-                            </xmp>
+                            <pre><xmp class="ve-card__section prettyprint"><h1>h1 Heading</h1>
+<h2>h2 Heading</h2>
+<h3>h3 Heading</h3>
+<h4>h4 Heading</h4>
+<h5>h5 Heading</h5>
+<h6>h6 Heading</h6>
+<p>Paragraph text</p>
+<a>Anchor</a>
+<strong>Bold</strong>
+<u>Underline</u>
+<ul>
+    <li>Unordered list item</li>
+    <li>Unordered list item
+        <ul>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+        </ul>
+    </li>
+    <li>Unordered list item</li>
+</ul>
+<ol>
+    <li>Ordered list item</li>
+    <li>Unordered list item
+        <ol>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+        </ol>
+    </li>
+    <li>Ordered list item</li>
+</ol></xmp></pre>
                         </div>
                     </div>
                 </section>
             </div>
             <div class="toc-block" id="icons">
                 <section>
-                    <h2>Icons</h2>
+                    <h1 class="toc-block__title">Icons</h1>
                     <p>Starting with shopunity css framework is easy</p>
                     <p><i class="fab fa-opencart"></i></p>
                     <p><a class="ve-btn ve-btn--primary"><i class="fab fa-opencart"></i> Opencart</a></p>
@@ -264,7 +315,7 @@
                 <section>
                     <div class="row">
                         <div class="col">
-                            <h2>Inputs</h2>
+                            <h1 class="toc-block__title">Inputs</h1>
                             <p>Starting with shopunity css framework is easy</p>
                             <div class="ve-field">
                                 <label>Label</label>
@@ -290,7 +341,74 @@
                                 <textarea class="ve-input"></textarea>
                             </div>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card ">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-field">
+    <label>Label</label>
+    <input class="ve-input" type="text" />
+</div>
+<div class="ve-field">
+    <label class="ve-label"><input class="ve-input" 
+    type="radio" name="option1a" 
+    checked="checked">Option</label>
+    <label class="ve-label"><input class="ve-input" 
+    type="radio" name="option1a">Option</label>
+</div>
+<div class="ve-field">
+    <select class="ve-input">
+        <option>Select</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </select>
+</div>
+<div class="ve-field">
+    <label><input class="ve-input" type="checkbox" 
+    name="option2a" checked="checked">Option</label>
+    <label><input class="ve-input" type="checkbox" 
+    name="option2a">Option</label>
+</div>
+<div class="ve-field">
+    <textarea class="ve-input"></textarea>
+</div></xmp></pre>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Input sizes</h2>
+                            <p>Starting with shopunity css framework is easy</p>
+                            <div class="ve-field">
+                                <input class="ve-input ve-input--sm" type="text" placeholder="small" />
+                            </div>
+                            <div class="ve-field">
+                                <input class="ve-input ve-input--md" type="text" placeholder="medium" />
+                            </div>
+                            <div class="ve-field">
+                                <input class="ve-input ve-input--lg" type="text" placeholder="large" />
+                            </div>
+                            <div class="ve-field">
+                                <input class="ve-input ve-input--hg" type="text" placeholder="huge" />
+                            </div>
+                        </div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-field">
+    <input class="ve-input ve-input--sm" 
+    type="text" placeholder="small" />
+</div>
+<div class="ve-field">
+    <input class="ve-input ve-input--md" 
+    type="text" placeholder="medium" />
+</div>
+<div class="ve-field">
+    <input class="ve-input ve-input--lg" 
+    type="text" placeholder="large" />
+</div>
+<div class="ve-field">
+    <input class="ve-input ve-input--hg" 
+    type="text" placeholder="huge" />
+</div></xmp></pre>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -299,13 +417,23 @@
                             <h2>Input Group</h2>
                             <p>Starting with shopunity css framework is easy</p>
                             <div class="ve-input-group">
-                                <label class="ve-label">Name</label>
+                                <label class="ve-input-group__addon">Name</label>
                                 <input class="ve-input" type="text" placeholder="Name" />
                                 <a class="ve-btn ve-btn--primary">Edit</a>
-                                <a class="ve-btn ve-btn--primary">Edit</a>
+                                <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
                             </div>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-input-group">
+    <label class="ve-input-group__addon">Name</label>
+    <input class="ve-input" type="text" 
+    placeholder="Name" />
+    <a class="ve-btn ve-btn--primary">Edit</a>
+    <a class="ve-btn ve-btn--primary">
+        <i class="fas fa-times"></i>
+    </a>
+</div></xmp></pre>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -313,7 +441,7 @@
                 <section>
                     <div class="row">
                         <div class="col">
-                            <h2>Fields & Inputs</h2>
+                            <h1 class="toc-block__title">Fields</h1>
                             <p>Starting with shopunity css framework is easy</p>
                             <div class="ve-field">
                                 <label class="ve-label">Name</label>
@@ -321,7 +449,13 @@
                                 <a class="ve-btn ve-btn--primary">Edit</a>
                             </div>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-field">
+    <label class="ve-label">Name</label>
+    <input class="ve-input" type="text" />
+    <a class="ve-btn ve-btn--primary">Edit</a>
+</div></xmp></pre>
+                        </div>
                     </div>
                 </section>
 
@@ -336,10 +470,90 @@
                                 <a class="ve-btn ve-btn--primary">Edit</a>
                             </div>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-field ve-field--inline">
+    <label class="ve-label">Name</label>
+    <input class="ve-input" type="text" 
+    placeholder="Name" />
+    <a class="ve-btn ve-btn--primary">Edit</a>
+</div></xmp></pre>
+                        </div>
                     </div>
                 </section>
 
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Error an Valid Fields</h2>
+                            <p>Starting with shopunity css framework is easy</p>
+                            <div class="ve-field ve-field--error">
+                                <label class="ve-label">Name</label>
+                                <input class="ve-input" type="text" placeholder="Name" />
+                            </div>
+                            <div class="ve-field ve-field--error">
+                                <label class="ve-label"><input class="ve-input" type="radio" name="option1a" checked="checked">Option</label>
+                                <label class="ve-label"><input class="ve-input" type="radio" name="option1a">Option</label>
+                            </div>
+                            <div class="ve-field ve-field--error">
+                                <label class="ve-label">Name</label>
+                                <select class="ve-input">
+                                        <option>Select</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                            </div>
+                            <div class="ve-field ve-field--error">
+                                <label class="ve-label"><input class="ve-input" type="checkbox" name="option2a" checked="checked">Option</label>
+                                <label class="ve-label"><input class="ve-input" type="checkbox" name="option2a">Option</label>
+                            </div>
+                            <div class="ve-field ve-field--error">
+                                <label class="ve-label">Name</label>
+                                <textarea class="ve-input"></textarea>
+                            </div>
+                        </div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-field ve-field--error">
+    <label class="ve-label">Name</label>
+    <input class="ve-input" type="text" 
+    placeholder="Name" />
+</div>
+<div class="ve-field ve-field--error">
+    <label class="ve-label">
+        <input class="ve-input" type="radio" 
+        name="option1a" checked="checked">Option
+    </label>
+    <label class="ve-label">
+        <input class="ve-input" type="radio" 
+        name="option1a">Option
+    </label>
+</div>
+<div class="ve-field ve-field--error">
+    <label class="ve-label">Name</label>
+    <select class="ve-input">
+            <option>Select</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </select>
+</div>
+<div class="ve-field ve-field--error">
+    <label class="ve-label">
+        <input class="ve-input" type="checkbox" 
+        name="option2a" checked="checked">Option
+    </label>
+    <label class="ve-label">
+        <input class="ve-input" type="checkbox" 
+        name="option2a">Option
+    </label>
+</div>
+<div class="ve-field ve-field--error">
+    <label class="ve-label">Name</label>
+    <textarea class="ve-input"></textarea>
+</div></xmp></pre>
+                        </div>
+                    </div>
+                </section>
 
             </div>
 
@@ -347,7 +561,7 @@
                 <section>
                     <div class="row">
                         <div class="col">
-                            <h1>Buttons</h1>
+                            <h1 class="toc-block__title">Buttons</h1>
                             <p>Starting with shopunity css framework is easy</p>
                             <a class="ve-btn ve-btn--primary">Edit</a>
                             <a class="ve-btn ve-btn--danger">Delete</a>
@@ -356,7 +570,14 @@
                             <a class="ve-btn ve-btn--info">Details</a>
                             <a class="ve-btn">Show</a>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><a class="ve-btn ve-btn--primary">Edit</a>
+<a class="ve-btn ve-btn--danger">Delete</a>
+<a class="ve-btn ve-btn--warning">Remove</a>
+<a class="ve-btn ve-btn--success">Save</a>
+<a class="ve-btn ve-btn--info">Details</a>
+<a class="ve-btn">Show</a></xmp></pre>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -369,7 +590,12 @@
                             <a class="ve-btn ve-btn--primary ve-btn--lg">Edit</a>
                             <a class="ve-btn ve-btn--primary ve-btn--hg">Edit</a>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><a class="ve-btn ve-btn--primary ve-btn--sm">Edit</a>
+<a class="ve-btn ve-btn--primary ve-btn--md">Edit</a>
+<a class="ve-btn ve-btn--primary ve-btn--lg">Edit</a>
+<a class="ve-btn ve-btn--primary ve-btn--hg">Edit</a></xmp></pre>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -384,33 +610,63 @@
                                 </div>
                             </p>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-btn-group">
+    <a class="ve-btn">Show</a>
+    <a class="ve-btn">Show</a>
+    <a class="ve-btn">Show</a>
+</div></xmp></pre>
+                        </div>
                     </div>
                 </section>
                 <section>
                     <div class="row">
                         <div class="col">
                             <h2>Button group Size</h2>
-                            <p><span>See how button groups work</span>
-                                <div class="ve-btn-group ve-btn-group--sm">
-                                    <a class="ve-btn ve-btn--primary">Show</a>
-                                    <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
-                                </div><br/>
-                                <div class="ve-btn-group ve-btn-group--md">
-                                    <a class="ve-btn ve-btn--primary">Show</a>
-                                    <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
-                                </div><br/>
-                                <div class="ve-btn-group ve-btn-group--lg">
-                                    <a class="ve-btn ve-btn--primary">Show</a>
-                                    <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
-                                </div><br/>
-                                <div class="ve-btn-group ve-btn-group--hg">
-                                    <a class="ve-btn ve-btn--primary">Show</a>
-                                    <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
-                                </div>
-                            </p>
+                            <p><span>See how button groups work</span></p>
+                            <div class="ve-btn-group ve-btn-group--sm">
+                                <a class="ve-btn ve-btn--primary">Show</a>
+                                <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                            </div><br/>
+                            <div class="ve-btn-group ve-btn-group--md">
+                                <a class="ve-btn ve-btn--primary">Show</a>
+                                <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                            </div><br/>
+                            <div class="ve-btn-group ve-btn-group--lg">
+                                <a class="ve-btn ve-btn--primary">Show</a>
+                                <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                            </div><br/>
+                            <div class="ve-btn-group ve-btn-group--hg">
+                                <a class="ve-btn ve-btn--primary">Show</a>
+                                <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                            </div>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card prettyprint">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-btn-group ve-btn-group--sm">
+    <a class="ve-btn ve-btn--primary">Show</a>
+    <a class="ve-btn ve-btn--primary">
+        <i class="fas fa-times"></i>
+    </a>
+</div><br/>
+<div class="ve-btn-group ve-btn-group--md">
+    <a class="ve-btn ve-btn--primary">Show</a>
+    <a class="ve-btn ve-btn--primary">
+        <i class="fas fa-times"></i>
+    </a>
+</div><br/>
+<div class="ve-btn-group ve-btn-group--lg">
+    <a class="ve-btn ve-btn--primary">Show</a>
+    <a class="ve-btn ve-btn--primary">
+        <i class="fas fa-times"></i>
+    </a>
+</div><br/>
+<div class="ve-btn-group ve-btn-group--hg">
+    <a class="ve-btn ve-btn--primary">Show</a>
+    <a class="ve-btn ve-btn--primary">
+        <i class="fas fa-times"></i>
+    </a>
+</div></xmp></pre>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -419,10 +675,10 @@
                             <h2>Button block</h2>
                             <p><span>See how button groups work</span></p>
                             <a class="ve-btn ve-btn--block">Show</a>
-
-
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><a class="ve-btn ve-btn--block">Show</a></xmp></pre>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -437,36 +693,69 @@
                                 </div>
                             </p>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-btn-group ve-btn-group--hg 
+ve-btn-group--block">
+    <a class="ve-btn">Show</a>
+    <a class="ve-btn">Show</a>
+    <a class="ve-btn">Show</a>
+</div></xmp></pre>
+                        </div>
                     </div>
                 </section>
                 <section>
                     <div class="row">
                         <div class="col">
                             <h2>Button group Vertical</h2>
-                            <p><span>See how button groups work</span>
-                                <div class="ve-btn-group ve-btn-group--hg  ve-btn-group--vertical">
-                                    <a class="ve-btn"><i class="fas fa-compass"></i> Show</a>
-                                    <a class="ve-btn"><i class="fas fa-comment"></i> Show</a>
-                                    <a class="ve-btn"><i class="fas fa-times"></i> Show</a>
-                                </div>
-                            </p>
-                            <p><span>See how button groups work</span>
-                                <div class="ve-btn-group ve-btn-group--hg ve-btn-group--block ve-btn-group--vertical">
-                                    <a class="ve-btn">Show</a>
-                                    <a class="ve-btn">Show</a>
-                                    <a class="ve-btn">Show</a>
-                                </div>
-                            </p>
+                            <p><span>See how button groups work</span></p>
+                            <div class="ve-btn-group ve-btn-group--hg ve-btn-group--vertical">
+                                <a class="ve-btn"><i class="fas fa-compass"></i> Show</a>
+                                <a class="ve-btn"><i class="fas fa-comment"></i> Show</a>
+                                <a class="ve-btn"><i class="fas fa-times"></i> Show</a>
+                            </div>
+
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-btn-group ve-btn-group--hg 
+ve-btn-group--vertical">
+    <a class="ve-btn">
+        <i class="fas fa-compass"></i> Show
+    </a>
+    <a class="ve-btn">
+        <i class="fas fa-comment"></i> Show
+    </a>
+    <a class="ve-btn">
+        <i class="fas fa-times"></i> Show
+    </a>
+</div></xmp></pre>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <p><span>See how button groups work</span></p>
+                            <div class="ve-btn-group ve-btn-group--hg ve-btn-group--block ve-btn-group--vertical">
+                                <a class="ve-btn">Show</a>
+                                <a class="ve-btn">Show</a>
+                                <a class="ve-btn">Show</a>
+                            </div>
+                        </div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-btn-group ve-btn-group--hg 
+ve-btn-group--block ve-btn-group--vertical">
+    <a class="ve-btn">Show</a>
+    <a class="ve-btn">Show</a>
+    <a class="ve-btn">Show</a>
+</div></xmp></pre>
+                        </div>
                     </div>
                 </section>
 
             </div>
             <div class="toc-block" id="alerts">
                 <section>
-                    <h2>Alerts</h2>
+                    <h1 class="toc-block__title">Alerts</h1>
                     <p>Starting with shopunity css framework is easy</p>
                     <div class="row">
                         <div class="col ve-card">
@@ -496,15 +785,26 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col ve-card"></div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-alert ve-alert--primary 
+ve-alert--dismissible">
+    <h4 class="ve-alert__heading">Alert Primary</h4>
+    <p>Statement descriptors are limited to between 
+        5 and 22 characters. They must contain at 
+        least 5 letters and cannot use the special 
+        characters</p>
+    <a class="ve-btn ve-btn--primary">Sign up</a>
+    <span class="ve-alert__close">
+        <i class="fas fa-times"></i>
+    </span>
+</div></xmp></pre>
+                        </div>
                     </div>
-
-
                 </section>
             </div>
             <div class="toc-block" id="well">
                 <section>
-                    <h2>Well</h2>
+                    <h1 class="toc-block__title">Well</h1>
                     <p>Starting with shopunity css framework is easy</p>
 
                     <div class="row">
@@ -537,9 +837,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col ve-card"></div>
-                    </div>
+                        <div class="col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-well ve-well">
+    <span>Select the two options</span>
+    <a class="ve-btn ve-btn--primary">Yes</a>
+    <a class="ve-btn ve-btn--default">No</a>
+</div>
 
+<div class="ve-well ve-well--primary">
+    <p>Statement descriptors are limited to 
+        between 5 and 22 characters. They must 
+        contain at least 5 letters and cannot 
+        use the special characters</p>
+    <a class="ve-btn ve-btn--primary">Edit</a>
+</div></xmp></pre>
+                        </div>
+                    </div>
                 </section>
             </div>
             <footer>
