@@ -34,7 +34,7 @@
         width: 300px;
         border-right: 1px solid #efefef;
         position: fixed;
-        height: calc(100% - 70px);
+        height: 100%;
         top: 0px;
         display: flex;
         flex-direction: column;
@@ -68,16 +68,18 @@
             width: 100%;
         }
     }
-    &__menu+&__setting {
-        top: 70px;
+    &__content {
+        margin-left: 300px;
+        position: relative;
+        height: 100%;
     }
     &__menu+&__content,
     &__menu+&__setting+&__content {
         top: 70px;
+        height: calc(100% - 70px);
     }
-    &__content {
-        margin-left: 300px;
-        position: relative;
+    &__menu+&__setting {
+        top: 70px;
         height: calc(100% - 70px);
     }
 }

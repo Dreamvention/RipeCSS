@@ -1209,7 +1209,7 @@ a:not([href]):not([tabindex]).ve-btn {
     width: 300px;
     border-right: 1px solid #efefef;
     position: fixed;
-    height: calc(100% - 70px);
+    height: 100%;
     top: 0px;
     display: flex;
     flex-direction: column; }
@@ -1237,14 +1237,16 @@ a:not([href]):not([tabindex]).ve-btn {
       position: absolute;
       bottom: 0px;
       width: 100%; }
-  .ve-editor__menu + .ve-editor__setting {
-    top: 70px; }
-  .ve-editor__menu + .ve-editor__content,
-  .ve-editor__menu + .ve-editor__setting + .ve-editor__content {
-    top: 70px; }
   .ve-editor__content {
     margin-left: 300px;
     position: relative;
+    height: 100%; }
+  .ve-editor__menu + .ve-editor__content,
+  .ve-editor__menu + .ve-editor__setting + .ve-editor__content {
+    top: 70px;
+    height: calc(100% - 70px); }
+  .ve-editor__menu + .ve-editor__setting {
+    top: 70px;
     height: calc(100% - 70px); }
 
 /*# sourceMappingURL=ripe.css.map */
