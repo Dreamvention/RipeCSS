@@ -1238,9 +1238,10 @@ a:not([href]):not([tabindex]).ve-btn {
       bottom: 0px;
       width: 100%; }
   .ve-editor__content {
-    margin-left: 300px;
     position: relative;
     height: 100%; }
+  .ve-editor__setting + .ve-editor__content {
+    margin-left: 300px; }
   .ve-editor__menu + .ve-editor__content,
   .ve-editor__menu + .ve-editor__setting + .ve-editor__content {
     top: 70px;

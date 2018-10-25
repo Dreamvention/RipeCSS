@@ -69,9 +69,11 @@
         }
     }
     &__content {
-        margin-left: 300px;
         position: relative;
         height: 100%;
+    }
+    &__setting+&__content {
+        margin-left: 300px;
     }
     &__menu+&__content,
     &__menu+&__setting+&__content {
