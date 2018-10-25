@@ -1,0 +1,37 @@
+.ve-list {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-top: 1px solid #efefef;
+    &__item {
+        border-bottom: 1px solid #efefef;
+        >* {
+            padding: 1.5rem 2rem;
+            display: flex;
+            color: lighten($text-color, 15%);
+            line-height: 1.3rem;
+            >* {
+                flex: auto;
+            }
+            &:hover {
+                text-decoration: none;
+                color: $text-color;
+                background: $body-bg;
+                .ve-list__item__icon {
+                    color: $text-color;
+                }
+            }
+        }
+        &__icon {
+            padding-right: 2rem;
+            padding-left: 2rem;
+            color: lighten($text-color, 35%);
+            flex: 0;
+        }
+    }
+    &--borderless {
+        border-top: none;
+        .ve-list__item:last-child {
+            border-bottom: none;
+        }
+    }
+}

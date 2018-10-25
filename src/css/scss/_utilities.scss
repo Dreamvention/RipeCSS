@@ -1,0 +1,18 @@
+.hide,
+.hidden {
+    display: none !important;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.ve-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+.pull-right {
+    float: right;
+}

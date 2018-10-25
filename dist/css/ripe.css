@@ -756,7 +756,8 @@ body {
   line-height: 2rem;
   font-weight: 400;
   color: #333333;
-  background-color: #f6f9fc; }
+  background-color: #f6f9fc;
+  height: 100%; }
 
 .ve-header h1 {
   font-size: 56px; }
@@ -1094,7 +1095,8 @@ a:not([href]):not([tabindex]).ve-btn {
   margin: 0;
   padding: 0;
   white-space: nowrap;
-  box-shadow: inset 0 -1px 0 0 #dfe3e8; }
+  box-shadow: inset 0 -1px 0 0 #dfe3e8;
+  flex: auto; }
   .ve-tab__item {
     flex: 0 0 auto; }
     .ve-tab__item a {
@@ -1105,20 +1107,144 @@ a:not([href]):not([tabindex]).ve-btn {
       cursor: pointer;
       position: relative;
       white-space: nowrap;
-      color: #637381;
+      color: #595959;
       padding: .3rem 1.6rem 0rem;
       border-bottom: .3rem solid transparent; }
       .ve-tab__item a:hover {
         outline: none;
-        color: #212b36;
+        color: #333333;
         border-color: #c9d6fe;
         text-decoration: none; }
     .ve-tab__item--active a, .ve-tab__item:first-child:last-child a {
-      color: #212b36;
+      color: #333333;
       cursor: default;
       text-decoration: none;
       border-color: #648bfd; }
       .ve-tab__item--active a:hover, .ve-tab__item:first-child:last-child a:hover {
         border-color: #648bfd; }
+  .ve-tab--block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .ve-tab--block .ve-tab__item {
+      flex: auto; }
+      .ve-tab--block .ve-tab__item a {
+        display: block; }
+
+.hide,
+.hidden {
+  display: none !important; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.ve-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0px; }
+
+.pull-right {
+  float: right; }
+
+.ve-list {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-top: 1px solid #efefef; }
+  .ve-list__item {
+    border-bottom: 1px solid #efefef; }
+    .ve-list__item > * {
+      padding: 1.5rem 2rem;
+      display: flex;
+      color: #595959;
+      line-height: 1.3rem; }
+      .ve-list__item > * > * {
+        flex: auto; }
+      .ve-list__item > *:hover {
+        text-decoration: none;
+        color: #333333;
+        background: #f6f9fc; }
+        .ve-list__item > *:hover .ve-list__item__icon {
+          color: #333333; }
+    .ve-list__item__icon {
+      padding-right: 2rem;
+      padding-left: 2rem;
+      color: #8c8c8c;
+      flex: 0; }
+  .ve-list--borderless {
+    border-top: none; }
+    .ve-list--borderless .ve-list__item:last-child {
+      border-bottom: none; }
+
+.ve-editor {
+  overflow: hidden; }
+  .ve-editor__menu {
+    background: #fff;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #efefef;
+    position: fixed;
+    z-index: 1000; }
+    .ve-editor__menu > * {
+      padding: 1.5rem;
+      flex-basis: 0; }
+    .ve-editor__menu__title {
+      flex: auto; }
+      .ve-editor__menu__title h1,
+      .ve-editor__menu__title h2,
+      .ve-editor__menu__title h3,
+      .ve-editor__menu__title h4,
+      .ve-editor__menu__title h5,
+      .ve-editor__menu__title h6 {
+        line-height: 1.4em; }
+    .ve-editor__menu__control {
+      flex: 0; }
+  .ve-editor__setting {
+    background: #fff;
+    width: 300px;
+    border-right: 1px solid #efefef;
+    position: fixed;
+    height: calc(100% - 70px);
+    top: 0px;
+    display: flex;
+    flex-direction: column; }
+    .ve-editor__setting__header {
+      flex: 0;
+      background: #fff;
+      padding: 1rem;
+      border-bottom: 1px solid #efefef;
+      font-size: 1.2em;
+      line-height: 2em; }
+      .ve-editor__setting__header > i {
+        padding: 0 1.3rem; }
+    .ve-editor__setting__content {
+      flex: auto;
+      background: #f6f9fc;
+      overflow: scroll;
+      margin-bottom: 53px; }
+      .ve-editor__setting__content > * {
+        background: #fff; }
+    .ve-editor__setting__footer {
+      flex: 0;
+      background: #fff;
+      padding: 1rem;
+      border-top: 1px solid #efefef;
+      position: absolute;
+      bottom: 0px;
+      width: 100%; }
+  .ve-editor__menu + .ve-editor__setting {
+    top: 70px; }
+  .ve-editor__menu + .ve-editor__content,
+  .ve-editor__menu + .ve-editor__setting + .ve-editor__content {
+    top: 70px; }
+  .ve-editor__content {
+    margin-left: 300px;
+    position: relative;
+    height: calc(100% - 70px); }
 
 /*# sourceMappingURL=ripe.css.map */

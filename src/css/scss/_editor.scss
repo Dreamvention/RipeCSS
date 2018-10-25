@@ -1,0 +1,83 @@
+.ve-editor {
+    overflow: hidden;
+    &__menu {
+        background: #fff;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #efefef;
+        position: fixed;
+        z-index: 1000;
+        >* {
+            padding: 1.5rem;
+            flex-basis: 0;
+        }
+        &__title {
+            flex: auto;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                line-height: 1.4em;
+            }
+        }
+        &__action {}
+        &__control {
+            flex: 0;
+        }
+    }
+    &__setting {
+        background: #fff;
+        width: 300px;
+        border-right: 1px solid #efefef;
+        position: fixed;
+        height: calc(100% - 70px);
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        &__header {
+            flex: 0;
+            background: #fff;
+            padding: 1rem;
+            border-bottom: 1px solid #efefef;
+            font-size: 1.2em;
+            line-height: 2em;
+            >i {
+                padding: 0 1.3rem;
+            }
+        }
+        &__content {
+            flex: auto;
+            background: #f6f9fc;
+            overflow: scroll;
+            margin-bottom: 53px;
+            >* {
+                background: #fff;
+            }
+        }
+        &__footer {
+            flex: 0;
+            background: #fff;
+            padding: 1rem;
+            border-top: 1px solid #efefef;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+        }
+    }
+    &__menu+&__setting {
+        top: 70px;
+    }
+    &__menu+&__content,
+    &__menu+&__setting+&__content {
+        top: 70px;
+    }
+    &__content {
+        margin-left: 300px;
+        position: relative;
+        height: calc(100% - 70px);
+    }
+}

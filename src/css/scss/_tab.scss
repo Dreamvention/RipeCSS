@@ -1,4 +1,5 @@
 .ve-tab {
+    $ve: &;
     display: flex;
     flex-wrap: nowrap;
     list-style: none;
@@ -6,6 +7,7 @@
     padding: 0;
     white-space: nowrap;
     box-shadow: inset 0 -1px 0 0 #dfe3e8;
+    flex: auto;
     &__item {
         flex: 0 0 auto;
         a {
@@ -16,12 +18,12 @@
             cursor: pointer;
             position: relative;
             white-space: nowrap;
-            color: #637381;
+            color: lighten($text-color, 15%);
             padding: .3rem 1.6rem 0rem;
             border-bottom: .3rem solid transparent;
             &:hover {
                 outline: none;
-                color: #212b36;
+                color: $text-color;
                 border-color: lighten($color-primary, 20%);
                 text-decoration: none;
             }
@@ -32,10 +34,21 @@
                 &:hover {
                     border-color: $color-primary;
                 }
-                color: #212b36;
+                color: $text-color;
                 cursor: default;
                 text-decoration: none;
                 border-color: $color-primary;
+            }
+        }
+    }
+    &--block {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        #{$ve}__item {
+            flex: auto;
+            a {
+                display: block;
             }
         }
     }
