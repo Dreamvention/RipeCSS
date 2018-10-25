@@ -674,6 +674,45 @@ select.ve-input {
     .ve-input-group a.ve-btn:not(:first-child):not(:last-child),
     .ve-input-group a:not([href]):not([tabindex]).ve-btn:not(:first-child):not(:last-child) {
       border-radius: 0; }
+  .ve-input-group--sm .ve-btn,
+  .ve-input-group--sm a.ve-btn,
+  .ve-input-group--sm a:not([href]):not([tabindex]).ve-btn {
+    line-height: 24px; }
+  .ve-input-group--sm .ve-input {
+    padding: .1rem .6rem;
+    font-size: 1.3rem; }
+  .ve-input-group--sm .ve-input-group__addon,
+  .ve-input-group--sm .ve-label {
+    line-height: 24px;
+    height: 24px;
+    padding: 0 1rem;
+    font-size: 1.3rem; }
+  .ve-input-group--lg .ve-btn,
+  .ve-input-group--lg a.ve-btn,
+  .ve-input-group--lg a:not([href]):not([tabindex]).ve-btn {
+    line-height: 40px; }
+  .ve-input-group--lg .ve-input {
+    padding: .9rem 1.3rem;
+    font-size: 1.8rem; }
+  .ve-input-group--lg .ve-input-group__addon,
+  .ve-input-group--lg .ve-label {
+    line-height: 40px;
+    height: 40px;
+    padding: 0 1.3rem;
+    font-size: 1.8rem; }
+  .ve-input-group--hg .ve-btn,
+  .ve-input-group--hg a.ve-btn,
+  .ve-input-group--hg a:not([href]):not([tabindex]).ve-btn {
+    line-height: 48px; }
+  .ve-input-group--hg .ve-input {
+    padding: 1.3rem 1.3rem;
+    font-size: 1.9rem; }
+  .ve-input-group--hg .ve-input-group__addon,
+  .ve-input-group--hg .ve-label {
+    line-height: 48px;
+    height: 48px;
+    padding: 0 1.6rem;
+    font-size: 1.9rem; }
 
 .ve-card {
   box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
