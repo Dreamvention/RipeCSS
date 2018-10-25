@@ -1087,4 +1087,38 @@ a:not([href]):not([tabindex]).ve-btn {
     background: #fff;
     color: rgba(0, 0, 0, 0.7); }
 
+.ve-tab {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  box-shadow: inset 0 -1px 0 0 #dfe3e8; }
+  .ve-tab__item {
+    flex: 0 0 auto; }
+    .ve-tab__item a {
+      display: inline-block;
+      font-size: 1.4rem;
+      line-height: 3.6rem;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      white-space: nowrap;
+      color: #637381;
+      padding: .3rem 1.6rem 0rem;
+      border-bottom: .3rem solid transparent; }
+      .ve-tab__item a:hover {
+        outline: none;
+        color: #212b36;
+        border-color: #c9d6fe;
+        text-decoration: none; }
+    .ve-tab__item--active a, .ve-tab__item:first-child:last-child a {
+      color: #212b36;
+      cursor: default;
+      text-decoration: none;
+      border-color: #648bfd; }
+      .ve-tab__item--active a:hover, .ve-tab__item:first-child:last-child a:hover {
+        border-color: #648bfd; }
+
 /*# sourceMappingURL=ripe.css.map */
