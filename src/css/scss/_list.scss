@@ -4,6 +4,7 @@
     border-top: 1px solid #efefef;
     &__item {
         border-bottom: 1px solid #efefef;
+        background: #fff;
         >* {
             padding: 1.5rem 2rem;
             display: flex;
@@ -11,6 +12,7 @@
             line-height: 1.3rem;
             >* {
                 flex: auto;
+                padding-left: 2rem;
             }
             &:hover {
                 text-decoration: none;
@@ -22,8 +24,6 @@
             }
         }
         &__icon {
-            padding-right: 2rem;
-            padding-left: 2rem;
             color: lighten($text-color, 35%);
             flex: 0;
         }

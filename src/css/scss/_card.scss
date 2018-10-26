@@ -5,13 +5,21 @@
     margin-bottom: 15px;
     background: #fff;
     min-height: 3rem;
-    &.col {
+    &.ve-col {
         margin-left: 15px;
         margin-right: 15px;
     }
     &__header {
         border-bottom: $border;
         padding: 2.0rem;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
     }
     &__image {
         >img {

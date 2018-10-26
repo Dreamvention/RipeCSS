@@ -1,0 +1,9 @@
+.screen {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+}
+
+.screen--active {
+    display: flex;
+}

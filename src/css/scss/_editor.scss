@@ -12,6 +12,7 @@
         >* {
             padding: 1.5rem;
             flex-basis: 0;
+            font-size: 1em;
         }
         &__title {
             flex: auto;
@@ -22,6 +23,7 @@
             h5,
             h6 {
                 line-height: 1.4em;
+                margin: 0px;
             }
         }
         &__action {}
@@ -45,27 +47,42 @@
             border-bottom: 1px solid #efefef;
             font-size: 1.2em;
             line-height: 2em;
-            >i {
-                padding: 0 1.3rem;
+            &__action {
+                padding: 1rem 1.3rem;
+                cursor: pointer;
+                color: $text-color;
+            }
+            &__title {
+                padding: 1rem 1.3rem;
+                cursor: pointer;
+                color: $text-color;
             }
         }
         &__content {
             flex: auto;
             background: #f6f9fc;
             overflow: scroll;
-            margin-bottom: 53px;
-            >* {
-                background: #fff;
+            margin-bottom: 63px;
+            &__section {
+                padding: 1.5rem;
             }
         }
         &__footer {
             flex: 0;
             background: #fff;
-            padding: 1rem;
+            padding: 1.5rem;
             border-top: 1px solid #efefef;
             position: absolute;
             bottom: 0px;
             width: 100%;
+        }
+        .ve-tab {
+            background: #fff;
+            &__item {
+                >a {
+                    line-height: 4.8rem;
+                }
+            }
         }
     }
     &__content {
