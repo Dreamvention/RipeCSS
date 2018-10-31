@@ -1,0 +1,21 @@
+.ve-admin {
+    &__header {
+        display: flex;
+        padding: 15px;
+        border-bottom: 1px solid #efefef;
+        &__title {
+            align-items: baseline;
+            display: flex;
+            flex-grow: 1;
+            font-family: 'Open Sans', sans-serif;
+            h1 {
+                font-weight: 300;
+                font-size: 30px;
+            }
+        }
+        &___action {}
+    }
+    &__content {
+        padding: 15px;
+    }
+}

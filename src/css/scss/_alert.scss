@@ -18,6 +18,13 @@
         right: 0;
         padding: 15px;
         cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 2rem;
+        &:active,
+        &:focus {
+            outline: none;
+        }
     }
     &--dismissible {
         padding-right: 30px;
@@ -26,7 +33,8 @@
         background: lighten($color-primary, 25%);
         @include make-alert-shadow($color-primary);
         #{$ve}__heading,
-        #{$ve}__close {
+        #{$ve}__close,
+        i {
             color: $color-primary;
         }
     }
@@ -34,7 +42,8 @@
         background: lighten($color-danger, 25%);
         @include make-alert-shadow($color-danger);
         #{$ve}__heading,
-        #{$ve}__close {
+        #{$ve}__close,
+        i {
             color: $color-danger;
         }
     }
@@ -42,7 +51,8 @@
         background: lighten($color-warning, 30%);
         @include make-alert-shadow($color-warning);
         #{$ve}__heading,
-        #{$ve}__close {
+        #{$ve}__close,
+        i {
             color: $color-warning;
         }
     }
@@ -50,15 +60,17 @@
         background: lighten($color-success, 35%);
         @include make-alert-shadow($color-success);
         #{$ve}__heading,
-        #{$ve}__close {
+        #{$ve}__close,
+        i {
             color: $color-success;
         }
     }
     &--info {
         background: lighten($color-info, 30%);
         @include make-alert-shadow($color-info);
-        #{$ve}t__heading,
-        #{$ve}__close {
+        #{$ve}__heading,
+        #{$ve}__close,
+        i {
             color: $color-info;
         }
     }
@@ -66,7 +78,8 @@
         background: #fff;
         @include make-alert-shadow(#333);
         #{$ve}__heading,
-        #{$ve}__close {
+        #{$ve}__close,
+        i {
             color: findColorInvert(#fff);
         }
     }

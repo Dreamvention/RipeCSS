@@ -6,6 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
 var postcssSass = require('@csstools/postcss-sass');
 var browserSync = require('browser-sync');
+var postcssPresetEnv = require('postcss-preset-env');
 
 var baseDir = path.join(__dirname, '/');
 
@@ -15,7 +16,7 @@ if (typeof process.env.HOST === "undefined") {
 
 gulp.task('css', function() {
     var processors = [
-        postcssSass(), autoprefixer()
+        postcssSass(), autoprefixer(), postcssPresetEnv({ stage: 2 })
     ];
 
     return gulp.src(path.join(baseDir, 'src/css/ripe.scss'))
@@ -32,6 +33,7 @@ gulp.task('css', function() {
 gulp.task('watch:css', function() {
     var cssFiles = [];
     cssFiles.push(path.join(baseDir, '/src/css/scss/', '*.*css'));
+    cssFiles.push(path.join(baseDir, '/src/css/scss/', '*/*.*css'));
     gulp.watch([cssFiles], ['css']);
 });
 

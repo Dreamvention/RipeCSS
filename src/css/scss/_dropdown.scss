@@ -1,0 +1,61 @@
+$zindex-dropdown:100;
+$dropdown-min-width:200px;
+$dropdown-padding-y:0px;
+$dropdown-spacer:5px;
+$dropdown-bg:#fff;
+$dropdown-border:none;
+$dropdown-border-radius:$border-radius;
+$dropdown-box-shadow:$box-shadow;
+$dropdown-item-padding-y: 1rem;
+$dropdown-item-padding-x: 1rem;
+$font-weight-normal:400;
+$dropdown-link-color:#333;
+.ve-dropdown {
+    position: relative;
+    &__menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: $zindex-dropdown;
+        display: none; // none by default, but block on "open" of the menu
+        float: left;
+        min-width: $dropdown-min-width;
+        padding: $dropdown-padding-y 0;
+        margin: $dropdown-spacer 0 0; // override default ul
+        font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
+        color: $text-color;
+        text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+        list-style: none;
+        background-color: $dropdown-bg;
+        background-clip: padding-box;
+        border: $dropdown-border;
+        border-radius: $dropdown-border-radius;
+        box-shadow: $dropdown-box-shadow;
+        overflow: hidden;
+        &__item {
+            display: block;
+            width: 100%; // For `<button>`s
+            padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+            clear: both;
+            font-weight: $font-weight-normal;
+            color: $dropdown-link-color;
+            text-align: inherit; // For `<button>`s
+            white-space: nowrap; // prevent links from randomly breaking onto new lines
+            background-color: transparent; // For `<button>`s
+            border: 0; // For `<button>`s
+            font-size: 1.5rem;
+            &:hover {
+                background: $body-bg;
+            }
+            &:active {
+                background: $color-primary;
+                color: #fff;
+            }
+        }
+    }
+    &--open {
+        .ve-dropdown__menu {
+            display: block;
+        }
+    }
+}

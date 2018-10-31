@@ -1,0 +1,42 @@
+.ve-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5em;
+    margin-bottom: 1rem;
+    list-style: none;
+    border-radius: .3rem;
+    margin: 0 5px;
+}
+
+.ve-breadcrumb__item {
+    // The separator between breadcrumbs (by default, a forward-slash: "/")
+    >a {
+        color: $gray-light;
+    }
+    +.ve-breadcrumb__item {
+        padding-left: 1rem;
+        &::before {
+            display: inline-block; // Suppress underlining of the separator in modern browsers
+            padding-right: 1rem;
+            color: $gray-light;
+            font-size: 0.5em;
+            content: ">";
+        }
+    }
+    // IE9-11 hack to properly handle hyperlink underlines for breadcrumbs built
+    // without `<ul>`s. The `::before` pseudo-element generates an element
+    // *within* the .breadcrumb-item and thereby inherits the `text-decoration`.
+    //
+    // To trick IE into suppressing the underline, we give the pseudo-element an
+    // underline and then immediately remove it.
+    +.breadcrumb__item:hover::before {
+        text-decoration: underline;
+    }
+    // stylelint-disable-next-line no-duplicate-selectors
+    +.breadcrumb__item:hover::before {
+        text-decoration: none;
+    }
+    &.active {
+        color: $color-primary;
+    }
+}

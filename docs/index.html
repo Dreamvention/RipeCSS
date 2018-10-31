@@ -8,12 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="css/ripe.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script src="js/sidebar.js"></script>
-    <title>Ripe CSS | Shopunity CSS Framework</title>
+    <title>Ripple CSS | Shopunity CSS Framework</title>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
         <main>
             <div class="toc-block" id="home">
                 <header class="ve-header">
-                    <h1>Ripe</h1>
+                    <h1>Ripple</h1>
                     <h2>The Beautiful Framework for Shopunity Application Development</h2>
                     <p>A semantic toolkit designed to help developers create responsive </p>
                 </header>
@@ -324,8 +325,14 @@
                                 <input class="ve-input" type="text" />
                             </div>
                             <div class="ve-field">
-                                <label><input class="ve-input" type="radio" name="option1a" checked="checked">Option</label>
-                                <label><input class="ve-input" type="radio" name="option1a">Option</label>
+                                <label class="ve-radio">
+                                    <input class="ve-input" type="radio" name="option1" value="" checked="checked">
+                                    <i></i> Option
+                                </label>
+                                <label class="ve-radio">
+                                    <input class="ve-input" type="radio" name="option1">
+                                    <i></i> Option
+                                </label>
                             </div>
                             <div class="ve-field">
                                 <select class="ve-input">
@@ -336,11 +343,48 @@
                                 </select>
                             </div>
                             <div class="ve-field">
-                                <label><input class="ve-input" type="checkbox" name="option2a" checked="checked">Option</label>
-                                <label><input class="ve-input" type="checkbox" name="option2a">Option</label>
+                                <label class="ve-checkbox" for="checkbox1">
+                                    <input class="ve-input" type="checkbox" name="option2a" checked="checked" id="checkbox1">
+                                    <i></i> Option
+                                </label>
+                                <label class="ve-checkbox">
+                                    <input class="ve-input" type="checkbox" name="option2a"  id="checkbox2">
+                                    <i></i> Option
+                                </label>
                             </div>
                             <div class="ve-field">
                                 <textarea class="ve-input"></textarea>
+                            </div>
+                            <div class="ve-field">
+                                <label class="ve-checkbox">
+                                    <input class="ve-input" type="checkbox" name="option2a" >
+                                    <i></i> Option
+                                </label>
+                                <a href="#" class="ve-btn ve-btn--primary">Edit</a>
+                            </div>
+                            <div class="ve-field">
+                                <label class="ve-switch">
+                                    <input class="ve-input" type="checkbox" name="option2a" >
+                                    <i></i> Option
+                                </label>
+                                <a href="#" class="ve-btn ve-btn--primary">Edit</a>
+                            </div>
+                            <div class="ve-field">
+                                <label>Label</label>
+                                <input class="ve-input" type="range" min="0" max="10" step="1" value="3" />
+                            </div>
+                            <div class="ve-field">
+                                <label class="ve-file">
+                                    <input type="file" class="ve-input">
+                                    <span class="ve-file__title">Choose file</span>
+                                    <a class="ve-btn ve-btn--primary">Upload</a>
+                                </label>
+                            </div>
+                            <div class="ve-field">
+                                <a href="" id="thumb-logo" data-toggle="image" class="img-thumbnail ve-input">
+                                    <img src="http://localhost/opencart/302/d_quickcheckout/image/cache/no_image-100x100.png" alt="" title="" data-placeholder="http://localhost/opencart/302/d_quickcheckout/image/cache/no_image-100x100.png">
+                                </a>
+                                <input type="hidden" name="config_logo" value="catalog/logo.png" id="input-logo">
                             </div>
                         </div>
                         <div class="ve-col ve-card ">
@@ -349,11 +393,15 @@
     <input class="ve-input" type="text" />
 </div>
 <div class="ve-field">
-    <label class="ve-label"><input class="ve-input" 
-    type="radio" name="option1a" 
-    checked="checked">Option</label>
-    <label class="ve-label"><input class="ve-input" 
-    type="radio" name="option1a">Option</label>
+    <label class="ve-radio">
+        <input  type="radio" name="option1" 
+        checked="checked">
+        <i></i> Option
+    </label>
+    <label class="ve-radio">
+        <input type="radio" name="option1">
+        <i></i> Option
+    </label>
 </div>
 <div class="ve-field">
     <select class="ve-input">
@@ -364,13 +412,60 @@
     </select>
 </div>
 <div class="ve-field">
-    <label><input class="ve-input" type="checkbox" 
-    name="option2a" checked="checked">Option</label>
-    <label><input class="ve-input" type="checkbox" 
-    name="option2a">Option</label>
+    <label class="ve-checkbox">
+        <input type="checkbox" name="option1a" />
+        <i></i> Option
+    </label>
+    <label class="ve-checkbox">
+        <input type="checkbox" name="option2a" />
+        <i></i> Option
+    </label>
 </div>
 <div class="ve-field">
     <textarea class="ve-input"></textarea>
+</div>
+<div class="ve-field">
+    <label class="ve-switch">
+        <input class="ve-input" type="checkbox" >
+        <i></i> Option
+    </label>
+    <a href="#" class="ve-btn">Edit</a>
+</div>
+<div class="ve-field">
+    <label>Label</label>
+    <input class="ve-input" type="range" 
+    min="0" max="10" step="1" value="3" />
+</div>
+<div class="ve-field">
+    <label class="ve-file">
+        <input type="file" class="ve-input">
+        <span class="ve-file__title">Choose file</span>
+        <a class="ve-btn ve-btn--primary">Upload</a>
+    </label>
+</div>
+<div class="ve-field">
+    <a href="" id="thumb-logo" data-toggle="image" class="img-thumbnail ve-input">
+        <img src="..." alt="" title="">
+    </a>
+    <input type="hidden" name="config_logo" value="catalog/logo.png" id="input-logo">
+</div></xmp></pre>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="ve-row">
+                        <div class="ve-col">
+                            <h2>Disabled Inputs</h2>
+                            <p>Starting with shopunity css framework is easy</p>
+                            <div class="ve-field">
+                                <label>Label</label>
+                                <input class="ve-input" type="text" disabled value="Name" />
+                            </div>
+                        </div>
+                        <div class="ve-col ve-card ">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-field">
+    <label>Label</label>
+    <input class="ve-input" type="text" disabled value="Name"/>
 </div></xmp></pre>
                         </div>
                     </div>
@@ -512,72 +607,131 @@
                             <div class="ve-field ve-field--error">
                                 <label class="ve-label">Name</label>
                                 <input class="ve-input" type="text" placeholder="Name" />
+                                <span class="ve-field__error">This field can not be empty</span>
                             </div>
                             <div class="ve-field ve-field--error">
-                                <label class="ve-label"><input class="ve-input" type="radio" name="option1a" checked="checked">Option</label>
-                                <label class="ve-label"><input class="ve-input" type="radio" name="option1a">Option</label>
+                                <label class="ve-radio">
+                                    <input class="ve-input" type="radio" checked="checked" name="option3s">
+                                    <i></i>Option
+                                </label>
+                                <label class="ve-radio">
+                                    <input class="ve-input" type="radio" name="option3s">
+                                    <i></i>Option
+                                </label>
+
+                                <span class="ve-field__error">This field can not be empty</span>
                             </div>
                             <div class="ve-field ve-field--error">
                                 <label class="ve-label">Name</label>
                                 <select class="ve-input">
-                                        <option>Select</option>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
+                                    <option>Select</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                                <span class="ve-field__error">This field can not be empty</span>
                             </div>
                             <div class="ve-field ve-field--error">
-                                <label class="ve-label"><input class="ve-input" type="checkbox" name="option2a" checked="checked">Option</label>
-                                <label class="ve-label"><input class="ve-input" type="checkbox" name="option2a">Option</label>
+                                <label class="ve-checkbox">
+                                    <input class="ve-input" type="checkbox"checked="checked">
+                                    <i></i>Option
+                                </label>
+                                <label class="ve-checkbox">
+                                    <input class="ve-input" type="checkbox">
+                                    <i></i>Option
+                                </label>
+                                <span class="ve-field__error">This field can not be empty</span>
                             </div>
                             <div class="ve-field ve-field--error">
                                 <label class="ve-label">Name</label>
                                 <textarea class="ve-input"></textarea>
+                                <span class="ve-field__error">This field can not be empty</span>
+                            </div>
+                            <div class="ve-field ve-field--error">
+                                <label class="ve-switch">
+                                    <input class="ve-input" type="checkbox"checked="checked">
+                                    <i></i>Option
+                                </label>
+                                <span class="ve-field__error">This field can not be empty</span>
                             </div>
                         </div>
                         <div class="ve-col ve-card">
                             <pre><xmp class="ve-card__section prettyprint"><div class="ve-field ve-field--error">
     <label class="ve-label">Name</label>
-    <input class="ve-input" type="text" 
-    placeholder="Name" />
+    <input class="ve-input" type="text" placeholder="Name" />
+    <span class="ve-field__error">This field can not be empty</span>
 </div>
+
 <div class="ve-field ve-field--error">
     <label class="ve-label">
-        <input class="ve-input" type="radio" 
-        name="option1a" checked="checked">Option
+        <input class="ve-input" type="radio" name="option1a" checked="checked">Option
     </label>
     <label class="ve-label">
-        <input class="ve-input" type="radio" 
-        name="option1a">Option
+        <input class="ve-input" type="radio" name="option1a">Option
     </label>
+    <span class="ve-field__error">This field can not be empty</span>
 </div>
+
 <div class="ve-field ve-field--error">
     <label class="ve-label">Name</label>
     <select class="ve-input">
-            <option>Select</option>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-        </select>
+        <option>Select</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </select>
+    <span class="ve-field__error">This field can not be empty</span>
 </div>
+
 <div class="ve-field ve-field--error">
-    <label class="ve-label">
-        <input class="ve-input" type="checkbox" 
-        name="option2a" checked="checked">Option
-    </label>
-    <label class="ve-label">
-        <input class="ve-input" type="checkbox" 
-        name="option2a">Option
-    </label>
+    <label class="ve-label"><input class="ve-input" type="checkbox" name="option2a" checked="checked">Option</label>
+    <label class="ve-label"><input class="ve-input" type="checkbox" name="option2a">Option</label>
+    <span class="ve-field__error">This field can not be empty</span>
 </div>
+
 <div class="ve-field ve-field--error">
     <label class="ve-label">Name</label>
     <textarea class="ve-input"></textarea>
+    <span class="ve-field__error">This field can not be empty</span>
 </div></xmp></pre>
                         </div>
                     </div>
                 </section>
+            </div>
 
+            <div class="toc-block" id="buttons">
+                <section>
+                    <div class="ve-row">
+                        <div class="ve-col">
+                            <h1 class="toc-block__title">Dropdowns</h1>
+                            <p>Starting with shopunity css framework is easy</p>
+                            <div class="ve-dropdown ve-dropdown--open">
+                                <a class="ve-btn ve-btn--primary ve-dropdown__toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown link <i class="fas fa-caret-down"></i>
+                                </a>
+
+                                <div class="ve-dropdown__menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="ve-dropdown__menu__item" href="#">Action</a>
+                                    <a class="ve-dropdown__menu__item" href="#">Another action</a>
+                                    <a class="ve-dropdown__menu__item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ve-col ve-card">
+                            <pre><xmp class="ve-card__section prettyprint"><div class="ve-dropdown ve-dropdown--open">
+    <a class="ve-btn ve-btn--primary ve-dropdown__toggle" href="#" >
+        Dropdown link <i class="fas fa-caret-down"></i>
+    </a>
+
+    <div class="ve-dropdown__menu">
+        <a class="ve-dropdown__menu__item" href="#">Action</a>
+        <a class="ve-dropdown__menu__item" href="#">Another action</a>
+        <a class="ve-dropdown__menu__item" href="#">Something else here</a>
+    </div>
+</div></xmp></pre>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div class="toc-block" id="buttons">

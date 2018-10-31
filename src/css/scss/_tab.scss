@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     white-space: nowrap;
-    box-shadow: inset 0 -1px 0 0 #dfe3e8;
+    box-shadow: inset 0 -1px 0 0 $color-border;
     flex: auto;
     &__item {
         flex: 0 0 auto;

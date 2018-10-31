@@ -17,6 +17,7 @@
         "gulp-sourcemaps": "^2.6.4",
         "normalize.css": "github:necolas/normalize.css",
         "postcss": "^7.0.5",
+        "postcss-preset-env": "^6.3.0",
         "postcss-scss": "^2.0.0"
     },
     "dependencies": {

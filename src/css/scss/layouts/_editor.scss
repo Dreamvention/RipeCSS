@@ -4,6 +4,7 @@
         background: #fff;
         height: 70px;
         width: 100%;
+        top: 0px;
         display: flex;
         flex-wrap: wrap;
         border-bottom: 1px solid #efefef;
@@ -86,6 +87,7 @@
         }
     }
     &__content {
+        overflow: scroll;
         position: relative;
         height: 100%;
     }

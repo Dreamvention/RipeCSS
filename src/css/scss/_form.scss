@@ -1,0 +1,13 @@
+.ve-form {
+    &__row {
+        margin-bottom: 1rem;
+        padding: 1rem 0;
+        display: flex;
+        >* {
+            @include clearfix();
+        }
+        .ve-label {
+            text-align: right
+        }
+    }
+}

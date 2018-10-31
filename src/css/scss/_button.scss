@@ -7,7 +7,7 @@ a:not([href]):not([tabindex]).ve-btn {
     border-style: none;
     color: $gray-base;
     display: inline-block;
-    padding: 0 14px;
+    padding: 0 12px;
     letter-spacing: .025em;
     font-size: 15px;
     height: 32px;
@@ -20,6 +20,10 @@ a:not([href]):not([tabindex]).ve-btn {
     text-align: center;
     cursor: pointer;
     @include make-button-pressable;
+    &:active,
+    &:focus {
+        outline: none;
+    }
     /*size*/
     &--sm {
         line-height: 24px;

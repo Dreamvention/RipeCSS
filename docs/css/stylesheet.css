@@ -59,3 +59,13 @@ section {
     border-radius: .3rem;
     box-shadow: 0 0 0 1px rgba(63, 63, 68, .05), 0 1px 3px 0 rgba(63, 63, 68, .15);
 }
+
+.prettyprint {
+    max-width: 1036px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}

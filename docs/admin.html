@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
+    <link href="css/ripe.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Editor | Shopunity CSS Framework</title>
+</head>
+
+<body class="ve-editor">
+    <div class="ve-editor__menu">
+        <div class="ve-editor__menu__title">
+            <h1 class="ve-h1">Editor</h1>
+        </div>
+    </div>
+    <div class="ve-editor__setting">
+
+        <div class="ve-editor__setting__content">
+            <div class="ve-list">
+                <div class="ve-list__item">
+                    <a href="#product_thumb_screen" class="screen-open"><i class="fas fa-object-group ve-list__item__icon"></i> <span>Product thumb</span><i class="fas fa-caret-right ve-list__item__icon"></i></a>
+                </div>
+                <div class="ve-list__item">
+                    <a href="#breadcrumb_screen" class="screen-open"><i class="fas fa-object-group ve-list__item__icon"></i> <span>Breadcrumbs</span><i class="fas fa-caret-right ve-list__item__icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="ve-editor__setting__footer"><a href="#" class="ve-btn ve-btn--primary">Save</a></div>
+
+    </div>
+    <main id="content" class="ve-editor__content">
+        <div class="ve-admin">
+            <div class="ve-admin__header">
+                <div class="ve-admin__header__title">
+                    <h1>My Module 1.0.0</h1>
+                    <ol class="ve-breadcrumb">
+                        <li class="ve-breadcrumb__item"><a href="#">Home</a></li>
+                        <li class="ve-breadcrumb__item"><a href="#">Modules</a></li>
+                        <li class="ve-breadcrumb__item"><a href="#">My Module</a></li>
+                    </ol>
+                </div>
+                <div class="ve-admin__header__action">
+
+                    <button data-toggle="tooltip" title="{{button_save}}" class="ve-btn ve-btn--primary" type="submit" form="form"> Save</button>
+                    <a data-toggle="tooltip" title="{{button_cancel}}" class="ve-btn ve-btn--default" href="#">Cancel</a>
+                </div>
+            </div>
+
+            <div class="ve-admin__content">
+
+
+                <div class="ve-row">
+                    <div class="ve-col ve-col-4">
+                        <h2>Active theme</h2>
+                        <p>This is the current active theme.</p>
+                    </div>
+                    <div class="ve-col ve-col-4">
+                        <div class="ve-card">
+                            <div class="ve-card__header">
+                                <h2>Default theme</h2>
+                                <p>A simple yet elegent theme for Opencart</p>
+                                <div class="ve-btn-group">
+                                    <a class="ve-btn ve-btn--primary">Edit</a>
+                                    <a class="ve-btn ve-btn--primary">
+                                        <i class="fas fa-caret-down"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ve-card__image">
+                                <img src="https://shopunity.net/image/cache/extension/136/preview.ajax-quick-checkout400-400x250.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="ve-row">
+                    <div class="ve-col ve-col-4">
+                        <h2>Active theme</h2>
+                        <p>This is the current active theme.</p>
+                    </div>
+                    <div class="ve-col ve-col-8">
+                        <div class="ve-row">
+                            <div class="ve-col ve-card">
+                                <div class="ve-card__header">
+                                    <h2>Default theme</h2>
+                                    <p>A simple yet elegent theme for Opencart</p>
+
+                                    <a class="ve-btn ve-btn--primary">Activate</a>
+                                </div>
+                                <div class="ve-card__image">
+                                    <img src="https://shopunity.net/image/cache/extension/136/preview.ajax-quick-checkout400-400x250.png" />
+                                </div>
+                            </div>
+                            <div class="ve-col ve-card">
+                                <div class="ve-card__header">
+                                    <h2>Default theme</h2>
+                                    <p>A simple yet elegent theme for Opencart</p>
+
+                                    <a class="ve-btn ve-btn--primary">Activate</a>
+                                </div>
+                                <div class="ve-card__image">
+                                    <img src="https://shopunity.net/image/cache/extension/136/preview.ajax-quick-checkout400-400x250.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ve-row">
+                            <div class="ve-col ve-card">
+                                <div class="ve-card__header">
+                                    <h2>Default theme</h2>
+                                    <p>A simple yet elegent theme for Opencart</p>
+
+                                    <a class="ve-btn ve-btn--primary">Activate</a>
+                                </div>
+                                <div class="ve-card__image">
+                                    <img src="https://shopunity.net/image/cache/extension/136/preview.ajax-quick-checkout400-400x250.png" />
+                                </div>
+                            </div>
+                            <div class="ve-col ve-card">
+                                <div class="ve-card__header">
+                                    <h2>Default theme</h2>
+                                    <p>A simple yet elegent theme for Opencart</p>
+
+                                    <a class="ve-btn ve-btn--primary">Activate</a>
+                                </div>
+                                <div class="ve-card__image">
+                                    <img src="https://shopunity.net/image/cache/extension/136/preview.ajax-quick-checkout400-400x250.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ve-row">
+                            <div class="ve-col ve-card">
+                                <div class="ve-card__header">
+                                    <h2>Default theme</h2>
+                                    <p>A simple yet elegent theme for Opencart</p>
+
+                                    <a class="ve-btn ve-btn--primary">Activate</a>
+                                </div>
+                                <div class="ve-card__image">
+                                    <img src="https://shopunity.net/image/cache/extension/136/preview.ajax-quick-checkout400-400x250.png" />
+                                </div>
+                            </div>
+                            <div class="ve-col ve-card">
+                                <div class="ve-card__header">
+                                    <h2>Default theme</h2>
+                                    <p>A simple yet elegent theme for Opencart</p>
+
+                                    <a class="ve-btn ve-btn--primary">Activate</a>
+                                </div>
+                                <div class="ve-card__image">
+                                    <img src="https://shopunity.net/image/cache/extension/136/preview.ajax-quick-checkout400-400x250.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="ve-alert ve-alert--info">Buy Pro text</div>
+                <div class="ve-alert ve-alert--danger"><i class="fa fa-exclamation-circle"></i> Error warning
+                    <button type="button" class="ve-alert__close" data-dismiss="alert">&times;</button>
+                </div>
+                <div class="ve-alert ve-alert--success"><i class="fa fa-exclamation-circle"></i> Success alert
+                    <button type="button" class="ve-alert__close" data-dismiss="alert">&times;</button>
+                </div>
+
+                <div class="ve-card">
+                    <div class="ve-card__header">
+                        <h3 class="panel-title"><i class="fa fa-pencil"></i> Edit Module</h3>
+                    </div>
+                    <ul class="ve-tab">
+                        <li class="ve-tab__item ve-tab__item--active">
+                            <a href="#tab_1">Tab 1</a>
+                        </li>
+                        <li class="ve-tab__item">
+                            <a href="#tab_1">Tab 2</a>
+                        </li>
+                        <li class="ve-tab__item">
+                            <a href="#tab_1">Tab 3</a>
+                        </li>
+                    </ul>
+                    <div class="ve-card__section">
+                        <div class="ve-form">
+                            <div class="ve-form__row">
+                                <label class="ve-col-2 ve-label" for="input_status">Edit settings</label>
+                                <div class="col-sm-10">
+                                    <a class="ve-btn ve-btn--success ve-btn--hg" href="https://dreamvention.ee/support" target="_blank">Visual Editor</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="ve-card__section">
+                        <div class="ve-form">
+
+
+                            <div class="ve-form__row">
+                                <label class="ve-col-2 ve-label" for="input_status">Status</label>
+                                <div class="col-sm-10">
+                                    <input type="hidden" name="{{codename}}_status" value="0" />
+                                    <label class="ve-switch">
+                                        <input type="checkbox" name="{{codename}}_status" data-label-text="{{text_enabled}}" id="input_status" {{attribute(_context, codename~ '_status') ? 'checked="checked"' }} value="1" />
+                                        <i></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- //status -->
+
+                            <div class="ve-form__row ">
+                                <label class="ve-col-2 ve-label" for="input_status">Force Bootstrap</label>
+                                <div class="ve-col-10">
+                                    <input type="hidden" name="{{codename}}_bootstrap" value="0" />
+                                    <label class="ve-switch">
+                                        <input type="checkbox" name="{{codename}}_bootstrap" class="switcher" data-label-text="{{text_enabled}}" id="input_bootstrap" {{attribute(_context, codename~ '_bootstrap') ? 'checked="checked"' }} value="1" />
+                                        <i></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- //status -->
+
+                            <div class="ve-form__row">
+                                <label class="ve-col-2 ve-label" for="input_status">Support</label>
+                                <div class="ve-col-10">
+                                    <a class="ve-btn ve-btn--success" href="https://dreamvention.ee/support" target="_blank">Support</a>
+                                </div>
+                            </div>
+                            <!-- //status -->
+                        </div>
+                        <div class="ve-text-center">Powered by Shopunity</div>
+                    </div>
+                </div>
+
+                <div class="ve-card">
+                    <ul class="ve-tab">
+                        <li class="ve-tab__item ve-tab__item--active">
+                            <a href="#tab_1">Tab 1</a>
+                        </li>
+                        <li class="ve-tab__item">
+                            <a href="#tab_1">Tab 2</a>
+                        </li>
+                        <li class="ve-tab__item">
+                            <a href="#tab_1">Tab 3</a>
+                        </li>
+                    </ul>
+                    <div class="ve-card__section">
+                        <div class="ve-form">
+                            <div class="ve-form__row">
+                                <label class="ve-col-2 ve-label" for="input_status">Edit settings</label>
+                                <div class="col-sm-10">
+                                    <a class="ve-btn ve-btn--success ve-btn--hg" href="https://dreamvention.ee/support" target="_blank">Visual Editor</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="ve-card__section">
+                        <div class="ve-form">
+
+
+                            <div class="ve-form__row">
+                                <label class="ve-col-2 ve-label" for="input_status">Status</label>
+                                <div class="col-sm-10">
+                                    <input type="hidden" name="{{codename}}_status" value="0" />
+                                    <label class="ve-switch">
+                                        <input type="checkbox" name="{{codename}}_status" data-label-text="{{text_enabled}}" id="input_status" {{attribute(_context, codename~ '_status') ? 'checked="checked"' }} value="1" />
+                                        <i></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- //status -->
+
+
+                            <div class="ve-form__row ">
+                                <label class="ve-col-2 ve-label" for="input_status">Force Bootstrap</label>
+                                <div class="ve-col-10">
+                                    <input class="ve-input" type="text" />
+                                </div>
+                            </div>
+                            <!-- //status -->
+
+                            <div class="ve-form__row">
+                                <label class="ve-col-2 ve-label" for="input_status">Support</label>
+                                <div class="ve-col-10">
+                                    <a class="ve-btn ve-btn--success" href="https://dreamvention.ee/support" target="_blank">Support</a>
+                                </div>
+                            </div>
+                            <!-- //status -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ve-footer">Powered by Shopunity</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
