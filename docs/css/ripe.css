@@ -1148,7 +1148,7 @@ label.ve-file {
     font-size: 19px; }
 
 .ve-card {
-  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.1);
   border-radius: 3px;
   padding: 0px;
   margin-bottom: 15px;
@@ -1171,7 +1171,8 @@ label.ve-file {
   .ve-card__image > img {
     width: 100%; }
   .ve-card__section {
-    padding: 20px; }
+    padding: 20px;
+    overflow-x: auto; }
     .ve-card__section > hr {
       margin: 10px 0; }
   .ve-card > hr {
@@ -1202,7 +1203,7 @@ a:not([href]):not([tabindex]).ve-btn {
   flex: auto;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.1);
   /*size*/
   /*state*/ }
   .ve-btn:hover, .ve-btn:focus,
@@ -1435,7 +1436,7 @@ a:not([href]):not([tabindex]).ve-btn {
     background-clip: padding-box;
     border: none;
     border-radius: 3px;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.1);
     overflow: hidden; }
     .ve-dropdown__menu__item,
     .ve-dropdown__menu a.ve-dropdown__menu__item {

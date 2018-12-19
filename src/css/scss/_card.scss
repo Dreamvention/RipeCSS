@@ -29,6 +29,7 @@
     }
     &__section {
         padding: $spacer-3;
+        overflow-x: auto;
         >hr {
             margin: $spacer-1 0;
         }
