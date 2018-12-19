@@ -668,7 +668,7 @@ a[class^=ve-] {
 .ve-thumbnail {
   display: inline-block;
   position: relative;
-  padding: 5px 10px;
+  padding: 5px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
@@ -684,6 +684,8 @@ a[class^=ve-] {
   max-width: 100%;
   font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
   transition: box-shadow 0.2s cubic-bezier(0.64, 0, 0.35, 1); }
+  .ve-thumbnail img {
+    display: block; }
 
 .ve-label {
   font-weight: 500;
@@ -797,7 +799,7 @@ select.ve-input {
     border-radius: 3px;
     transition: .4s; }
   .ve-checkbox i:after {
-    left: 0.33em;
+    left: 0.38em;
     top: 0.3em;
     border-width: 0;
     box-shadow: none;
@@ -1021,7 +1023,7 @@ label.ve-file {
     cursor: not-allowed; }
 
 .ve-field {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 10px; }
   .ve-field .ve-label {
     margin-bottom: 5px;
     display: inline-block; }
