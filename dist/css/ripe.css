@@ -1007,7 +1007,7 @@ label.ve-file {
 .ve-field {
   margin-bottom: 1.5rem; }
   .ve-field .ve-label {
-    margin-bottom: calc($spacer-1 / 2);
+    margin-bottom: 5px;
     display: inline-block; }
   .ve-field .ve-input,
   .ve-field .ve-switch,

@@ -1,7 +1,7 @@
 #{$pfx}field {
     margin-bottom: 1.5rem;
     #{$pfx}label {
-        margin-bottom: calc($spacer-1 / 2);
+        margin-bottom: $spacer-0;
         display: inline-block;
     }
     #{$pfx}input,
