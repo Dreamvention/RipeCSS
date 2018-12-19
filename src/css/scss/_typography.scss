@@ -49,7 +49,8 @@
     margin: 1rem 0px 2rem;
 }
 
-#{$pfx}a {
+#{$pfx}a,
+a[class^=#{$pfxx}] {
     text-decoration: none;
     color: $link-color;
     &:hover,

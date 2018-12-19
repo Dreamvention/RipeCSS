@@ -54,10 +54,13 @@ xmp {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   margin: 1rem 0px 2rem; }
 
-.ve-a {
+.ve-a,
+a[class^=ve-] {
   text-decoration: none;
   color: #648bfd; }
-  .ve-a:hover, .ve-a:active {
+  .ve-a:hover, .ve-a:active,
+  a[class^=ve-]:hover,
+  a[class^=ve-]:active {
     text-decoration: none; }
 
 .ve-container {
