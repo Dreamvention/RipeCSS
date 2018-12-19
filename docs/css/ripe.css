@@ -26,19 +26,19 @@ xmp {
   color: inherit; }
 
 .ve-h1 {
-  font-size: 35px; }
-
-.ve-h2 {
   font-size: 28px; }
 
-.ve-h3 {
+.ve-h2 {
   font-size: 24.5px; }
 
-.ve-h4 {
+.ve-h3 {
   font-size: 21px; }
 
-.ve-h5 {
+.ve-h4 {
   font-size: 17.5px; }
+
+.ve-h5 {
+  font-size: 15.4px; }
 
 .ve-h6 {
   font-size: 14px; }
@@ -1154,7 +1154,7 @@ label.ve-file {
   margin-bottom: 15px;
   background: #fff;
   min-height: 30px;
-  overflow: hidden; }
+  overflow: visible; }
   .ve-card.ve-col {
     margin-left: 15px;
     margin-right: 15px; }
