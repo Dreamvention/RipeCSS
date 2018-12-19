@@ -126,7 +126,7 @@ select#{$pfx}input {
         z-index: 0;
         position: absolute;
         left: 0;
-        top: 0.25em;
+        top: 0.1em;
         background-color: #fff;
         border: $input-border;
         box-shadow: $input-box-shadow;
@@ -135,10 +135,10 @@ select#{$pfx}input {
     }
     i:after {
         left: 0.38em;
-        top: 0.3em;
+        top: 0.2em;
         border-width: 0;
         box-shadow: none;
-        width: 0.5em;
+        width: 0.4em;
         height: 0.8em;
         transform: rotate(40deg);
         background-color: transparent;
@@ -179,7 +179,7 @@ select#{$pfx}input {
         z-index: 0;
         position: absolute;
         left: 0;
-        top: 0.25em;
+        top: 0.1em;
         background-color: #fff;
         border-radius: 100%;
         border: $input-border;

@@ -792,7 +792,7 @@ select.ve-input {
     z-index: 0;
     position: absolute;
     left: 0;
-    top: 0.25em;
+    top: 0.1em;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 3px 0 #e6ebf1;
@@ -800,10 +800,10 @@ select.ve-input {
     transition: .4s; }
   .ve-checkbox i:after {
     left: 0.38em;
-    top: 0.3em;
+    top: 0.2em;
     border-width: 0;
     box-shadow: none;
-    width: 0.5em;
+    width: 0.4em;
     height: 0.8em;
     -webkit-transform: rotate(40deg);
             transform: rotate(40deg);
@@ -840,7 +840,7 @@ select.ve-input {
     z-index: 0;
     position: absolute;
     left: 0;
-    top: 0.25em;
+    top: 0.1em;
     background-color: #fff;
     border-radius: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1); }
