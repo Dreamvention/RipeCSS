@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+    font-size: 1.4em;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #333333;
+    background-color: #f6f9fc;
+    height: 100%;
+}

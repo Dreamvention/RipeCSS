@@ -1,18 +1,18 @@
-.ve-card {
+#{$pfx}card {
     box-shadow: $box-shadow;
     border-radius: $border-radius;
     padding: 0px;
     margin-bottom: 15px;
     background: #fff;
-    min-height: 3rem;
+    min-height: 30px;
     overflow: hidden;
-    &.ve-col {
+    &#{$pfx}col {
         margin-left: 15px;
         margin-right: 15px;
     }
     &__header {
         border-bottom: $border;
-        padding: 2.0rem;
+        padding: $spacer-2;
         h1,
         h2,
         h3,
@@ -28,9 +28,9 @@
         }
     }
     &__section {
-        padding: 2.0rem;
+        padding: $spacer-2;
         >hr {
-            margin: 1em 0;
+            margin: $spacer-1 0;
         }
     }
     >hr {
@@ -38,6 +38,6 @@
     }
     &__footer {
         border-top: $border;
-        padding: 2.0rem;
+        padding: $spacer-2;
     }
 }

@@ -10,7 +10,7 @@ $dropdown-item-padding-y: 1rem;
 $dropdown-item-padding-x: 1rem;
 $font-weight-normal:400;
 $dropdown-link-color:#333;
-.ve-dropdown {
+#{$pfx}dropdown {
     position: relative;
     &__menu {
         position: absolute;
@@ -43,7 +43,7 @@ $dropdown-link-color:#333;
             white-space: nowrap; // prevent links from randomly breaking onto new lines
             background-color: transparent; // For `<button>`s
             border: 0; // For `<button>`s
-            font-size: 1.5rem;
+            font-size: 15px;
             &:hover {
                 background: $body-bg;
             }
@@ -54,7 +54,7 @@ $dropdown-link-color:#333;
         }
     }
     &--open {
-        .ve-dropdown__menu {
+        #{$pfx}dropdown__menu {
             display: block;
         }
     }

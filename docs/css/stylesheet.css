@@ -62,8 +62,8 @@ section {
 
 .prettyprint {
     max-width: 1036px;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 13px;
+    line-height: 16px;
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
     box-sizing: border-box;
     white-space: pre-wrap;

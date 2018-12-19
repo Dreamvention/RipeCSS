@@ -1,4 +1,4 @@
-.ve-breadcrumb {
+#{$pfx}breadcrumb {
     display: flex;
     flex-wrap: wrap;
     padding: .5em;
@@ -8,12 +8,12 @@
     margin: 0 5px;
 }
 
-.ve-breadcrumb__item {
+#{$pfx}breadcrumb__item {
     // The separator between breadcrumbs (by default, a forward-slash: "/")
     >a {
         color: $gray-light;
     }
-    +.ve-breadcrumb__item {
+    +#{$pfx}breadcrumb__item {
         padding-left: 1rem;
         &::before {
             display: inline-block; // Suppress underlining of the separator in modern browsers

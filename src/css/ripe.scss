@@ -1,5 +1,10 @@
+//==RipeCSS by Dreamvention
+//v0.1.0
+//
+$pfx: '.ve-';
 @import "scss/functions/assert";
 @import "scss/variables";
+@import "scss/scaffolding";
 @import "scss/typography";
 @import "scss/functions/color";
 @import "scss/mixins/clearfix";
@@ -10,7 +15,6 @@
 @import "scss/field";
 @import "scss/input_group";
 @import "scss/card";
-@import "scss/scaffolding";
 @import "scss/button";
 @import "scss/button_group";
 @import "scss/dropdown";

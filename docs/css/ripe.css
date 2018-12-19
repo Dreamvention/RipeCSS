@@ -1,10 +1,24 @@
+.ve-header h1 {
+  font-size: 56px;
+  line-height: 1em; }
+
+.ve-footer {
+  text-align: center;
+  color: #777777;
+  font-size: 1.3rem;
+  padding: 10px; }
+
+xmp {
+  margin: 0px;
+  font-size: 1.5rem; }
+
 .ve-h1,
 .ve-h2,
 .ve-h3,
 .ve-h4,
 .ve-h5,
 .ve-h6 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
   margin-top: 0px;
   font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
   font-weight: 500;
@@ -12,38 +26,38 @@
   color: inherit; }
 
 .ve-h1 {
-  font-size: 2.1em; }
+  font-size: 35px; }
 
 .ve-h2 {
-  font-size: 1.82em; }
+  font-size: 28px; }
 
 .ve-h3 {
-  font-size: 1.68em; }
+  font-size: 24.5px; }
 
 .ve-h4 {
-  font-size: 1.54em; }
+  font-size: 21px; }
 
 .ve-h5 {
-  font-size: 1.4em; }
+  font-size: 17.5px; }
 
 .ve-h6 {
-  font-size: 1.4em; }
+  font-size: 14px; }
 
-pre {
+.ve-pre {
   background: none;
   border: none;
-  line-height: 1.3em;
-  font-size: 1em; }
+  line-height: 13px;
+  font-size: 10px; }
 
-hr {
+.ve-hr {
   border: none;
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   margin: 1rem 0px 2rem; }
 
-a {
+.ve-a {
   text-decoration: none;
   color: #648bfd; }
-  a:hover, a:active {
+  .ve-a:hover, .ve-a:active {
     text-decoration: none; }
 
 .ve-container {
@@ -641,17 +655,17 @@ a {
 .ve-input {
   display: block;
   position: relative;
-  padding: .5rem 1rem;
+  padding: 5px 10px;
   background-color: #fff;
-  border: 0.1rem solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.3em;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
   color: #333333;
   box-sizing: border-box;
-  font-size: 1.6rem;
-  line-height: 2rem;
-  min-width: 7.5rem;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 75px;
   font-weight: 300;
-  vertical-align: baseline;
+  vertical-align: bottom;
   height: auto;
   margin: 0;
   max-width: 100%;
@@ -663,28 +677,28 @@ a {
     .ve-input[type=text]:focus {
       border-color: #648bfd;
       outline: none;
-      box-shadow: inset 0 0 0 0 transparent, 0 0 0 0.1rem #648bfd, 0 1px 3px 0 #e6ebf1;
+      box-shadow: inset 0 0 0 0 transparent, 0 0 0 1px #648bfd, 0 1px 3px 0 #e6ebf1;
       box-sizing: border-box; }
   .ve-input:disabled {
     cursor: not-allowed;
     background-color: #F4F6F8;
-    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     color: #C4CDD5; }
   .ve-input[type=radio], .ve-input[type=checkbox] {
     display: inline-block;
     margin-right: 4px; }
   .ve-input--sm {
-    padding: .1rem .6rem;
-    font-size: 1.3rem; }
+    padding: 1px 6px;
+    font-size: 13px; }
   .ve-input--md {
-    padding: .4rem .8rem;
-    font-size: 1.6rem; }
+    padding: 5px 8px;
+    font-size: 16px; }
   .ve-input--lg {
-    padding: .9rem 1rem;
-    font-size: 1.8rem; }
+    padding: 9px 10px;
+    font-size: 18px; }
   .ve-input--hg {
-    padding: 1.3rem 1.3rem;
-    font-size: 2rem; }
+    padding: 13px 13px;
+    font-size: 19px; }
 
 textarea.ve-input {
   width: 100%;
@@ -692,7 +706,7 @@ textarea.ve-input {
   textarea.ve-input:focus {
     border-color: #648bfd;
     outline: none;
-    box-shadow: inset 0 0 0 0 transparent, 0 0 0 0.1rem #648bfd, 0 1px 3px 0 #e6ebf1;
+    box-shadow: inset 0 0 0 0 transparent, 0 0 0 1px #648bfd, 0 1px 3px 0 #e6ebf1;
     box-sizing: border-box; }
 
 select.ve-input {
@@ -700,23 +714,24 @@ select.ve-input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  min-width: 7.5rem;
+  min-width: 75px;
   box-shadow: 0 1px 3px 0 #e6ebf1;
   box-sizing: border-box;
   background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='rgb(99,115,129)' d='M13 8l-3-3-3 3h6zm-.1 4L10 14.9 7.1 12h5.8z' fill-rule='evenodd'></path></svg>");
   background-size: 18px 18px;
   background-repeat: no-repeat;
-  background-position: right 0.7rem top 0.7rem; }
+  background-position: right 7px top 7px; }
   select.ve-input:focus {
     outline: none;
     border-color: #5c6ac4;
-    box-shadow: inset 0 0 0 0 transparent, 0 0 0 0.1rem #648bfd, 0 1px 3px 0 #e6ebf1; }
+    box-shadow: inset 0 0 0 0 transparent, 0 0 0 1px #648bfd, 0 1px 3px 0 #e6ebf1; }
 
 .ve-checkbox {
   position: relative;
   display: inline-block;
-  padding-left: 22px;
+  padding-left: 1.5em;
   padding-right: 5px;
+  vertical-align: bottom;
   cursor: pointer; }
   .ve-checkbox [type=checkbox] {
     position: absolute;
@@ -732,19 +747,19 @@ select.ve-input {
     z-index: 0;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0.25em;
     background-color: #fff;
-    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 1px 3px 0 #e6ebf1;
-    border-radius: 0.3em;
+    border-radius: 3px;
     transition: .4s; }
   .ve-checkbox i:after {
-    left: 6px;
-    top: 1px;
+    left: 0.33em;
+    top: 0.3em;
     border-width: 0;
     box-shadow: none;
-    width: calc(1em - 8px);
-    height: calc(1em - 3px);
+    width: 0.5em;
+    height: 0.8em;
     -webkit-transform: rotate(40deg);
             transform: rotate(40deg);
     background-color: transparent;
@@ -752,7 +767,7 @@ select.ve-input {
   .ve-checkbox [type=checkbox]:checked + i:after {
     display: block;
     border: solid #fff;
-    border-width: 0 1px 1px 0;
+    border-width: 0 0.1em 0.1em 0;
     background-color: transparent;
     border-radius: 0;
     box-shadow: none; }
@@ -763,7 +778,7 @@ select.ve-input {
 .ve-radio {
   position: relative;
   display: inline-block;
-  padding-left: 22px;
+  padding-left: 1.5em;
   padding-right: 5px;
   cursor: pointer; }
   .ve-radio [type=radio] {
@@ -780,10 +795,10 @@ select.ve-input {
     z-index: 0;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0.25em;
     background-color: #fff;
     border-radius: 100%;
-    border: 0.1rem solid rgba(0, 0, 0, 0.15); }
+    border: 1px solid rgba(0, 0, 0, 0.15); }
   .ve-radio i:after {
     -webkit-transform: scale(0);
             transform: scale(0); }
@@ -834,8 +849,8 @@ select.ve-input {
 
 .ve-file,
 label.ve-file {
-  border: 0.1rem solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.3em;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
   color: #333333;
   display: block;
   position: relative;
@@ -965,14 +980,14 @@ label.ve-file {
 .ve-field {
   margin-bottom: 1.5rem; }
   .ve-field .ve-label {
-    margin-bottom: calc(1rem / 2);
+    margin-bottom: calc($spacer-1 / 2);
     display: inline-block; }
   .ve-field .ve-input,
   .ve-field .ve-switch,
   .ve-field .ve-checkbox,
   .ve-field .ve-radio {
     display: inline-block;
-    margin-bottom: 1rem; }
+    margin-bottom: 10px; }
   .ve-field--inline > * {
     display: inline-block; }
     .ve-field--inline > *.ve-input {
@@ -1000,25 +1015,26 @@ label.ve-file {
   .ve-field--error .ve-radio i:before {
     border-color: #f96f66; }
   .ve-field__error {
-    padding: .5rem 1rem;
+    padding: 5px 10px;
     display: block;
     background: #fee2e1;
     color: #f96f66;
-    border-radius: .3rem;
-    margin-bottom: 1rem; }
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 14px; }
 
 .ve-input-group {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem; }
+  margin-bottom: 10px; }
   .ve-input-group__addon,
   .ve-input-group .ve-label {
     background: #fff;
-    border-radius: .3rem;
+    border-radius: 3px;
     height: 32px;
     line-height: 32px;
     padding: 0 14px;
-    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     margin-bottom: 0px;
     font-weight: 400; }
   .ve-input-group .ve-btn:hover, .ve-input-group .ve-btn:active,
@@ -1045,7 +1061,7 @@ label.ve-file {
     .ve-input-group .ve-btn:first-child,
     .ve-input-group a.ve-btn:first-child,
     .ve-input-group a:not([href]):not([tabindex]).ve-btn:first-child {
-      border-left-width: .1rem;
+      border-left-width: 1px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
     .ve-input-group__addon:last-child,
@@ -1066,55 +1082,55 @@ label.ve-file {
   .ve-input-group--sm a:not([href]):not([tabindex]).ve-btn {
     line-height: 24px; }
   .ve-input-group--sm .ve-input {
-    padding: .1rem .6rem;
-    font-size: 1.3rem; }
+    padding: 1px 6px;
+    font-size: 13px; }
   .ve-input-group--sm .ve-input-group__addon,
   .ve-input-group--sm .ve-label {
     line-height: 24px;
     height: 24px;
-    padding: 0 1rem;
-    font-size: 1.3rem; }
+    padding: 0 10px;
+    font-size: 13px; }
   .ve-input-group--lg .ve-btn,
   .ve-input-group--lg a.ve-btn,
   .ve-input-group--lg a:not([href]):not([tabindex]).ve-btn {
     line-height: 40px; }
   .ve-input-group--lg .ve-input {
-    padding: .9rem 1.3rem;
-    font-size: 1.8rem; }
+    padding: 9px 13px;
+    font-size: 18px; }
   .ve-input-group--lg .ve-input-group__addon,
   .ve-input-group--lg .ve-label {
     line-height: 40px;
     height: 40px;
-    padding: 0 1.3rem;
-    font-size: 1.8rem; }
+    padding: 0 13px;
+    font-size: 18px; }
   .ve-input-group--hg .ve-btn,
   .ve-input-group--hg a.ve-btn,
   .ve-input-group--hg a:not([href]):not([tabindex]).ve-btn {
     line-height: 48px; }
   .ve-input-group--hg .ve-input {
-    padding: 1.3rem 1.3rem;
-    font-size: 1.9rem; }
+    padding: 13px 13px;
+    font-size: 19px; }
   .ve-input-group--hg .ve-input-group__addon,
   .ve-input-group--hg .ve-label {
     line-height: 48px;
     height: 48px;
-    padding: 0 1.6rem;
-    font-size: 1.9rem; }
+    padding: 0 16px;
+    font-size: 19px; }
 
 .ve-card {
   box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-  border-radius: 0.3em;
+  border-radius: 3px;
   padding: 0px;
   margin-bottom: 15px;
   background: #fff;
-  min-height: 3rem;
+  min-height: 30px;
   overflow: hidden; }
   .ve-card.ve-col {
     margin-left: 15px;
     margin-right: 15px; }
   .ve-card__header {
-    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.15);
-    padding: 2.0rem; }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 15px; }
     .ve-card__header h1,
     .ve-card__header h2,
     .ve-card__header h3,
@@ -1125,48 +1141,14 @@ label.ve-file {
   .ve-card__image > img {
     width: 100%; }
   .ve-card__section {
-    padding: 2.0rem; }
+    padding: 15px; }
     .ve-card__section > hr {
-      margin: 1em 0; }
+      margin: 10px 0; }
   .ve-card > hr {
     margin: 0px; }
   .ve-card__footer {
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.15);
-    padding: 2.0rem; }
-
-* {
-  box-sizing: border-box; }
-
-html {
-  height: 100%;
-  font-size: 62.5%;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%; }
-
-body {
-  font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
-  font-size: 1.4em;
-  line-height: 2rem;
-  font-weight: 400;
-  color: #333333;
-  background-color: #f6f9fc;
-  height: 100%; }
-
-.ve-header h1 {
-  font-size: 56px;
-  line-height: 1em; }
-
-.ve-footer {
-  text-align: center;
-  color: #777777;
-  font-size: 1.3rem;
-  padding: 1rem; }
-
-xmp {
-  margin: 0px;
-  font-size: 1.5rem; }
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 15px; }
 
 .ve-btn,
 a.ve-btn,
@@ -1335,7 +1317,7 @@ a:not([href]):not([tabindex]).ve-btn {
     border-right-width: 0;
     border-radius: 0;
     box-shadow: none;
-    border-right: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
     margin-bottom: 0; }
     .ve-btn-group .ve-btn:hover, .ve-btn-group .ve-btn:active,
     .ve-btn-group a.ve-btn:hover,
@@ -1397,7 +1379,7 @@ a:not([href]):not([tabindex]).ve-btn {
     .ve-btn-group--vertical a.ve-btn,
     .ve-btn-group--vertical a:not([href]):not([tabindex]).ve-btn {
       border-right: none;
-      border-bottom: 0.1rem solid rgba(0, 0, 0, 0.15); }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
       .ve-btn-group--vertical .ve-btn:last-child,
       .ve-btn-group--vertical a.ve-btn:last-child,
       .ve-btn-group--vertical a:not([href]):not([tabindex]).ve-btn:last-child {
@@ -1415,14 +1397,14 @@ a:not([href]):not([tabindex]).ve-btn {
     min-width: 200px;
     padding: 0px 0;
     margin: 5px 0 0;
-    font-size: 1.4em;
+    font-size: 14px;
     color: #333333;
     text-align: left;
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
     border: none;
-    border-radius: 0.3em;
+    border-radius: 3px;
     box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
     overflow: hidden; }
     .ve-dropdown__menu__item {
@@ -1436,7 +1418,7 @@ a:not([href]):not([tabindex]).ve-btn {
       white-space: nowrap;
       background-color: transparent;
       border: 0;
-      font-size: 1.5rem; }
+      font-size: 15px; }
       .ve-dropdown__menu__item:hover {
         background: #f6f9fc; }
       .ve-dropdown__menu__item:active {
@@ -1451,7 +1433,8 @@ a:not([href]):not([tabindex]).ve-btn {
   color: #333333;
   margin-bottom: 1rem;
   box-shadow: 0 2px 4px 0 rgba(50, 50, 93, 0.1);
-  position: relative; }
+  position: relative;
+  font-size: 14px; }
   .ve-alert__media {
     padding: 0px 15px 15px 0px;
     float: left;
@@ -1464,7 +1447,7 @@ a:not([href]):not([tabindex]).ve-btn {
     cursor: pointer;
     border: none;
     background: none;
-    font-size: 2rem; }
+    font-size: 20px; }
     .ve-alert__close:active, .ve-alert__close:focus {
       outline: none; }
   .ve-alert--dismissible {
@@ -1559,15 +1542,15 @@ a:not([href]):not([tabindex]).ve-btn {
     flex: 0 0 auto; }
     .ve-tab__item a {
       display: inline-block;
-      font-size: 1.4rem;
-      line-height: 3.6rem;
+      font-size: 14px;
+      line-height: 36px;
       text-align: center;
       cursor: pointer;
       position: relative;
       white-space: nowrap;
       color: #595959;
-      padding: .3rem 1.6rem 0rem;
-      border-bottom: .3rem solid transparent; }
+      padding: 3px 16px 0px;
+      border-bottom: 3px solid transparent; }
       .ve-tab__item a:hover {
         outline: none;
         color: #333333;
@@ -1613,19 +1596,19 @@ a:not([href]):not([tabindex]).ve-btn {
 
 .ve-list {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   border-top: 1px solid #efefef; }
   .ve-list__item {
     border-bottom: 1px solid #efefef;
     background: #fff; }
     .ve-list__item > * {
-      padding: 1.5rem 2rem;
+      padding: 15px 20px;
       display: flex;
       color: #595959;
-      line-height: 1.3rem; }
+      line-height: 13px; }
       .ve-list__item > * > * {
         flex: auto;
-        padding-left: 2rem; }
+        padding-left: 20px; }
       .ve-list__item > *:hover {
         text-decoration: none;
         color: #333333;
@@ -1671,8 +1654,8 @@ a:not([href]):not([tabindex]).ve-btn {
   color: #648bfd; }
 
 .ve-form__row {
-  margin-bottom: 1rem;
-  padding: 1rem 0;
+  margin-bottom: 10px;
+  padding: 10px 0;
   display: flex; }
   .ve-form__row > *:before, .ve-form__row > *:after {
     content: " ";

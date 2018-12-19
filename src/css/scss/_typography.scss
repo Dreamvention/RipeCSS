@@ -1,9 +1,9 @@
-.ve-h1,
-.ve-h2,
-.ve-h3,
-.ve-h4,
-.ve-h5,
-.ve-h6 {
+#{$pfx}h1,
+#{$pfx}h2,
+#{$pfx}h3,
+#{$pfx}h4,
+#{$pfx}h5,
+#{$pfx}h6 {
     margin-bottom: $headings-margin-bottom;
     margin-top: 0px;
     font-family: $headings-font-family;
@@ -12,44 +12,44 @@
     color: $headings-color;
 }
 
-.ve-h1 {
+#{$pfx}h1 {
     font-size: $h1-font-size;
 }
 
-.ve-h2 {
+#{$pfx}h2 {
     font-size: $h2-font-size;
 }
 
-.ve-h3 {
+#{$pfx}h3 {
     font-size: $h3-font-size;
 }
 
-.ve-h4 {
+#{$pfx}h4 {
     font-size: $h4-font-size;
 }
 
-.ve-h5 {
+#{$pfx}h5 {
     font-size: $h5-font-size;
 }
 
-.ve-h6 {
+#{$pfx}h6 {
     font-size: $h6-font-size;
 }
 
-pre {
+#{$pfx}pre {
     background: none;
     border: none;
-    line-height: 1.3em;
-    font-size: 1em;
+    line-height: 13px;
+    font-size: 10px;
 }
 
-hr {
+#{$pfx}hr {
     border: none;
     border-bottom: $border;
     margin: 1rem 0px 2rem;
 }
 
-a {
+#{$pfx}a {
     text-decoration: none;
     color: $link-color;
     &:hover,

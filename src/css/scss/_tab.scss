@@ -1,4 +1,4 @@
-.ve-tab {
+#{$pfx}tab {
     $ve: &;
     display: flex;
     flex-wrap: nowrap;
@@ -12,15 +12,15 @@
         flex: 0 0 auto;
         a {
             display: inline-block;
-            font-size: 1.4rem;
-            line-height: 3.6rem;
+            font-size: 14px;
+            line-height: 36px;
             text-align: center;
             cursor: pointer;
             position: relative;
             white-space: nowrap;
             color: lighten($text-color, 15%);
-            padding: .3rem 1.6rem 0rem;
-            border-bottom: .3rem solid transparent;
+            padding: 3px 16px 0px;
+            border-bottom: 3px solid transparent;
             &:hover {
                 outline: none;
                 color: $text-color;

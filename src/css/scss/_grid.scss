@@ -8,7 +8,7 @@
 //
 // Set the container width, and override it for fixed navbars in media queries.
 @if $enable-grid-classes {
-    .ve-container {
+    #{$pfx}container {
         @include make-container();
         @include make-container-max-widths();
     }
@@ -19,7 +19,7 @@
 // Utilizes the mixin meant for fixed width containers, but with 100% width for
 // fluid, full width layouts.
 @if $enable-grid-classes {
-    .ve-container-fluid {
+    #{$pfx}container-fluid {
         @include make-container();
     }
 }
@@ -28,7 +28,7 @@
 //
 // Rows contain and clear the floats of your columns.
 @if $enable-grid-classes {
-    .ve-row {
+    #{$pfx}row {
         @include make-row();
     }
     // Remove the negative margin from default .row, then the horizontal padding
@@ -36,7 +36,7 @@
     .no-gutters {
         margin-right: 0;
         margin-left: 0;
-        >.ve-col,
+        >#{$pfx}col,
         >[class*="col-"] {
             padding-right: 0;
             padding-left: 0;

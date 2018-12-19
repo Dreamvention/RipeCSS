@@ -1,6 +1,6 @@
-.ve-btn,
-a.ve-btn,
-a:not([href]):not([tabindex]).ve-btn {
+#{$pfx}btn,
+a#{$pfx}btn,
+a:not([href]):not([tabindex])#{$pfx}btn {
     $ve: &;
     appearance: none;
     outline: none;

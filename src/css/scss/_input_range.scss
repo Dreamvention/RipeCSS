@@ -48,7 +48,7 @@ $ie-bottom-track-color: darken($track-color, $contrast) !default;
     cursor: not-allowed;
 }
 
-[type='range'].ve-input {
+[type='range']#{$pfx}input {
     -webkit-appearance: none;
     background: transparent;
     margin: $thumb-height / 2 0;

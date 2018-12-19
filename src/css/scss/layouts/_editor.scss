@@ -1,4 +1,4 @@
-.ve-editor {
+#{$pfx}editor {
     overflow: hidden;
     &__menu {
         background: #fff;
@@ -77,7 +77,7 @@
             bottom: 0px;
             width: 100%;
         }
-        .ve-tab {
+        #{$pfx}tab {
             background: #fff;
             &__item {
                 >a {

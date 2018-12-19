@@ -1,5 +1,5 @@
 @import "mixins/well";
-.ve-well {
+#{$pfx}well {
     @include make-well($body-bg);
     &--primary {
         @include make-well(lighten($color-primary, 25%));

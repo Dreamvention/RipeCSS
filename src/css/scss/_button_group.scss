@@ -1,13 +1,13 @@
-.ve-btn-group {
+#{$pfx}btn-group {
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     display: inline-block;
     transition: all .15s ease;
     border-radius: .3rem;
     overflow: hidden;
     background: none;
-    .ve-btn,
-    a.ve-btn,
-    a:not([href]):not([tabindex]).ve-btn {
+    #{$pfx}btn,
+    a#{$pfx}btn,
+    a:not([href]):not([tabindex])#{$pfx}btn {
         float: left;
         border-right-width: 0;
         border-radius: 0;
@@ -25,9 +25,9 @@
         }
     }
     &--sm {
-        .ve-btn,
-        a.ve-btn,
-        a:not([href]):not([tabindex]).ve-btn {
+        #{$pfx}btn,
+        a#{$pfx}btn,
+        a:not([href]):not([tabindex])#{$pfx}btn {
             line-height: 24px;
             height: 24px;
             font-size: 13px;
@@ -35,18 +35,18 @@
         }
     }
     &--md {
-        .ve-btn,
-        a.ve-btn,
-        a:not([href]):not([tabindex]).ve-btn {
+        #{$pfx}btn,
+        a#{$pfx}btn,
+        a:not([href]):not([tabindex])#{$pfx}btn {
             line-height: 32px;
             height: 32px;
             font-size: 15px;
         }
     }
     &--lg {
-        .ve-btn,
-        a.ve-btn,
-        a:not([href]):not([tabindex]).ve-btn {
+        #{$pfx}btn,
+        a#{$pfx}btn,
+        a:not([href]):not([tabindex])#{$pfx}btn {
             line-height: 40px;
             height: 40px;
             font-size: 17px;
@@ -54,9 +54,9 @@
         }
     }
     &--hg {
-        .ve-btn,
-        a.ve-btn,
-        a:not([href]):not([tabindex]).ve-btn {
+        #{$pfx}btn,
+        a#{$pfx}btn,
+        a:not([href]):not([tabindex])#{$pfx}btn {
             line-height: 48px;
             height: 48px;
             font-size: 19px;
@@ -71,9 +71,9 @@
     &--vertical {
         display: inline-flex;
         flex-direction: column;
-        .ve-btn,
-        a.ve-btn,
-        a:not([href]):not([tabindex]).ve-btn {
+        #{$pfx}btn,
+        a#{$pfx}btn,
+        a:not([href]):not([tabindex])#{$pfx}btn {
             border-right: none;
             border-bottom: $border;
             &:last-child {

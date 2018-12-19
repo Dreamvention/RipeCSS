@@ -2,27 +2,27 @@ $input-border:$border;
 $input-border-radius: $border-radius;
 $input-text-color: $text-color;
 $input-active-border-color:$color-primary;
-.ve-label {
+#{$pfx}label {
     font-weight: 500;
     margin-bottom: 0;
     display: inline-block;
 }
 
-.ve-input {
+#{$pfx}input {
     $ve: &;
     display: block;
     position: relative;
-    padding: .5rem 1rem;
+    padding: 5px 10px;
     background-color: #fff;
     border: $input-border;
     border-radius: $input-border-radius;
     color: $input-text-color;
     box-sizing: border-box;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    min-width: 7.5rem;
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 75px;
     font-weight: 300;
-    vertical-align: baseline;
+    vertical-align: bottom;
     height: auto;
     margin: 0;
     max-width: 100%;
@@ -34,7 +34,7 @@ $input-active-border-color:$color-primary;
         &:focus {
             border-color: $input-active-border-color;
             outline: none;
-            box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem $input-active-border-color, $input-box-shadow;
+            box-shadow: inset 0 0 0 0 transparent, 0 0 0 1px $input-active-border-color, $input-box-shadow;
             box-sizing: border-box;
         }
     }
@@ -50,56 +50,57 @@ $input-active-border-color:$color-primary;
         margin-right: 4px;
     }
     &--sm {
-        padding: .1rem .6rem;
-        font-size: 1.3rem;
+        padding: 1px 6px;
+        font-size: 13px;
     }
     &--md {
-        padding: .4rem .8rem;
-        font-size: 1.6rem;
+        padding: 5px 8px;
+        font-size: 16px;
     }
     &--lg {
-        padding: .9rem 1rem;
-        font-size: 1.8rem;
+        padding: 9px 10px;
+        font-size: 18px;
     }
     &--hg {
-        padding: 1.3rem 1.3rem;
-        font-size: 2rem;
+        padding: 13px 13px;
+        font-size: 19px;
     }
 }
 
-textarea.ve-input {
+textarea#{$pfx}input {
     width: 100%;
     box-shadow: $input-box-shadow;
     &:focus {
         border-color: $input-active-border-color;
         outline: none;
-        box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem $input-active-border-color, $input-box-shadow;
+        box-shadow: inset 0 0 0 0 transparent, 0 0 0 1px $input-active-border-color, $input-box-shadow;
         box-sizing: border-box;
     }
 }
 
-select.ve-input {
+select#{$pfx}input {
     width: 100%;
     appearance: none;
-    min-width: 7.5rem;
+    min-width: 75px;
     box-shadow: $input-box-shadow;
     box-sizing: border-box;
     background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='rgb(99,115,129)' d='M13 8l-3-3-3 3h6zm-.1 4L10 14.9 7.1 12h5.8z' fill-rule='evenodd'></path></svg>");
     background-size: 18px 18px;
     background-repeat: no-repeat;
-    background-position: right 0.7rem top 0.7rem;
+    background-position: right 7px top 7px;
     &:focus {
         outline: none;
         border-color: #5c6ac4;
-        box-shadow: inset 0 0 0 0 transparent, 0 0 0 .1rem $input-active-border-color, $input-box-shadow;
+        box-shadow: inset 0 0 0 0 transparent, 0 0 0 1px $input-active-border-color, $input-box-shadow;
     }
 }
 
-.ve-checkbox {
+#{$pfx}checkbox {
     position: relative;
     display: inline-block;
-    padding-left: 22px;
+    padding-left: 1.5em;
     padding-right: 5px;
+    vertical-align: bottom;
     cursor: pointer;
     [type=checkbox] {
         position: absolute;
@@ -116,7 +117,7 @@ select.ve-input {
         z-index: 0;
         position: absolute;
         left: 0;
-        top: 0;
+        top: 0.25em;
         background-color: #fff;
         border: $input-border;
         box-shadow: $input-box-shadow;
@@ -124,12 +125,12 @@ select.ve-input {
         transition: .4s;
     }
     i:after {
-        left: 6px;
-        top: 1px;
+        left: 0.33em;
+        top: 0.3em;
         border-width: 0;
         box-shadow: none;
-        width: calc(1em - 8px);
-        height: calc(1em - 3px);
+        width: 0.5em;
+        height: 0.8em;
         transform: rotate(40deg);
         background-color: transparent;
         transition: 0s;
@@ -137,7 +138,7 @@ select.ve-input {
     [type=checkbox]:checked+i:after {
         display: block;
         border: solid #fff;
-        border-width: 0 1px 1px 0;
+        border-width: 0 0.1em 0.1em 0;
         background-color: transparent;
         border-radius: 0;
         box-shadow: none;
@@ -148,10 +149,10 @@ select.ve-input {
     }
 }
 
-.ve-radio {
+#{$pfx}radio {
     position: relative;
     display: inline-block;
-    padding-left: 22px;
+    padding-left: 1.5em;
     padding-right: 5px;
     cursor: pointer;
     [type=radio] {
@@ -169,7 +170,7 @@ select.ve-input {
         z-index: 0;
         position: absolute;
         left: 0;
-        top: 0;
+        top: 0.25em;
         background-color: #fff;
         border-radius: 100%;
         border: $input-border;
@@ -188,7 +189,7 @@ select.ve-input {
     }
 }
 
-.ve-switch {
+#{$pfx}switch {
     position: relative;
     display: inline-block;
     padding-left: 45px;
@@ -229,8 +230,8 @@ select.ve-input {
     }
 }
 
-.ve-file,
-label.ve-file {
+#{$pfx}file,
+label#{$pfx}file {
     border: $input-border;
     border-radius: $input-border-radius;
     color: $input-text-color;
@@ -254,9 +255,9 @@ label.ve-file {
         left: 0;
         z-index: 0;
     }
-    .ve-btn,
-    a.ve-btn,
-    a:not([href]):not([tabindex]).ve-bt {
+    #{$pfx}btn,
+    a#{$pfx}btn,
+    a:not([href]):not([tabindex])#{$pfx}bt {
         margin: -1px;
         z-index: 100;
         position: relative;

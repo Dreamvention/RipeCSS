@@ -1,12 +1,12 @@
-.ve-form {
+#{$pfx}form {
     &__row {
-        margin-bottom: 1rem;
-        padding: 1rem 0;
+        margin-bottom: 10px;
+        padding: 10px 0;
         display: flex;
         >* {
             @include clearfix();
         }
-        .ve-label {
+        #{$pfx}label {
             text-align: right
         }
     }

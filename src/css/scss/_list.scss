@@ -1,24 +1,24 @@
-.ve-list {
+#{$pfx}list {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: $spacer-1;
     border-top: 1px solid #efefef;
     &__item {
         border-bottom: 1px solid #efefef;
         background: #fff;
         >* {
-            padding: 1.5rem 2rem;
+            padding: 15px 20px;
             display: flex;
             color: lighten($text-color, 15%);
-            line-height: 1.3rem;
+            line-height: 13px;
             >* {
                 flex: auto;
-                padding-left: 2rem;
+                padding-left: 20px;
             }
             &:hover {
                 text-decoration: none;
                 color: $text-color;
                 background: $body-bg;
-                .ve-list__item__icon {
+                #{$pfx}list__item__icon {
                     color: $text-color;
                 }
             }
@@ -30,7 +30,7 @@
     }
     &--borderless {
         border-top: none;
-        .ve-list__item:last-child {
+        #{$pfx}list__item:last-child {
             border-bottom: none;
         }
     }
