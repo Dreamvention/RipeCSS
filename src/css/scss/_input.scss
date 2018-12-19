@@ -29,7 +29,9 @@ $input-active-border-color:$color-primary;
     max-width: 100%;
     font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
     transition: box-shadow .2s cubic-bezier(.64, 0, .35, 1);
-    &[type=text] {
+    &[type=text],
+    &[type=email],
+    &[type=password] {
         width: 100%;
         box-shadow: $input-box-shadow;
         &:focus {
