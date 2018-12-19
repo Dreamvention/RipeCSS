@@ -31,7 +31,8 @@ $input-active-border-color:$color-primary;
     transition: box-shadow .2s cubic-bezier(.64, 0, .35, 1);
     &[type=text],
     &[type=email],
-    &[type=password] {
+    &[type=password],
+    &[type=tel] {
         width: 100%;
         box-shadow: $input-box-shadow;
         &:focus {
