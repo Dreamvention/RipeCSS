@@ -1082,7 +1082,8 @@ label.ve-file {
   .ve-input-group .ve-btn,
   .ve-input-group a.ve-btn,
   .ve-input-group a:not([href]):not([tabindex]).ve-btn {
-    margin-left: -1px; }
+    margin-left: -1px;
+    margin-bottom: 0px; }
     .ve-input-group__addon:first-child,
     .ve-input-group .ve-input:first-child,
     .ve-input-group .ve-btn:first-child,

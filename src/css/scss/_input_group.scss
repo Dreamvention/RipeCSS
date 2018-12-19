@@ -24,6 +24,7 @@
     a#{$pfx}btn,
     a:not([href]):not([tabindex])#{$pfx}btn {
         margin-left: -1px;
+        margin-bottom: 0px;
         &:first-child {
             border-left-width: 1px;
             border-top-right-radius: 0;
