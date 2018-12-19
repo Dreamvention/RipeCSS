@@ -21,6 +21,7 @@
             color: lighten($text-color, 15%);
             padding: 3px 16px 0px;
             border-bottom: 3px solid transparent;
+            text-decoration: none;
             &:hover {
                 outline: none;
                 color: $text-color;

@@ -32,7 +32,8 @@ $dropdown-link-color:#333;
         border-radius: $dropdown-border-radius;
         box-shadow: $dropdown-box-shadow;
         overflow: hidden;
-        &__item {
+        &__item,
+        a#{$pfx}dropdown__menu__item {
             display: block;
             width: 100%; // For `<button>`s
             padding: $dropdown-item-padding-y $dropdown-item-padding-x;

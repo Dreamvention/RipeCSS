@@ -10,6 +10,7 @@
             display: flex;
             color: lighten($text-color, 15%);
             line-height: 13px;
+            text-decoration: none;
             >* {
                 flex: auto;
                 padding-left: 20px;

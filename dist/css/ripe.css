@@ -1160,7 +1160,7 @@ label.ve-file {
     margin-right: 15px; }
   .ve-card__header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 15px; }
+    padding: 20px; }
     .ve-card__header h1,
     .ve-card__header h2,
     .ve-card__header h3,
@@ -1171,14 +1171,14 @@ label.ve-file {
   .ve-card__image > img {
     width: 100%; }
   .ve-card__section {
-    padding: 15px; }
+    padding: 20px; }
     .ve-card__section > hr {
       margin: 10px 0; }
   .ve-card > hr {
     margin: 0px; }
   .ve-card__footer {
     border-top: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 15px; }
+    padding: 20px; }
 
 .ve-btn,
 a.ve-btn,
@@ -1437,7 +1437,8 @@ a:not([href]):not([tabindex]).ve-btn {
     border-radius: 3px;
     box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
     overflow: hidden; }
-    .ve-dropdown__menu__item {
+    .ve-dropdown__menu__item,
+    .ve-dropdown__menu a.ve-dropdown__menu__item {
       display: block;
       width: 100%;
       padding: 1rem 1rem;
@@ -1449,9 +1450,11 @@ a:not([href]):not([tabindex]).ve-btn {
       background-color: transparent;
       border: 0;
       font-size: 15px; }
-      .ve-dropdown__menu__item:hover {
+      .ve-dropdown__menu__item:hover,
+      .ve-dropdown__menu a.ve-dropdown__menu__item:hover {
         background: #f6f9fc; }
-      .ve-dropdown__menu__item:active {
+      .ve-dropdown__menu__item:active,
+      .ve-dropdown__menu a.ve-dropdown__menu__item:active {
         background: #648bfd;
         color: #fff; }
   .ve-dropdown--open .ve-dropdown__menu {
@@ -1580,7 +1583,8 @@ a:not([href]):not([tabindex]).ve-btn {
       white-space: nowrap;
       color: #595959;
       padding: 3px 16px 0px;
-      border-bottom: 3px solid transparent; }
+      border-bottom: 3px solid transparent;
+      text-decoration: none; }
       .ve-tab__item a:hover {
         outline: none;
         color: #333333;
@@ -1635,7 +1639,8 @@ a:not([href]):not([tabindex]).ve-btn {
       padding: 15px 20px;
       display: flex;
       color: #595959;
-      line-height: 13px; }
+      line-height: 13px;
+      text-decoration: none; }
       .ve-list__item > * > * {
         flex: auto;
         padding-left: 20px; }
