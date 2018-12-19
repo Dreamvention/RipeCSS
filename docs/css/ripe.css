@@ -650,6 +650,26 @@ a[class^=ve-] {
   .ve-offset-xl-11 {
     margin-left: 91.66667%; } }
 
+.ve-thumbnail {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  color: #333333;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 75px;
+  font-weight: 300;
+  vertical-align: bottom;
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+  transition: box-shadow 0.2s cubic-bezier(0.64, 0, 0.35, 1); }
+
 .ve-label {
   font-weight: 500;
   margin-bottom: 0;

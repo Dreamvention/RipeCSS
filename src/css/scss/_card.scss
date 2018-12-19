@@ -12,7 +12,7 @@
     }
     &__header {
         border-bottom: $border;
-        padding: $spacer-2;
+        padding: $spacer-3;
         h1,
         h2,
         h3,
@@ -28,7 +28,7 @@
         }
     }
     &__section {
-        padding: $spacer-2;
+        padding: $spacer-3;
         >hr {
             margin: $spacer-1 0;
         }
@@ -38,6 +38,6 @@
     }
     &__footer {
         border-top: $border;
-        padding: $spacer-2;
+        padding: $spacer-3;
     }
 }

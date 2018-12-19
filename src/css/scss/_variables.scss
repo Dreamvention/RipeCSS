@@ -89,6 +89,7 @@ $screen-lg-desktop: $screen-lg-min !default;
 $screen-xs-max: ($screen-sm-min - 1) !default;
 $screen-sm-max: ($screen-md-min - 1) !default;
 $screen-md-max: ($screen-lg-min - 1) !default;
+$breakpoints: ("phone": 400px, "phone-wide": $screen-xs "phablet": 560px, "tablet-small": 640px, "tablet": $screen-sm, "tablet-wide": $screen-md, "laptop": 1199px, "desktop": $screen-lg, "desktop-wide": 1440px);
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,

@@ -1,0 +1,24 @@
+$image-border:$border;
+$image-border-radius: $border-radius;
+$image-text-color: $text-color;
+$image-active-border-color:$color-primary;
+#{$pfx}thumbnail {
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: $image-border;
+    border-radius: $image-border-radius;
+    color: $image-text-color;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 75px;
+    font-weight: 300;
+    vertical-align: bottom;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+    transition: box-shadow .2s cubic-bezier(.64, 0, .35, 1);
+}
