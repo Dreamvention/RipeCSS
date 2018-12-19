@@ -28,6 +28,9 @@
             color: $color-danger;
         }
         [type=text]#{$pfx}input,
+        [type=email]#{$pfx}input,
+        [type=tel]#{$pfx}input,
+        [type=password]#{$pfx}input,
         select#{$pfx}input,
         textarea#{$pfx}input {
             border-color: $color-danger;

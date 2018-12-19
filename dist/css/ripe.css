@@ -1042,11 +1042,17 @@ label.ve-file {
   .ve-field--error .ve-radio {
     color: #f96f66; }
   .ve-field--error [type=text].ve-input,
+  .ve-field--error [type=email].ve-input,
+  .ve-field--error [type=tel].ve-input,
+  .ve-field--error [type=password].ve-input,
   .ve-field--error select.ve-input,
   .ve-field--error textarea.ve-input {
     border-color: #f96f66;
     background-color: #fee2e1; }
     .ve-field--error [type=text].ve-input:focus,
+    .ve-field--error [type=email].ve-input:focus,
+    .ve-field--error [type=tel].ve-input:focus,
+    .ve-field--error [type=password].ve-input:focus,
     .ve-field--error select.ve-input:focus,
     .ve-field--error textarea.ve-input:focus {
       outline: none;
