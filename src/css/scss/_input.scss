@@ -52,18 +52,22 @@ $input-active-border-color:$color-primary;
     &--sm {
         padding: 1px 6px;
         font-size: 13px;
+        height: 24px;
     }
     &--md {
         padding: 5px 8px;
         font-size: 16px;
+        height: 32px;
     }
     &--lg {
         padding: 9px 10px;
         font-size: 18px;
+        height: 40px;
     }
     &--hg {
         padding: 13px 13px;
         font-size: 19px;
+        height: 48px;
     }
 }
 
