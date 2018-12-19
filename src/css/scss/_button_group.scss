@@ -19,6 +19,11 @@
             padding-bottom: 0px;
             padding-top: 1px;
         }
+        >input[type=radio] {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            pointer-events: none;
+        }
         &:first-child {}
         &:last-child {
             border: none;

@@ -21,6 +21,7 @@ a:not([href]):not([tabindex])#{$pfx}btn {
     cursor: pointer;
     @include make-button-pressable;
     &:active,
+    &.active,
     &:focus {
         outline: none;
     }
@@ -55,7 +56,8 @@ a:not([href]):not([tabindex])#{$pfx}btn {
         &:hover {
             background: lighten($color-primary, 2%);
         }
-        &:active {
+        &:active,
+        &.active {
             background: darken($color-primary, 15%);
         }
     }
@@ -65,7 +67,8 @@ a:not([href]):not([tabindex])#{$pfx}btn {
         &:hover {
             background: lighten($color-danger, 2%);
         }
-        &:active {
+        &:active,
+        &.active {
             background: darken($color-danger, 15%);
         }
     }
@@ -75,7 +78,8 @@ a:not([href]):not([tabindex])#{$pfx}btn {
         &:hover {
             background: lighten($color-warning, 2%);
         }
-        &:active {
+        &:active,
+        &.active {
             background: darken($color-warning, 15%);
         }
     }
@@ -85,7 +89,8 @@ a:not([href]):not([tabindex])#{$pfx}btn {
         &:hover {
             background: lighten($color-success, 2%);
         }
-        &:active {
+        &:active,
+        &.active {
             background: darken($color-success, 15%);
         }
     }
@@ -95,14 +100,16 @@ a:not([href]):not([tabindex])#{$pfx}btn {
         &:hover {
             background: lighten($color-info, 2%);
         }
-        &:active {
+        &:active,
+        &.active {
             background: darken($color-info, 15%);
         }
     }
     &--default {
         background: #fff;
         color: findColorInvert(#fff);
-        &:active {
+        &:active,
+        &.active {
             background: darken(#efefef, 15%);
         }
     }
