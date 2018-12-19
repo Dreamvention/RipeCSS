@@ -684,7 +684,7 @@ a[class^=ve-] {
   border-radius: 3px;
   color: #333333;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   min-width: 75px;
   font-weight: 300;
@@ -1082,8 +1082,7 @@ label.ve-file {
   .ve-input-group .ve-btn,
   .ve-input-group a.ve-btn,
   .ve-input-group a:not([href]):not([tabindex]).ve-btn {
-    margin-left: -1px;
-    margin-bottom: 0px; }
+    margin-left: -1px; }
     .ve-input-group__addon:first-child,
     .ve-input-group .ve-input:first-child,
     .ve-input-group .ve-btn:first-child,

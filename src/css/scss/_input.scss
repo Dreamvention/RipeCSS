@@ -1,6 +1,7 @@
 $input-border:$border;
 $input-border-radius: $border-radius;
 $input-text-color: $text-color;
+$input-font-size: $font-size-base;
 $input-active-border-color:$color-primary;
 #{$pfx}label {
     font-weight: 500;
@@ -18,7 +19,7 @@ $input-active-border-color:$color-primary;
     border-radius: $input-border-radius;
     color: $input-text-color;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: $input-font-size;
     line-height: 20px;
     min-width: 75px;
     font-weight: 300;
