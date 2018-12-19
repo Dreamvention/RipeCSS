@@ -51,7 +51,7 @@ xmp {
 
 .ve-hr {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin: 1rem 0px 2rem; }
 
 .ve-a,
@@ -655,7 +655,7 @@ a[class^=ve-] {
   position: relative;
   padding: 5px 10px;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   color: #333333;
   box-sizing: border-box;
@@ -680,7 +680,7 @@ a[class^=ve-] {
   position: relative;
   padding: 5px 10px;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   color: #333333;
   box-sizing: border-box;
@@ -705,7 +705,7 @@ a[class^=ve-] {
   .ve-input:disabled {
     cursor: not-allowed;
     background-color: #F4F6F8;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     color: #C4CDD5; }
   .ve-input[type=radio], .ve-input[type=checkbox] {
     display: inline-block;
@@ -776,7 +776,7 @@ select.ve-input {
     left: 0;
     top: 0.25em;
     background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 3px 0 #e6ebf1;
     border-radius: 3px;
     transition: .4s; }
@@ -825,7 +825,7 @@ select.ve-input {
     top: 0.25em;
     background-color: #fff;
     border-radius: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.15); }
+    border: 1px solid rgba(0, 0, 0, 0.1); }
   .ve-radio i:after {
     -webkit-transform: scale(0);
             transform: scale(0); }
@@ -855,7 +855,7 @@ select.ve-input {
     width: 40px;
     top: 0px;
     left: 0px;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 1.2em;
     transition: background-color 0.5s ease; }
   .ve-switch i:after {
@@ -876,7 +876,7 @@ select.ve-input {
 
 .ve-file,
 label.ve-file {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   color: #333333;
   display: block;
@@ -921,22 +921,22 @@ label.ve-file {
   [type='range'].ve-input:focus {
     outline: 0; }
     [type='range'].ve-input:focus::-webkit-slider-runnable-track {
-      background: rgba(13, 13, 13, 0.15); }
+      background: rgba(13, 13, 13, 0.1); }
     [type='range'].ve-input:focus::-ms-fill-lower {
-      background: rgba(0, 0, 0, 0.15); }
+      background: rgba(0, 0, 0, 0.1); }
     [type='range'].ve-input:focus::-ms-fill-upper {
-      background: rgba(13, 13, 13, 0.15); }
+      background: rgba(13, 13, 13, 0.1); }
   [type='range'].ve-input::-webkit-slider-runnable-track {
     cursor: default;
     height: 8px;
     transition: all .2s ease;
     width: 100%;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0 0 0px rgba(13, 13, 13, 0);
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.1);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 5px; }
   [type='range'].ve-input::-webkit-slider-thumb {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15), 0 0 1px rgba(13, 13, 13, 0.15);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), 0 0 1px rgba(13, 13, 13, 0.1);
     background: #fff;
     border: 0px solid #fff;
     border-radius: 12px;
@@ -951,12 +951,12 @@ label.ve-file {
     height: 8px;
     transition: all .2s ease;
     width: 100%;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.1);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     height: 4px; }
   [type='range'].ve-input::-moz-range-thumb {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15), 0 0 1px rgba(13, 13, 13, 0.15);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), 0 0 1px rgba(13, 13, 13, 0.1);
     background: #fff;
     border: 0px solid #fff;
     border-radius: 12px;
@@ -974,16 +974,16 @@ label.ve-file {
     color: transparent; }
   [type='range'].ve-input::-ms-fill-lower {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0 0 0px rgba(13, 13, 13, 0);
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.1);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px; }
   [type='range'].ve-input::-ms-fill-upper {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0 0 0px rgba(13, 13, 13, 0);
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.1);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px; }
   [type='range'].ve-input::-ms-thumb {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15), 0 0 1px rgba(13, 13, 13, 0.15);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), 0 0 1px rgba(13, 13, 13, 0.1);
     background: #fff;
     border: 0px solid #fff;
     border-radius: 12px;
@@ -1061,7 +1061,7 @@ label.ve-file {
     height: 32px;
     line-height: 32px;
     padding: 0 14px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 0px;
     font-weight: 400; }
   .ve-input-group .ve-btn:hover, .ve-input-group .ve-btn:active,
@@ -1159,7 +1159,7 @@ label.ve-file {
     margin-left: 15px;
     margin-right: 15px; }
   .ve-card__header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px; }
     .ve-card__header h1,
     .ve-card__header h2,
@@ -1178,7 +1178,7 @@ label.ve-file {
   .ve-card > hr {
     margin: 0px; }
   .ve-card__footer {
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px; }
 
 .ve-btn,
@@ -1348,7 +1348,7 @@ a:not([href]):not([tabindex]).ve-btn {
     border-right-width: 0;
     border-radius: 0;
     box-shadow: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 0; }
     .ve-btn-group .ve-btn:hover, .ve-btn-group .ve-btn:active,
     .ve-btn-group a.ve-btn:hover,
@@ -1410,7 +1410,7 @@ a:not([href]):not([tabindex]).ve-btn {
     .ve-btn-group--vertical a.ve-btn,
     .ve-btn-group--vertical a:not([href]):not([tabindex]).ve-btn {
       border-right: none;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
       .ve-btn-group--vertical .ve-btn:last-child,
       .ve-btn-group--vertical a.ve-btn:last-child,
       .ve-btn-group--vertical a:not([href]):not([tabindex]).ve-btn:last-child {
@@ -1570,7 +1570,7 @@ a:not([href]):not([tabindex]).ve-btn {
   margin: 0;
   padding: 0;
   white-space: nowrap;
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   flex: auto; }
   .ve-tab__item {
     flex: 0 0 auto; }
