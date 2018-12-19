@@ -63,6 +63,21 @@ a[class^=ve-] {
   a[class^=ve-]:active {
     text-decoration: none; }
 
+.ve-text-primary {
+  color: #648bfd; }
+
+.ve-text-success {
+  color: #3ecf8e; }
+
+.ve-text-info {
+  color: #6ed8da; }
+
+.ve-text-warning {
+  color: #ffb24d; }
+
+.ve-text-danger {
+  color: #f96f66; }
+
 .ve-container {
   width: 100%;
   padding-right: 15px;

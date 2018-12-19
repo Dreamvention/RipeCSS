@@ -58,3 +58,23 @@ a[class^=#{$pfxx}] {
         text-decoration: none;
     }
 }
+
+#{$pfx}text-primary {
+    color: $color-primary
+}
+
+#{$pfx}text-success {
+    color: $color-success
+}
+
+#{$pfx}text-info {
+    color: $color-info
+}
+
+#{$pfx}text-warning {
+    color: $color-warning
+}
+
+#{$pfx}text-danger {
+    color: $color-danger
+}
