@@ -75,6 +75,7 @@ $input-active-border-color:$color-primary;
 textarea#{$pfx}input {
     width: 100%;
     box-shadow: $input-box-shadow;
+    height: auto;
     &:focus {
         border-color: $input-active-border-color;
         outline: none;
