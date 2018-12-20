@@ -829,6 +829,9 @@ select.ve-input {
   .ve-radio [type=radio] {
     position: absolute;
     opacity: 0; }
+  .ve-radio--selected {
+    font-weight: bold;
+    color: #648bfd; }
   .ve-radio i:after,
   .ve-radio i:before {
     content: '';

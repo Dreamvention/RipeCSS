@@ -168,6 +168,10 @@ select#{$pfx}input {
         position: absolute;
         opacity: 0;
     }
+    &--selected {
+        font-weight: bold;
+        color: $link-color;
+    }
     i:after,
     i:before {
         content: '';
