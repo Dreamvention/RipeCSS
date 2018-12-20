@@ -42,6 +42,10 @@ $input-active-border-color:$color-primary;
             box-sizing: border-box;
         }
     }
+    &+#{$pfx}help,
+    &+#{$pfx}field__error {
+        margin-top: $spacer-1;
+    }
     &:disabled {
         cursor: not-allowed;
         background-color: #F4F6F8;

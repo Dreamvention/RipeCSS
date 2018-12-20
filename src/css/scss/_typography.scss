@@ -59,6 +59,10 @@ a[class^=#{$pfxx}] {
     }
 }
 
+#{$pfx}help {
+    font-size: 12px;
+}
+
 #{$pfx}text-primary {
     color: $color-primary
 }

@@ -1,5 +1,7 @@
 #{$pfx}field {
-    margin-bottom: $spacer-1;
+    &:not(:last-child) {
+        margin-bottom: $spacer-1;
+    }
     #{$pfx}label {
         margin-bottom: $spacer-0;
         display: inline-block;
@@ -9,7 +11,7 @@
     #{$pfx}checkbox,
     #{$pfx}radio {
         display: inline-block;
-        margin-bottom: $spacer-1;
+        margin-bottom: 0px;
     }
     &--inline {
         >* {

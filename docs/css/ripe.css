@@ -63,6 +63,9 @@ a[class^=ve-] {
   a[class^=ve-]:active {
     text-decoration: none; }
 
+.ve-help {
+  font-size: 12px; }
+
 .ve-text-primary {
   color: #648bfd; }
 
@@ -719,6 +722,9 @@ a[class^=ve-] {
       outline: none;
       box-shadow: inset 0 0 0 0 transparent, 0 0 0 1px #648bfd, 0 1px 3px 0 #e6ebf1;
       box-sizing: border-box; }
+  .ve-input + .ve-help,
+  .ve-input + .ve-field__error {
+    margin-top: 10px; }
   .ve-input:disabled {
     cursor: not-allowed;
     background-color: #F4F6F8;
@@ -1025,57 +1031,65 @@ label.ve-file {
   [type='range'].ve-input:disabled::-ms-fill-upper {
     cursor: not-allowed; }
 
-.ve-field {
+.ve-field:not(:last-child) {
   margin-bottom: 10px; }
-  .ve-field .ve-label {
-    margin-bottom: 5px;
-    display: inline-block; }
-  .ve-field .ve-input,
-  .ve-field .ve-switch,
-  .ve-field .ve-checkbox,
-  .ve-field .ve-radio {
-    display: inline-block;
-    margin-bottom: 10px; }
-  .ve-field--inline > * {
-    display: inline-block; }
-    .ve-field--inline > *.ve-input {
-      width: inherit;
-      margin-bottom: 0; }
-  .ve-field--error .ve-label,
-  .ve-field--error .ve-switch,
-  .ve-field--error .ve-checkbox,
-  .ve-field--error .ve-radio {
-    color: #f96f66; }
-  .ve-field--error [type=text].ve-input,
-  .ve-field--error [type=email].ve-input,
-  .ve-field--error [type=tel].ve-input,
-  .ve-field--error [type=password].ve-input,
-  .ve-field--error select.ve-input,
-  .ve-field--error textarea.ve-input {
+
+.ve-field .ve-label {
+  margin-bottom: 5px;
+  display: inline-block; }
+
+.ve-field .ve-input,
+.ve-field .ve-switch,
+.ve-field .ve-checkbox,
+.ve-field .ve-radio {
+  display: inline-block;
+  margin-bottom: 0px; }
+
+.ve-field--inline > * {
+  display: inline-block; }
+  .ve-field--inline > *.ve-input {
+    width: inherit;
+    margin-bottom: 0; }
+
+.ve-field--error .ve-label,
+.ve-field--error .ve-switch,
+.ve-field--error .ve-checkbox,
+.ve-field--error .ve-radio {
+  color: #f96f66; }
+
+.ve-field--error [type=text].ve-input,
+.ve-field--error [type=email].ve-input,
+.ve-field--error [type=tel].ve-input,
+.ve-field--error [type=password].ve-input,
+.ve-field--error select.ve-input,
+.ve-field--error textarea.ve-input {
+  border-color: #f96f66;
+  background-color: #fee2e1; }
+  .ve-field--error [type=text].ve-input:focus,
+  .ve-field--error [type=email].ve-input:focus,
+  .ve-field--error [type=tel].ve-input:focus,
+  .ve-field--error [type=password].ve-input:focus,
+  .ve-field--error select.ve-input:focus,
+  .ve-field--error textarea.ve-input:focus {
+    outline: none;
     border-color: #f96f66;
-    background-color: #fee2e1; }
-    .ve-field--error [type=text].ve-input:focus,
-    .ve-field--error [type=email].ve-input:focus,
-    .ve-field--error [type=tel].ve-input:focus,
-    .ve-field--error [type=password].ve-input:focus,
-    .ve-field--error select.ve-input:focus,
-    .ve-field--error textarea.ve-input:focus {
-      outline: none;
-      border-color: #f96f66;
-      box-shadow: inset 0 0 0 0 transparent, 0 0 0 0.1rem #f96f66, 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, 0.05); }
-  .ve-field--error .ve-switch i:before {
-    background-color: #f96f66; }
-  .ve-field--error .ve-checkbox i:before,
-  .ve-field--error .ve-radio i:before {
-    border-color: #f96f66; }
-  .ve-field__error {
-    padding: 5px 10px;
-    display: block;
-    background: #fee2e1;
-    color: #f96f66;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    font-size: 14px; }
+    box-shadow: inset 0 0 0 0 transparent, 0 0 0 0.1rem #f96f66, 0 0 0 1px transparent, 0 1px 0 0 rgba(22, 29, 37, 0.05); }
+
+.ve-field--error .ve-switch i:before {
+  background-color: #f96f66; }
+
+.ve-field--error .ve-checkbox i:before,
+.ve-field--error .ve-radio i:before {
+  border-color: #f96f66; }
+
+.ve-field__error {
+  padding: 5px 10px;
+  display: block;
+  background: #fee2e1;
+  color: #f96f66;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 14px; }
 
 .ve-input-group {
   display: flex;
