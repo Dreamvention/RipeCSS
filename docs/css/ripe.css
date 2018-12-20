@@ -729,11 +729,11 @@ a[class^=ve-] {
     margin-right: 4px; }
   .ve-input--sm {
     padding: 1px 6px;
-    font-size: 13px;
+    font-size: 12px;
     height: 24px; }
   .ve-input--md {
     padding: 5px 8px;
-    font-size: 16px;
+    font-size: 14px;
     height: 32px; }
   .ve-input--lg {
     padding: 9px 10px;
@@ -1136,14 +1136,14 @@ label.ve-file {
     line-height: 24px; }
   .ve-input-group--sm .ve-input {
     padding: 1px 6px;
-    font-size: 13px;
+    font-size: 12px;
     height: 24px; }
   .ve-input-group--sm .ve-input-group__addon,
   .ve-input-group--sm .ve-label {
     line-height: 24px;
     height: 24px;
     padding: 0 10px;
-    font-size: 13px; }
+    font-size: 12px; }
   .ve-input-group--lg .ve-btn,
   .ve-input-group--lg a.ve-btn,
   .ve-input-group--lg a:not([href]):not([tabindex]).ve-btn {
