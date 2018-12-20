@@ -1077,7 +1077,8 @@ label.ve-file {
 .ve-input-group {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px 0 #e6ebf1; }
   .ve-input-group__addon,
   .ve-input-group .ve-label {
     background: #fff;
@@ -1108,6 +1109,7 @@ label.ve-file {
   .ve-input-group .ve-btn,
   .ve-input-group a.ve-btn,
   .ve-input-group a:not([href]):not([tabindex]).ve-btn {
+    box-shadow: none;
     margin-left: -1px; }
     .ve-input-group__addon:first-child,
     .ve-input-group .ve-input:first-child,
@@ -1518,7 +1520,7 @@ a:not([href]):not([tabindex]).ve-btn {
   padding: 15px;
   border-radius: 3px;
   color: #333333;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   box-shadow: 0 2px 4px 0 rgba(50, 50, 93, 0.1);
   position: relative;
   font-size: 14px; }

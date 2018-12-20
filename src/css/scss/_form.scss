@@ -1,7 +1,7 @@
 #{$pfx}form {
     &__row {
-        margin-bottom: 10px;
-        padding: 10px 0;
+        margin-bottom: $spacer-1;
+        padding: $spacer-1 0;
         display: flex;
         >* {
             @include clearfix();

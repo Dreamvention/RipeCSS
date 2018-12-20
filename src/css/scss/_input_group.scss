@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    box-shadow: $input-box-shadow;
     &__addon,
     #{$pfx}label {
         background: #fff;
@@ -23,6 +24,7 @@
     #{$pfx}btn,
     a#{$pfx}btn,
     a:not([href]):not([tabindex])#{$pfx}btn {
+        box-shadow: none;
         margin-left: -1px;
         &:first-child {
             border-left-width: 1px;
