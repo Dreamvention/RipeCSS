@@ -1385,14 +1385,14 @@ a:not([href]):not([tabindex]).ve-btn {
   .ve-btn--default,
   a.ve-btn--default,
   a:not([href]):not([tabindex]).ve-btn--default {
-    background: #fff;
+    background: #e6ebf1;
     color: rgba(0, 0, 0, 0.7); }
     .ve-btn--default:active, .ve-btn--default.active,
     a.ve-btn--default:active,
     a.ve-btn--default.active,
     a:not([href]):not([tabindex]).ve-btn--default:active,
     a:not([href]):not([tabindex]).ve-btn--default.active {
-      background: #c9c9c9; }
+      background: #b5c4d6; }
   .ve-btn--block,
   a.ve-btn--block,
   a:not([href]):not([tabindex]).ve-btn--block {

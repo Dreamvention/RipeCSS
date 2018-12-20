@@ -106,11 +106,11 @@ a:not([href]):not([tabindex])#{$pfx}btn {
         }
     }
     &--default {
-        background: #fff;
-        color: findColorInvert(#fff);
+        background: #e6ebf1;
+        color: findColorInvert(#e6ebf1);
         &:active,
         &.active {
-            background: darken(#efefef, 15%);
+            background: darken(#e6ebf1, 15%);
         }
     }
     &--outline {}
