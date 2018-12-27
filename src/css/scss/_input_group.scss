@@ -1,7 +1,7 @@
 #{$pfx}input-group {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     box-shadow: $input-box-shadow;
     &__addon,
     #{$pfx}label {

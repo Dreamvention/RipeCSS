@@ -101,6 +101,7 @@ select#{$pfx}input {
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: right 7px top 7px;
+    padding-right: 20px;
     &:focus {
         outline: none;
         border-color: #5c6ac4;
@@ -111,7 +112,7 @@ select#{$pfx}input {
 #{$pfx}checkbox {
     position: relative;
     display: inline-block;
-    padding-left: 1.5em;
+    padding-left: 1.7em;
     padding-right: 5px;
     vertical-align: bottom;
     cursor: pointer;
@@ -165,7 +166,7 @@ select#{$pfx}input {
 #{$pfx}radio {
     position: relative;
     display: inline-block;
-    padding-left: 1.5em;
+    padding-left: 1.7em;
     padding-right: 5px;
     cursor: pointer;
     [type=radio] {

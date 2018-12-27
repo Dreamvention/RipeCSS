@@ -22,6 +22,16 @@
             }
         }
     }
+    &--block {
+        display: flex;
+        align-items: center;
+        #{$pfx}label {
+            margin-bottom: 0px;
+        }
+        >*:not(:last-child) {
+            margin-right: $spacer-0;
+        }
+    }
     &--error {
         #{$pfx}label,
         #{$pfx}switch,

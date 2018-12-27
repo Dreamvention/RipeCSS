@@ -32,6 +32,7 @@
     }
     &--primary {
         background: lighten($color-primary, 25%);
+        color: $color-primary;
         @include make-alert-shadow($color-primary);
         #{$ve}__heading,
         #{$ve}__close,
@@ -42,6 +43,7 @@
     &--danger {
         background: lighten($color-danger, 25%);
         @include make-alert-shadow($color-danger);
+        color: darken($color-danger, 10%);
         #{$ve}__heading,
         #{$ve}__close,
         i {
@@ -51,6 +53,7 @@
     &--warning {
         background: lighten($color-warning, 30%);
         @include make-alert-shadow($color-warning);
+        color: darken($color-warning, 10%);
         #{$ve}__heading,
         #{$ve}__close,
         i {
@@ -60,6 +63,7 @@
     &--success {
         background: lighten($color-success, 35%);
         @include make-alert-shadow($color-success);
+        color: darken($color-success, 10%);
         #{$ve}__heading,
         #{$ve}__close,
         i {
@@ -69,6 +73,7 @@
     &--info {
         background: lighten($color-info, 30%);
         @include make-alert-shadow($color-info);
+        color: darken($color-info, 10%);
         #{$ve}__heading,
         #{$ve}__close,
         i {

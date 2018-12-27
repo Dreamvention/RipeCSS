@@ -1,9 +1,9 @@
-.hide,
-.hidden {
+#{$pfx}hide,
+#{$pfx}hidden {
     display: none !important;
 }
 
-.clearfix {
+#{$pfx}clearfix {
     @include clearfix;
 }
 
@@ -13,10 +13,107 @@
     border: 0px;
 }
 
-.pull-right {
+#{$pfx}pull-right {
     float: right;
+}
+
+#{$pfx}pull-left {
+    float: left;
 }
 
 #{$pfx}text-center {
     text-align: center
+}
+
+// Responsive alignment
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        .text#{$infix}-left {
+            text-align: left !important;
+        }
+        .text#{$infix}-right {
+            text-align: right !important;
+        }
+        .text#{$infix}-center {
+            text-align: center !important;
+        }
+    }
+}
+
+// stylelint-disable declaration-no-important
+// Margin and Padding
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        @each $prop,
+        $abbrev in (margin: m, padding: p) {
+            @each $size, $length in $spacers {
+                .#{$pfxx}#{$abbrev}#{$infix}-#{$size} {
+                    #{$prop}: $length !important;
+                }
+                .#{$pfxx}#{$abbrev}t#{$infix}-#{$size},
+                .#{$pfxx}#{$abbrev}y#{$infix}-#{$size} {
+                    #{$prop}-top: $length !important;
+                }
+                .#{$pfxx}#{$abbrev}r#{$infix}-#{$size},
+                .#{$pfxx}#{$abbrev}x#{$infix}-#{$size} {
+                    #{$prop}-right: $length !important;
+                }
+                .#{$pfxx}#{$abbrev}b#{$infix}-#{$size},
+                .#{$pfxx}#{$abbrev}y#{$infix}-#{$size} {
+                    #{$prop}-bottom: $length !important;
+                }
+                .#{$pfxx}#{$abbrev}l#{$infix}-#{$size},
+                .#{$pfxx}#{$abbrev}x#{$infix}-#{$size} {
+                    #{$prop}-left: $length !important;
+                }
+            }
+        }
+        // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
+        @each $size,
+        $length in $spacers {
+            @if $size !=0 {
+                .#{$pfxx}m#{$infix}-n#{$size} {
+                    margin: -$length !important;
+                }
+                .#{$pfxx}mt#{$infix}-n#{$size},
+                .#{$pfxx}my#{$infix}-n#{$size} {
+                    margin-top: -$length !important;
+                }
+                .#{$pfxx}mr#{$infix}-n#{$size},
+                .#{$pfxx}mx#{$infix}-n#{$size} {
+                    margin-right: -$length !important;
+                }
+                .#{$pfxx}mb#{$infix}-n#{$size},
+                .#{$pfxx}my#{$infix}-n#{$size} {
+                    margin-bottom: -$length !important;
+                }
+                .#{$pfxx}ml#{$infix}-n#{$size},
+                .#{$pfxx}mx#{$infix}-n#{$size} {
+                    margin-left: -$length !important;
+                }
+            }
+        }
+        // Some special margin utils
+        .#{$pfxx}m#{$infix}-auto {
+            margin: auto !important;
+        }
+        .#{$pfxx}mt#{$infix}-auto,
+        .#{$pfxx}my#{$infix}-auto {
+            margin-top: auto !important;
+        }
+        .#{$pfxx}mr#{$infix}-auto,
+        .#{$pfxx}mx#{$infix}-auto {
+            margin-right: auto !important;
+        }
+        .#{$pfxx}mb#{$infix}-auto,
+        .#{$pfxx}my#{$infix}-auto {
+            margin-bottom: auto !important;
+        }
+        .#{$pfxx}ml#{$infix}-auto,
+        .#{$pfxx}mx#{$infix}-auto {
+            margin-left: auto !important;
+        }
+    }
 }
