@@ -3,6 +3,24 @@
     display: none !important;
 }
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-down($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        #{$pfx}hidden-#{$infix} {
+            display: none !important;
+        }
+    }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-down($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        #{$pfx}visible-#{$infix} {
+            display: block !important;
+        }
+    }
+}
+
 #{$pfx}clearfix {
     @include clearfix;
 }

@@ -15,6 +15,8 @@ $color-info: #6ed8da !default;
 $color-warning: #ffb24d !default;
 $color-danger: #f96f66 !default;
 $color-border: rgba(0, 0, 0, 0.1) !default;
+$theme-colors: () !default;
+$theme-colors: map-merge( ( "primary": $color-primary, "success": $color-success, "info": $color-info, "warning": $color-warning, "danger": $color-danger, "light": $gray-light, "dark": $gray-dark), $theme-colors);
 //== Typography
 $font-family-base: -apple-system,
 "BlinkMacSystemFont",
@@ -26,18 +28,19 @@ sans-serif;
 $font-size-base: 14px;
 $line-height-base: 2rem; // 20/14
 $font-weight-base: 400;
+$font-weight-bold: 600;
 $text-color: $gray-dark;
 $body-bg: #f6f9fc;
 $h1-font-size: $font-size-base * 2 !default;
 $h2-font-size: $font-size-base * 1.75 !default;
 $h3-font-size: $font-size-base * 1.5!default;
 $h4-font-size: $font-size-base * 1.25 !default;
-$h5-font-size: $font-size-base * 1.1 !default;
+$h5-font-size: $font-size-base * 1 !default;
 $h6-font-size: $font-size-base !default;
 //== Design
 //
 $border:1px solid $color-border;
-$box-shadow: 0 0 0 1px rgba(63, 63, 68, .05),
+$box-shadow: 0 0 0 1px rgba(63, 63, 68, .1),
 0 1px 3px 0 rgba(63, 63, 68, .1);
 $input-box-shadow: 0 1px 3px 0 #e6ebf1;
 $border-radius:3px;
@@ -50,6 +53,11 @@ $spacer-3: $spacer * 2;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge( ( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 3)), $spacers);
+$btn-transition: color .15s ease-in-out,
+background-color .15s ease-in-out,
+border-color .15s ease-in-out,
+box-shadow .15s ease-in-out !default;
+$input-btn-focus-width: .2rem !default;
 //== Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -58,6 +66,7 @@ $enable-rounded: true !default;
 $enable-shadows: false !default;
 $enable-gradients: false !default;
 $enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
 $enable-grid-classes: true !default;
 $enable-print-styles: true !default;
 $enable-validation-icons: true !default;
@@ -117,7 +126,7 @@ $grid-gutter-width: 30px !default;
 //== Heading
 $headings-font-family: $font-family-base;
 $headings-font-weight: 500;
-$headings-margin-bottom: ($spacer / 2);
-$headings-line-height: 1.2 !default;
+$headings-margin-bottom: $spacer;
+$headings-line-height: 1.55 !default;
 $headings-color: inherit !default;
 $link-color:$color-primary;

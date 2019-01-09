@@ -6,10 +6,10 @@
 #{$pfx}h6 {
     margin-bottom: $headings-margin-bottom;
     margin-top: 0px;
-    font-family: $headings-font-family;
     font-weight: $headings-font-weight;
     line-height: $headings-line-height;
     color: $headings-color;
+    display: inline-block;
 }
 
 #{$pfx}h1 {
@@ -47,7 +47,15 @@
 #{$pfx}hr {
     border: none;
     border-bottom: $border;
-    margin: 1rem 0px 2rem;
+    margin: 10px 0px;
+    background: none;
+}
+
+#{$pfx}p {
+    margin: 0 0 10px;
+    &:last-child {
+        margin: 0px;
+    }
 }
 
 #{$pfx}a,

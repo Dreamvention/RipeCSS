@@ -25,6 +25,7 @@
     a#{$pfx}btn,
     a:not([href]):not([tabindex])#{$pfx}btn {
         box-shadow: none;
+        box-sizing: border-box;
         margin-left: -1px;
         &:first-child {
             border-left-width: 1px;

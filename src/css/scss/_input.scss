@@ -7,6 +7,10 @@ $input-active-border-color:$color-primary;
     font-weight: 500;
     margin-bottom: 0;
     display: inline-block;
+    &+#{$pfx}help,
+    &+#{$pfx}field__error {
+        margin-top: $spacer-1;
+    }
 }
 
 #{$pfx}input {
@@ -25,6 +29,7 @@ $input-active-border-color:$color-primary;
     font-weight: 300;
     vertical-align: bottom;
     height: 32px;
+    min-height: auto;
     margin: 0;
     max-width: 100%;
     font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
@@ -35,6 +40,9 @@ $input-active-border-color:$color-primary;
     &[type=tel] {
         width: 100%;
         box-shadow: $input-box-shadow;
+        min-height: auto;
+        border: $input-border;
+        border-radius: $input-border-radius;
         &:focus {
             border-color: $input-active-border-color;
             outline: none;
@@ -83,6 +91,8 @@ textarea#{$pfx}input {
     width: 100%;
     box-shadow: $input-box-shadow;
     height: auto;
+    border: $input-border;
+    border-radius: $input-border-radius;
     &:focus {
         border-color: $input-active-border-color;
         outline: none;
@@ -102,6 +112,8 @@ select#{$pfx}input {
     background-repeat: no-repeat;
     background-position: right 7px top 7px;
     padding-right: 20px;
+    border: $input-border;
+    border-radius: $input-border-radius;
     &:focus {
         outline: none;
         border-color: #5c6ac4;
@@ -119,6 +131,13 @@ select#{$pfx}input {
     [type=checkbox] {
         position: absolute;
         opacity: 0;
+    }
+    i {
+        position: unset;
+    }
+    &+#{$pfx}help,
+    &+#{$pfx}field__error {
+        margin-top: $spacer-1;
     }
     i:after,
     i:before {
@@ -169,6 +188,10 @@ select#{$pfx}input {
     padding-left: 1.7em;
     padding-right: 5px;
     cursor: pointer;
+    &+#{$pfx}help,
+    &+#{$pfx}field__error {
+        margin-top: $spacer-1;
+    }
     [type=radio] {
         position: absolute;
         opacity: 0;
@@ -176,6 +199,9 @@ select#{$pfx}input {
     &--selected {
         font-weight: bold;
         color: $link-color;
+    }
+    i {
+        position: unset;
     }
     i:after,
     i:before {
@@ -214,6 +240,10 @@ select#{$pfx}input {
     padding-right: 5px;
     cursor: pointer;
     height: 22px;
+    &+#{$pfx}help,
+    &+#{$pfx}field__error {
+        margin-top: $spacer-1;
+    }
     [type=checkbox] {
         position: absolute;
         opacity: 0;

@@ -19,6 +19,7 @@ a:not([href]):not([tabindex])#{$pfx}btn {
     flex: auto;
     text-align: center;
     margin-bottom: 0px;
+    box-sizing: border-box;
     cursor: pointer;
     @include make-button-pressable;
     &:active,

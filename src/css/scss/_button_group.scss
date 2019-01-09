@@ -1,6 +1,6 @@
 #{$pfx}btn-group {
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-    display: inline-block;
+    display: flex;
     transition: all .15s ease;
     border-radius: .3rem;
     overflow: hidden;
@@ -19,7 +19,8 @@
             padding-bottom: 0px;
             padding-top: 1px;
         }
-        >input[type=radio] {
+        >input[type=radio],
+        >input[type=checkbox] {
             position: absolute;
             clip: rect(0, 0, 0, 0);
             pointer-events: none;

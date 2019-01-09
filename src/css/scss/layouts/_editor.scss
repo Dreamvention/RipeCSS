@@ -1,19 +1,22 @@
 #{$pfx}editor {
     overflow: hidden;
+    z-index: 1000;
     &__menu {
         background: #fff;
-        height: 70px;
+        height: 60px;
         width: 100%;
         top: 0px;
+        left: 0px;
         display: flex;
         flex-wrap: wrap;
-        border-bottom: 1px solid #efefef;
+        border-bottom: $border;
         position: fixed;
         z-index: 1000;
         >* {
-            padding: 1.5rem;
+            padding: 10px;
             flex-basis: 0;
-            font-size: 1em;
+            font-size: 14px;
+            white-space: nowrap;
         }
         &__title {
             flex: auto;
@@ -35,26 +38,32 @@
     &__setting {
         background: #fff;
         width: 300px;
-        border-right: 1px solid #efefef;
+        border-right: $border;
         position: fixed;
         height: 100%;
         top: 0px;
-        display: flex;
+        left: 0px;
+        display: none;
         flex-direction: column;
+        z-index: 1000;
+        &.active {
+            display: block;
+        }
         &__header {
             flex: 0;
+            display: flex;
             background: #fff;
-            padding: 1rem;
-            border-bottom: 1px solid #efefef;
-            font-size: 1.2em;
-            line-height: 2em;
+            border-bottom: $border;
+            font-size: 14px;
+            line-height: 28px;
             &__action {
-                padding: 1rem 1.3rem;
+                padding: 10px;
                 cursor: pointer;
                 color: $text-color;
             }
             &__title {
-                padding: 1rem 1.3rem;
+                padding: 10px;
+                flex: auto;
                 cursor: pointer;
                 color: $text-color;
             }
@@ -64,24 +73,30 @@
             background: #f6f9fc;
             overflow: scroll;
             margin-bottom: 63px;
+            height: 100%;
             &__section {
-                padding: 1.5rem;
+                padding: 15px;
+                &:last-child {
+                    margin-bottom: 111px;
+                }
             }
         }
         &__footer {
             flex: 0;
             background: #fff;
-            padding: 1.5rem;
-            border-top: 1px solid #efefef;
+            padding: 15px;
+            border-top: $border;
             position: absolute;
             bottom: 0px;
             width: 100%;
+            box-sizing: border-box;
+            z-index: 1000;
         }
         #{$pfx}tab {
             background: #fff;
             &__item {
                 >a {
-                    line-height: 4.8rem;
+                    line-height: 48px;
                 }
             }
         }
@@ -95,12 +110,11 @@
         margin-left: 300px;
     }
     &__menu+&__content,
-    &__menu+&__setting+&__content {
-        top: 70px;
-        height: calc(100% - 70px);
-    }
-    &__menu+&__setting {
-        top: 70px;
-        height: calc(100% - 70px);
+    &__menu+&__setting,
+    &__menu+&__setting+&__content,
+    &--topmenu &__content,
+    &--topmenu &__setting {
+        top: 60px;
+        height: calc(100% - 60px);
     }
 }

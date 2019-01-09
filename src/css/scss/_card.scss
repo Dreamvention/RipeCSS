@@ -19,7 +19,9 @@
         h4,
         h5,
         h6 {
-            margin: 0;
+            &:last-child {
+                margin: 0;
+            }
         }
     }
     &__image {
@@ -28,10 +30,9 @@
         }
     }
     &__section {
-        padding: $spacer-2 $spacer-3;
-        overflow-x: auto;
+        padding: $spacer-2;
         &:last-child {
-            padding: $spacer-3;
+            padding: $spacer-2;
         }
         >hr {
             margin: $spacer-1 0;
