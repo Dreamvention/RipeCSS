@@ -1,12 +1,12 @@
 {
     "name": "ripecss",
-    "version": "1.0.0",
-    "description": "",
+    "version": "0.0.1",
+    "description": "The Beautiful Framework for Shopunity Frontend Editor Development",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": "gulp"
     },
-    "author": "",
+    "author": "Dreamvention",
     "license": "ISC",
     "devDependencies": {
         "@csstools/postcss-sass": "^3.0.0",
@@ -21,9 +21,7 @@
         "postcss": "^7.0.10",
         "postcss-preset-env": "^6.3.0",
         "postcss-scss": "^2.0.0",
-        "rtlcss": "^2.4.0"
-    },
-    "dependencies": {
+        "rtlcss": "^2.4.0",
         "gulp-postcss": "^8.0.0"
     }
 }
