@@ -3,10 +3,12 @@ var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var concat = require("gulp-concat");
 var sourcemaps = require('gulp-sourcemaps');
+var rename = require("gulp-rename");
 var autoprefixer = require('autoprefixer');
 var postcssSass = require('@csstools/postcss-sass');
 var browserSync = require('browser-sync');
 var postcssPresetEnv = require('postcss-preset-env');
+var rtlcss = require('rtlcss');
 
 var baseDir = path.join(__dirname, '/');
 
@@ -29,12 +31,25 @@ gulp.task('css', function() {
         .pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
+gulp.task('rtl', function() {
+    var processors = [
+        postcssSass(), autoprefixer(), postcssPresetEnv({ stage: 2 }), rtlcss()
+    ];
+    return gulp.src(path.join(baseDir, 'src/css/ripe.scss'))
+        .pipe(sourcemaps.init())
+        .pipe(postcss(processors)).on('error', (e) => console.log(e.message))
+        .pipe(rename({ suffix: '.rtl', extname: '.css' }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(path.join(baseDir, 'dist/css/')))
+
+    .pipe(browserSync.stream({ match: '**/*.css' }));
+});
 
 gulp.task('watch:css', function() {
     var cssFiles = [];
     cssFiles.push(path.join(baseDir, '/src/css/scss/', '*.*css'));
     cssFiles.push(path.join(baseDir, '/src/css/scss/', '*/*.*css'));
-    gulp.watch([cssFiles], ['css']);
+    gulp.watch([cssFiles], ['css', 'rtl']);
 });
 
 gulp.task("serve", function() {

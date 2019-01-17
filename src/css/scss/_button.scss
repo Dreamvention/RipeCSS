@@ -22,10 +22,16 @@ a:not([href]):not([tabindex])#{$pfx}btn {
     box-sizing: border-box;
     cursor: pointer;
     @include make-button-pressable;
+    >* {
+        color: findColorInvert(#fff);
+    }
     &:active,
     &.active,
     &:focus {
         outline: none;
+    }
+    &:disabled {
+        cursor: not-allowed;
     }
     &--loading {
         position: relative;
@@ -76,6 +82,9 @@ a:not([href]):not([tabindex])#{$pfx}btn {
     &--primary {
         background: $color-primary;
         color: findColorInvert($color-primary);
+        >* {
+            color: findColorInvert($color-primary);
+        }
         &:after {
             border-color: findColorInvert($color-primary);
         }
@@ -90,8 +99,11 @@ a:not([href]):not([tabindex])#{$pfx}btn {
     &--danger {
         background: $color-danger;
         color: findColorInvert($color-danger);
+        >* {
+            color: findColorInvert($color-danger);
+        }
         &:after {
-            border-color: findColorInvert($color-primary);
+            border-color: findColorInvert($color-danger);
         }
         &:hover {
             background: lighten($color-danger, 2%);
@@ -104,8 +116,11 @@ a:not([href]):not([tabindex])#{$pfx}btn {
     &--warning {
         background: $color-warning;
         color: findColorInvert($color-warning);
+        >* {
+            color: findColorInvert($color-warning);
+        }
         &:after {
-            border-color: findColorInvert($color-primary);
+            border-color: findColorInvert($color-warning);
         }
         &:hover {
             background: lighten($color-warning, 2%);
@@ -118,8 +133,11 @@ a:not([href]):not([tabindex])#{$pfx}btn {
     &--success {
         background: $color-success;
         color: findColorInvert($color-success);
+        >* {
+            color: findColorInvert($color-success);
+        }
         &:after {
-            border-color: findColorInvert($color-primary);
+            border-color: findColorInvert($color-success);
         }
         &:hover {
             background: lighten($color-success, 2%);
@@ -132,8 +150,11 @@ a:not([href]):not([tabindex])#{$pfx}btn {
     &--info {
         background: $color-info;
         color: findColorInvert($color-info);
+        >* {
+            color: findColorInvert($color-info);
+        }
         &:after {
-            border-color: findColorInvert($color-primary);
+            border-color: findColorInvert($color-info);
         }
         &:hover {
             background: lighten($color-info, 2%);
@@ -146,6 +167,9 @@ a:not([href]):not([tabindex])#{$pfx}btn {
     &--default {
         background: #e6ebf1;
         color: findColorInvert(#e6ebf1);
+        >* {
+            color: findColorInvert(#e6ebf1);
+        }
         &:after {
             border-color: findColorInvert(#e6ebf1);
         }

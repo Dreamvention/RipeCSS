@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script src="js/sidebar.js"></script>
-    <title>Ripple CSS | Shopunity CSS Framework</title>
+    <title>Ripe CSS | Shopunity CSS Framework</title>
 </head>
 
 <body>
@@ -323,7 +323,7 @@
                             <h1 class="toc-block__title">Inputs</h1>
                             <p class="ve-p">Starting with shopunity css framework is easy</p>
                             <div class="ve-field">
-                                <label>Label</label>
+                                <label class="ve-label">Label</label>
                                 <input class="ve-input" type="text" />
                             </div>
                             <div class="ve-field">
@@ -391,7 +391,7 @@
                         </div>
                         <div class="ve-col ve-card ">
                             <pre class="ve-pre"><xmp class="ve-card__section prettyprint"><div class="ve-field">
-    <label>Label</label>
+    <label class="ve-label">Label</label>
     <input class="ve-input" type="text" />
 </div>
 <div class="ve-field">
@@ -460,13 +460,13 @@
                             <h2 class="ve-h2">Disabled Inputs</h2>
                             <p class="ve-p">Starting with shopunity css framework is easy</p>
                             <div class="ve-field">
-                                <label>Label</label>
+                                <label class="ve-label">Label</label>
                                 <input class="ve-input" type="text" disabled value="Name" />
                             </div>
                         </div>
                         <div class="ve-col ve-card ">
                             <pre class="ve-pre"><xmp class="ve-card__section prettyprint"><div class="ve-field">
-    <label>Label</label>
+    <label class="ve-label">Label</label>
     <input class="ve-input" type="text" disabled value="Name"/>
 </div></xmp></pre>
                         </div>
@@ -515,43 +515,51 @@
                         <div class="ve-col">
                             <h2 class="ve-h2">Input Group</h2>
                             <p class="ve-p">Starting with shopunity css framework is easy</p>
-                            <div class="ve-input-group">
-                                <label class="ve-input-group__addon">Name</label>
-                                <input class="ve-input" type="text" placeholder="Name" />
-                                <a class="ve-btn ve-btn--primary">Edit</a>
-                                <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                            <div class="ve-field">
+                                <div class="ve-input-group">
+                                    <label class="ve-input-group__addon">Name</label>
+                                    <input class="ve-input" type="text" placeholder="Name" />
+                                    <a class="ve-btn ve-btn--primary">Edit</a>
+                                    <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+                                </div>
                             </div>
-
-                            <div class="ve-input-group ve-input-group--sm">
-                                <label class="ve-input-group__addon"><i class="fab fa-opencart"></i></label>
-                                <input class="ve-input" type="text" placeholder="Name" />
-                                <label class="ve-input-group__addon">px</label>
+                            <div class="ve-field">
+                                <div class="ve-input-group ve-input-group--sm">
+                                    <label class="ve-input-group__addon"><i class="fab fa-opencart"></i></label>
+                                    <input class="ve-input" type="text" placeholder="Name" />
+                                    <label class="ve-input-group__addon">px</label>
+                                </div>
                             </div>
-                            <div class="ve-input-group ve-input-group--md">
-                                <label class="ve-input-group__addon"><i class="fab fa-opencart"></i></label>
-                                <input class="ve-input" type="text" placeholder="Name" />
-                                <label class="ve-input-group__addon">px</label>
+                            <div class="ve-field">
+                                <div class="ve-input-group ve-input-group--md">
+                                    <label class="ve-input-group__addon"><i class="fab fa-opencart"></i></label>
+                                    <input class="ve-input" type="text" placeholder="Name" />
+                                    <label class="ve-input-group__addon">px</label>
+                                </div>
                             </div>
-                            <div class="ve-input-group ve-input-group--lg">
-                                <label class="ve-input-group__addon"><i class="fab fa-opencart"></i></label>
-                                <input class="ve-input" type="text" placeholder="Name" />
-                                <label class="ve-input-group__addon">px</label>
+                            <div class="ve-field">
+                                <div class="ve-input-group ve-input-group--lg">
+                                    <label class="ve-input-group__addon"><i class="fab fa-opencart"></i></label>
+                                    <input class="ve-input" type="text" placeholder="Name" />
+                                    <label class="ve-input-group__addon">px</label>
+                                </div>
                             </div>
-                            <div class="ve-input-group ve-input-group--hg">
-                                <label class="ve-input-group__addon"><i class="fab fa-opencart"></i></label>
-                                <input class="ve-input" type="text" placeholder="Name" />
-                                <label class="ve-input-group__addon">px</label>
+                            <div class="ve-field">
+                                <div class="ve-input-group ve-input-group--hg">
+                                    <label class="ve-input-group__addon"><i class="fab fa-opencart"></i></label>
+                                    <input class="ve-input" type="text" placeholder="Name" />
+                                    <label class="ve-input-group__addon">px</label>
+                                </div>
                             </div>
                         </div>
                         <div class="ve-col ve-card">
-                            <pre class="ve-pre"><xmp class="ve-card__section prettyprint"><div class="ve-input-group">
-    <label class="ve-input-group__addon">Name</label>
-    <input class="ve-input" type="text" 
-    placeholder="Name" />
-    <a class="ve-btn ve-btn--primary">Edit</a>
-    <a class="ve-btn ve-btn--primary">
-        <i class="fas fa-times"></i>
-    </a>
+                            <pre class="ve-pre"><xmp class="ve-card__section prettyprint"><div class="ve-field">
+    <div class="ve-input-group">
+        <label class="ve-input-group__addon">Name</label>
+        <input class="ve-input" type="text" placeholder="Name" />
+        <a class="ve-btn ve-btn--primary">Edit</a>
+        <a class="ve-btn ve-btn--primary"><i class="fas fa-times"></i></a>
+    </div>
 </div></xmp></pre>
                         </div>
                     </div>

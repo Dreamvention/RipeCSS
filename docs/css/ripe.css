@@ -1,6 +1,8 @@
-.ve-header h1 {
-  font-size: 56px;
-  line-height: 1em; }
+.ve-header {
+  margin-bottom: 30px; }
+  .ve-header h1 {
+    font-size: 56px;
+    line-height: 1em; }
 
 .ve-footer {
   text-align: center;
@@ -23,7 +25,7 @@ xmp {
   font-weight: 500;
   line-height: 1.55;
   color: inherit;
-  display: inline-block; }
+  display: block; }
 
 .ve-h1 {
   font-size: 28px; }
@@ -62,12 +64,12 @@ xmp {
     margin: 0px; }
 
 .ve-a,
-a[class^=ve-] {
+a[class^=ve-a] {
   text-decoration: none;
   color: #648bfd; }
   .ve-a:hover, .ve-a:active,
-  a[class^=ve-]:hover,
-  a[class^=ve-]:active {
+  a[class^=ve-a]:hover,
+  a[class^=ve-a]:active {
     text-decoration: none; }
 
 .ve-help {
@@ -738,6 +740,7 @@ a[class^=ve-] {
   .ve-input[type=text], .ve-input[type=email], .ve-input[type=password], .ve-input[type=tel] {
     width: 100%;
     box-shadow: 0 1px 3px 0 #e6ebf1;
+    height: 32px;
     min-height: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px; }
@@ -757,19 +760,19 @@ a[class^=ve-] {
   .ve-input[type=radio], .ve-input[type=checkbox] {
     display: inline-block;
     margin-right: 4px; }
-  .ve-input--sm {
+  .ve-input--sm[type=text], .ve-input--sm[type=email], .ve-input--sm[type=password], .ve-input--sm[type=tel], .ve-input--sm {
     padding: 1px 6px;
     font-size: 12px;
     height: 24px; }
-  .ve-input--md {
+  .ve-input--md[type=text], .ve-input--md[type=email], .ve-input--md[type=password], .ve-input--md[type=tel], .ve-input--md {
     padding: 5px 8px;
     font-size: 14px;
     height: 32px; }
-  .ve-input--lg {
+  .ve-input--lg[type=text], .ve-input--lg[type=email], .ve-input--lg[type=password], .ve-input--lg[type=tel], .ve-input--lg {
     padding: 9px 10px;
     font-size: 18px;
     height: 40px; }
-  .ve-input--hg {
+  .ve-input--hg[type=text], .ve-input--hg[type=email], .ve-input--hg[type=password], .ve-input--hg[type=tel], .ve-input--hg {
     padding: 13px 13px;
     font-size: 19px;
     height: 48px; }
@@ -1152,7 +1155,7 @@ label.ve-file {
     border-radius: 3px;
     height: 32px;
     line-height: 32px;
-    padding: 0 14px;
+    padding: 0 11px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 0px;
     font-weight: 400; }
@@ -1268,6 +1271,11 @@ label.ve-file {
     width: 100%; }
   .ve-card__section {
     padding: 15px; }
+    .ve-card__section:before, .ve-card__section:after {
+      content: " ";
+      display: table; }
+    .ve-card__section:after {
+      clear: both; }
     .ve-card__section:last-child {
       padding: 15px; }
     .ve-card__section > hr {
@@ -1326,6 +1334,10 @@ a:not([href]):not([tabindex]).ve-btn {
   a:not([href]):not([tabindex]).ve-btn.active {
     box-shadow: inset 0 2px 3px rgba(50, 50, 93, 0.11), 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
     text-decoration: none; }
+  .ve-btn > *,
+  a.ve-btn > *,
+  a:not([href]):not([tabindex]).ve-btn > * {
+    color: rgba(0, 0, 0, 0.7); }
   .ve-btn:active, .ve-btn.active, .ve-btn:focus,
   a.ve-btn:active,
   a.ve-btn.active,
@@ -1334,6 +1346,10 @@ a:not([href]):not([tabindex]).ve-btn {
   a:not([href]):not([tabindex]).ve-btn.active,
   a:not([href]):not([tabindex]).ve-btn:focus {
     outline: none; }
+  .ve-btn:disabled,
+  a.ve-btn:disabled,
+  a:not([href]):not([tabindex]).ve-btn:disabled {
+    cursor: not-allowed; }
   .ve-btn--loading,
   a.ve-btn--loading,
   a:not([href]):not([tabindex]).ve-btn--loading {
@@ -1390,6 +1406,10 @@ a:not([href]):not([tabindex]).ve-btn {
   a:not([href]):not([tabindex]).ve-btn--primary {
     background: #648bfd;
     color: #fff; }
+    .ve-btn--primary > *,
+    a.ve-btn--primary > *,
+    a:not([href]):not([tabindex]).ve-btn--primary > * {
+      color: #fff; }
     .ve-btn--primary:after,
     a.ve-btn--primary:after,
     a:not([href]):not([tabindex]).ve-btn--primary:after {
@@ -1409,6 +1429,10 @@ a:not([href]):not([tabindex]).ve-btn {
   a:not([href]):not([tabindex]).ve-btn--danger {
     background: #f96f66;
     color: #fff; }
+    .ve-btn--danger > *,
+    a.ve-btn--danger > *,
+    a:not([href]):not([tabindex]).ve-btn--danger > * {
+      color: #fff; }
     .ve-btn--danger:after,
     a.ve-btn--danger:after,
     a:not([href]):not([tabindex]).ve-btn--danger:after {
@@ -1428,6 +1452,10 @@ a:not([href]):not([tabindex]).ve-btn {
   a:not([href]):not([tabindex]).ve-btn--warning {
     background: #ffb24d;
     color: #fff; }
+    .ve-btn--warning > *,
+    a.ve-btn--warning > *,
+    a:not([href]):not([tabindex]).ve-btn--warning > * {
+      color: #fff; }
     .ve-btn--warning:after,
     a.ve-btn--warning:after,
     a:not([href]):not([tabindex]).ve-btn--warning:after {
@@ -1447,6 +1475,10 @@ a:not([href]):not([tabindex]).ve-btn {
   a:not([href]):not([tabindex]).ve-btn--success {
     background: #3ecf8e;
     color: #fff; }
+    .ve-btn--success > *,
+    a.ve-btn--success > *,
+    a:not([href]):not([tabindex]).ve-btn--success > * {
+      color: #fff; }
     .ve-btn--success:after,
     a.ve-btn--success:after,
     a:not([href]):not([tabindex]).ve-btn--success:after {
@@ -1466,6 +1498,10 @@ a:not([href]):not([tabindex]).ve-btn {
   a:not([href]):not([tabindex]).ve-btn--info {
     background: #6ed8da;
     color: #fff; }
+    .ve-btn--info > *,
+    a.ve-btn--info > *,
+    a:not([href]):not([tabindex]).ve-btn--info > * {
+      color: #fff; }
     .ve-btn--info:after,
     a.ve-btn--info:after,
     a:not([href]):not([tabindex]).ve-btn--info:after {
@@ -1485,6 +1521,10 @@ a:not([href]):not([tabindex]).ve-btn {
   a:not([href]):not([tabindex]).ve-btn--default {
     background: #e6ebf1;
     color: rgba(0, 0, 0, 0.7); }
+    .ve-btn--default > *,
+    a.ve-btn--default > *,
+    a:not([href]):not([tabindex]).ve-btn--default > * {
+      color: rgba(0, 0, 0, 0.7); }
     .ve-btn--default:after,
     a.ve-btn--default:after,
     a:not([href]):not([tabindex]).ve-btn--default:after {
@@ -1502,7 +1542,7 @@ a:not([href]):not([tabindex]).ve-btn {
 
 .ve-btn-group {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  display: flex;
+  display: inline-flex;
   transition: all .15s ease;
   border-radius: .3rem;
   overflow: hidden;
@@ -1510,12 +1550,13 @@ a:not([href]):not([tabindex]).ve-btn {
   .ve-btn-group .ve-btn,
   .ve-btn-group a.ve-btn,
   .ve-btn-group a:not([href]):not([tabindex]).ve-btn {
-    float: left;
+    flex: 1 1 auto;
     border-right-width: 0;
     border-radius: 0;
     box-shadow: none;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    position: relative; }
     .ve-btn-group .ve-btn:hover, .ve-btn-group .ve-btn:active,
     .ve-btn-group a.ve-btn:hover,
     .ve-btn-group a.ve-btn:active,

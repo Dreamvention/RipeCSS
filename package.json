@@ -1,5 +1,5 @@
 {
-    "name": "shopunitycss",
+    "name": "ripecss",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -13,12 +13,15 @@
         "autoprefixer": "^9.2.1",
         "browser-sync": "^2.26.3",
         "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^6.0.0",
         "gulp-concat": "^2.6.1",
+        "gulp-rename": "^1.4.0",
         "gulp-sourcemaps": "^2.6.4",
         "normalize.css": "github:necolas/normalize.css",
-        "postcss": "^7.0.5",
+        "postcss": "^7.0.10",
         "postcss-preset-env": "^6.3.0",
-        "postcss-scss": "^2.0.0"
+        "postcss-scss": "^2.0.0",
+        "rtlcss": "^2.4.0"
     },
     "dependencies": {
         "gulp-postcss": "^8.0.0"

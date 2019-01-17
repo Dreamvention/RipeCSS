@@ -40,6 +40,7 @@ $input-active-border-color:$color-primary;
     &[type=tel] {
         width: 100%;
         box-shadow: $input-box-shadow;
+        height: 32px;
         min-height: auto;
         border: $input-border;
         border-radius: $input-border-radius;
@@ -66,24 +67,48 @@ $input-active-border-color:$color-primary;
         margin-right: 4px;
     }
     &--sm {
-        padding: 1px 6px;
-        font-size: 12px;
-        height: 24px;
+        &[type=text],
+        &[type=email],
+        &[type=password],
+        &[type=tel],
+        & {
+            padding: 1px 6px;
+            font-size: 12px;
+            height: 24px;
+        }
     }
     &--md {
-        padding: 5px 8px;
-        font-size: 14px;
-        height: 32px;
+        &[type=text],
+        &[type=email],
+        &[type=password],
+        &[type=tel],
+        & {
+            padding: 5px 8px;
+            font-size: 14px;
+            height: 32px;
+        }
     }
     &--lg {
-        padding: 9px 10px;
-        font-size: 18px;
-        height: 40px;
+        &[type=text],
+        &[type=email],
+        &[type=password],
+        &[type=tel],
+        & {
+            padding: 9px 10px;
+            font-size: 18px;
+            height: 40px;
+        }
     }
     &--hg {
-        padding: 13px 13px;
-        font-size: 19px;
-        height: 48px;
+        &[type=text],
+        &[type=email],
+        &[type=password],
+        &[type=tel],
+        & {
+            padding: 13px 13px;
+            font-size: 19px;
+            height: 48px;
+        }
     }
 }
 

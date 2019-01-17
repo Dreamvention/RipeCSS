@@ -9,7 +9,7 @@
     font-weight: $headings-font-weight;
     line-height: $headings-line-height;
     color: $headings-color;
-    display: inline-block;
+    display: block;
 }
 
 #{$pfx}h1 {
@@ -59,7 +59,7 @@
 }
 
 #{$pfx}a,
-a[class^=#{$pfxx}] {
+a[class^=#{$pfxx}a] {
     text-decoration: none;
     color: $link-color;
     &:hover,
