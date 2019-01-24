@@ -2,12 +2,21 @@
     "name": "ripecss",
     "version": "0.0.1",
     "description": "The Beautiful Framework for Shopunity Frontend Editor Development",
-    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Dreamvention/RipeCSS.git"
+    },
+    "main": "src/css/ripe.scss",
+    "unpkg": "dist/css/ripe.css",
+    "style": "RipeCSS/dist/css/ripe.css",
     "scripts": {
-        "dev": "gulp"
+        "build": "gulp"
     },
     "author": "Dreamvention",
-    "license": "ISC",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Dreamvention/RipeCSS/issues"
+    },
     "devDependencies": {
         "@csstools/postcss-sass": "^3.0.0",
         "autoprefixer": "^9.2.1",

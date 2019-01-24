@@ -3,6 +3,10 @@
     align-items: center;
     margin-bottom: 0px;
     box-shadow: $input-box-shadow;
+    &+#{$pfx}help,
+    &+#{$pfx}field__error {
+        margin-top: $spacer-1;
+    }
     &__addon,
     #{$pfx}label {
         background: #fff;
